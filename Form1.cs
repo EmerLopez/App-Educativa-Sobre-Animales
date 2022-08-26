@@ -16,5 +16,10 @@ namespace App_Educativa_Sobre_Animales
         {
             InitializeComponent();
         }
+
+        private void acToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
