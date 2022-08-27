@@ -73,6 +73,16 @@ namespace App_Educativa_Sobre_Animales.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Lion_Transparent_Background {
             get {
                 object obj = ResourceManager.GetObject("Lion-Transparent-Background", resourceCulture);
@@ -106,6 +116,26 @@ namespace App_Educativa_Sobre_Animales.Properties {
         internal static System.Drawing.Bitmap ovi_3 {
             get {
                 object obj = ResourceManager.GetObject("ovi 3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_cute_axolotl_cartoon_vector_illustration_png_image_4689474 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-cute-axolotl-cartoon-vector-illustration-png-image_4689474", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_green_animal_frog_image_1473867 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-green-animal-frog-image_1473867", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

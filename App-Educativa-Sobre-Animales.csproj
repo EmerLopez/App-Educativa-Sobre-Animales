@@ -108,6 +108,9 @@
     <EmbeddedResource Include="Acercade.resx">
       <DependentUpon>Acercade.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Anfibios.resx">
+      <DependentUpon>Anfibios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Domésticos.resx">
       <DependentUpon>Domésticos.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +169,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ovi 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cute-axolotl-cartoon-vector-illustration-png-image_4689474.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-green-animal-frog-image_1473867.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
