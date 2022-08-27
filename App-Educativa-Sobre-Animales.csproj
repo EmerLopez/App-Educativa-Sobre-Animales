@@ -108,6 +108,9 @@
     <EmbeddedResource Include="Acercade.resx">
       <DependentUpon>Acercade.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Domésticos.resx">
+      <DependentUpon>Domésticos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
