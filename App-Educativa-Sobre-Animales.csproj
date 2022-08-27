@@ -119,9 +119,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Vertebrados.resx">
       <DependentUpon>Vertebrados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vivíparos.resx">
+      <DependentUpon>Vivíparos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -135,6 +139,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unknown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop_11d1bd6f-4a6d-4e98-a78e-ccdffce29db5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lion-Transparent-Background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -63,5 +63,10 @@ namespace App_Educativa_Sobre_Animales
             Anfibios f = new Anfibios();
             f.Show();
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

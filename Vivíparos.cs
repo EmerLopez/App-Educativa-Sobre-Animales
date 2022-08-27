@@ -16,5 +16,10 @@ namespace App_Educativa_Sobre_Animales
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
