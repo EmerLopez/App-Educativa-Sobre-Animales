@@ -81,6 +81,7 @@ namespace App_Educativa_Sobre_Animales
             this.acercadeToolStripMenuItem.Name = "acercadeToolStripMenuItem";
             this.acercadeToolStripMenuItem.Size = new System.Drawing.Size(85, 25);
             this.acercadeToolStripMenuItem.Text = "Acercade";
+            this.acercadeToolStripMenuItem.Click += new System.EventHandler(this.acercadeToolStripMenuItem_Click);
             // 
             // terminosToolStripMenuItem
             // 

@@ -26,5 +26,11 @@ namespace App_Educativa_Sobre_Animales
         {
 
         }
+
+        private void acercadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Acercade f = new Acercade();
+            f.Show();
+        }
     }
 }
