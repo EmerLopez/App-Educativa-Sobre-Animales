@@ -68,5 +68,10 @@ namespace App_Educativa_Sobre_Animales
         {
             Close();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
