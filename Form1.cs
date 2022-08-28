@@ -73,5 +73,10 @@ namespace App_Educativa_Sobre_Animales
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

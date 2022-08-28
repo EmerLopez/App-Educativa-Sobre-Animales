@@ -61,40 +61,40 @@ namespace App_Educativa_Sobre_Animales
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(703, 29);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1892, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // herramientasToolStripMenuItem
             // 
             this.herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
-            this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(116, 25);
+            this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(142, 32);
             this.herramientasToolStripMenuItem.Text = "Herramientas";
             // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(66, 25);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(82, 32);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // acercadeToolStripMenuItem
             // 
             this.acercadeToolStripMenuItem.Name = "acercadeToolStripMenuItem";
-            this.acercadeToolStripMenuItem.Size = new System.Drawing.Size(85, 25);
+            this.acercadeToolStripMenuItem.Size = new System.Drawing.Size(106, 32);
             this.acercadeToolStripMenuItem.Text = "Acercade";
             this.acercadeToolStripMenuItem.Click += new System.EventHandler(this.acercadeToolStripMenuItem_Click);
             // 
             // terminosToolStripMenuItem
             // 
             this.terminosToolStripMenuItem.Name = "terminosToolStripMenuItem";
-            this.terminosToolStripMenuItem.Size = new System.Drawing.Size(85, 25);
+            this.terminosToolStripMenuItem.Size = new System.Drawing.Size(104, 32);
             this.terminosToolStripMenuItem.Text = "Terminos";
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(53, 25);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(64, 32);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -102,9 +102,10 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(28, 73);
+            this.button1.Location = new System.Drawing.Point(89, 61);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 55);
+            this.button1.Size = new System.Drawing.Size(321, 144);
             this.button1.TabIndex = 1;
             this.button1.Text = "Vertebrados";
             this.button1.UseVisualStyleBackColor = false;
@@ -114,9 +115,10 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(28, 176);
+            this.button2.Location = new System.Drawing.Point(89, 259);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 55);
+            this.button2.Size = new System.Drawing.Size(321, 160);
             this.button2.TabIndex = 2;
             this.button2.Text = "Vivíparos";
             this.button2.UseVisualStyleBackColor = false;
@@ -126,11 +128,12 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(213, 73);
+            this.button3.Location = new System.Drawing.Point(651, 61);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 55);
+            this.button3.Size = new System.Drawing.Size(355, 135);
             this.button3.TabIndex = 3;
-            this.button3.Text = "Domésti";
+            this.button3.Text = "Doméstico";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -138,9 +141,10 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(213, 176);
+            this.button4.Location = new System.Drawing.Point(651, 259);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(140, 55);
+            this.button4.Size = new System.Drawing.Size(355, 160);
             this.button4.TabIndex = 4;
             this.button4.Text = "Omnívoros";
             this.button4.UseVisualStyleBackColor = false;
@@ -150,9 +154,10 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Location = new System.Drawing.Point(28, 283);
+            this.button5.Location = new System.Drawing.Point(80, 505);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(140, 55);
+            this.button5.Size = new System.Drawing.Size(330, 139);
             this.button5.TabIndex = 5;
             this.button5.Text = "Ovíparos";
             this.button5.UseVisualStyleBackColor = false;
@@ -162,9 +167,10 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Location = new System.Drawing.Point(213, 283);
+            this.button6.Location = new System.Drawing.Point(651, 505);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(140, 55);
+            this.button6.Size = new System.Drawing.Size(355, 139);
             this.button6.TabIndex = 6;
             this.button6.Text = "Anfibios";
             this.button6.UseVisualStyleBackColor = false;
@@ -173,19 +179,22 @@ namespace App_Educativa_Sobre_Animales
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(392, 73);
+            this.pictureBox1.Location = new System.Drawing.Point(1134, 61);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(285, 265);
+            this.pictureBox1.Size = new System.Drawing.Size(745, 583);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
-            this.ClientSize = new System.Drawing.Size(703, 410);
+            this.ClientSize = new System.Drawing.Size(1892, 709);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -195,6 +204,7 @@ namespace App_Educativa_Sobre_Animales
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "App de Educacion Sobre Animales";
