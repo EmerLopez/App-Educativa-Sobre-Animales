@@ -78,5 +78,11 @@ namespace App_Educativa_Sobre_Animales
         {
 
         }
+
+        private void terminosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Terminos f = new Terminos();
+            f.Show();
+        }
     }
 }
