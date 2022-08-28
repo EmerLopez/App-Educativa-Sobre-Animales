@@ -44,6 +44,8 @@ namespace App_Educativa_Sobre_Animales
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.personalizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tutorialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -68,6 +70,9 @@ namespace App_Educativa_Sobre_Animales
             // 
             // herramientasToolStripMenuItem
             // 
+            this.herramientasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.personalizarToolStripMenuItem,
+            this.tutorialToolStripMenuItem});
             this.herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
             this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(116, 25);
             this.herramientasToolStripMenuItem.Text = "Herramientas";
@@ -183,6 +188,18 @@ namespace App_Educativa_Sobre_Animales
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // personalizarToolStripMenuItem
+            // 
+            this.personalizarToolStripMenuItem.Name = "personalizarToolStripMenuItem";
+            this.personalizarToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.personalizarToolStripMenuItem.Text = "Personalizar";
+            // 
+            // tutorialToolStripMenuItem
+            // 
+            this.tutorialToolStripMenuItem.Name = "tutorialToolStripMenuItem";
+            this.tutorialToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.tutorialToolStripMenuItem.Text = "Tutorial";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -227,6 +244,8 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem personalizarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tutorialToolStripMenuItem;
     }
 }
 
