@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace App_Educativa_Sobre_Animales
 {
-    public partial class Ayuda : Form
+    public partial class Reportar : Form
     {
-        public Ayuda()
+        public Reportar()
         {
             InitializeComponent();
         }

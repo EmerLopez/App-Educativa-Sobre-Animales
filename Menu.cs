@@ -87,7 +87,7 @@ namespace App_Educativa_Sobre_Animales
 
         private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Ayuda f = new Ayuda();
+            Reportar f = new Reportar();
             f.Show();
         }
 

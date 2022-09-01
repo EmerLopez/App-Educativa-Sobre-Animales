@@ -34,6 +34,9 @@ namespace App_Educativa_Sobre_Animales
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personalizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.azulToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.negroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reestablecerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.terminosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,9 +48,6 @@ namespace App_Educativa_Sobre_Animales
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.azulToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.negroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reestablecerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -66,7 +66,7 @@ namespace App_Educativa_Sobre_Animales
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1493, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(1370, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -85,14 +85,35 @@ namespace App_Educativa_Sobre_Animales
             this.negroToolStripMenuItem,
             this.reestablecerToolStripMenuItem});
             this.personalizarToolStripMenuItem.Name = "personalizarToolStripMenuItem";
-            this.personalizarToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.personalizarToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.personalizarToolStripMenuItem.Text = "Personalizar";
+            // 
+            // azulToolStripMenuItem
+            // 
+            this.azulToolStripMenuItem.Name = "azulToolStripMenuItem";
+            this.azulToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
+            this.azulToolStripMenuItem.Text = "Azul";
+            this.azulToolStripMenuItem.Click += new System.EventHandler(this.azulToolStripMenuItem_Click);
+            // 
+            // negroToolStripMenuItem
+            // 
+            this.negroToolStripMenuItem.Name = "negroToolStripMenuItem";
+            this.negroToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
+            this.negroToolStripMenuItem.Text = "Rosa";
+            this.negroToolStripMenuItem.Click += new System.EventHandler(this.negroToolStripMenuItem_Click);
+            // 
+            // reestablecerToolStripMenuItem
+            // 
+            this.reestablecerToolStripMenuItem.Name = "reestablecerToolStripMenuItem";
+            this.reestablecerToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
+            this.reestablecerToolStripMenuItem.Text = "Restablecer";
+            this.reestablecerToolStripMenuItem.Click += new System.EventHandler(this.reestablecerToolStripMenuItem_Click);
             // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(66, 25);
-            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(83, 25);
+            this.ayudaToolStripMenuItem.Text = "Reportar";
             this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
             // 
             // acercadeToolStripMenuItem
@@ -205,34 +226,13 @@ namespace App_Educativa_Sobre_Animales
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // azulToolStripMenuItem
-            // 
-            this.azulToolStripMenuItem.Name = "azulToolStripMenuItem";
-            this.azulToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.azulToolStripMenuItem.Text = "Azul";
-            this.azulToolStripMenuItem.Click += new System.EventHandler(this.azulToolStripMenuItem_Click);
-            // 
-            // negroToolStripMenuItem
-            // 
-            this.negroToolStripMenuItem.Name = "negroToolStripMenuItem";
-            this.negroToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.negroToolStripMenuItem.Text = "Rosa";
-            this.negroToolStripMenuItem.Click += new System.EventHandler(this.negroToolStripMenuItem_Click);
-            // 
-            // reestablecerToolStripMenuItem
-            // 
-            this.reestablecerToolStripMenuItem.Name = "reestablecerToolStripMenuItem";
-            this.reestablecerToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.reestablecerToolStripMenuItem.Text = "Restablecer";
-            this.reestablecerToolStripMenuItem.Click += new System.EventHandler(this.reestablecerToolStripMenuItem_Click);
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
-            this.ClientSize = new System.Drawing.Size(1493, 781);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);

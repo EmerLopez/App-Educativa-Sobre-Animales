@@ -1,7 +1,7 @@
 ﻿
 namespace App_Educativa_Sobre_Animales
 {
-    partial class Ayuda
+    partial class Reportar
     {
         /// <summary>
         /// Required designer variable.
@@ -34,10 +34,10 @@ namespace App_Educativa_Sobre_Animales
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -47,7 +47,7 @@ namespace App_Educativa_Sobre_Animales
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(329, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Describe el problema que haya encontrado";
+            this.label1.Text = "Reportar un problema\r\n";
             // 
             // textBox1
             // 
@@ -84,28 +84,6 @@ namespace App_Educativa_Sobre_Animales
             this.textBox2.Size = new System.Drawing.Size(240, 20);
             this.textBox2.TabIndex = 4;
             // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(129, 293);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(296, 17);
-            this.radioButton1.TabIndex = 5;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Podemos enviarte un correo para pedirte mas informacion";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(129, 328);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(167, 17);
-            this.radioButton2.TabIndex = 6;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Enviar informacion del sistema";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(100, 374);
@@ -126,23 +104,43 @@ namespace App_Educativa_Sobre_Animales
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Ayuda
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(129, 262);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(297, 17);
+            this.checkBox1.TabIndex = 9;
+            this.checkBox1.Text = "Podemos enviarte un correo para pedirte mas informacion";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(129, 297);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(168, 17);
+            this.checkBox2.TabIndex = 10;
+            this.checkBox2.Text = "Enviar informacion del sistema";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // Reportar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(500, 451);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Ayuda";
-            this.Text = "Ayuda";
+            this.Name = "Reportar";
+            this.Text = "Reportar";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,9 +153,9 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }
