@@ -90,5 +90,24 @@ namespace App_Educativa_Sobre_Animales
             Ayuda f = new Ayuda();
             f.Show();
         }
+
+        private void azulToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            menuStrip1.BackColor = Color.SteelBlue;
+            BackColor = Color.CornflowerBlue;
+
+        }
+
+        private void negroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            menuStrip1.BackColor = Color.DeepPink;
+            BackColor = Color.HotPink;
+        }
+
+        private void reestablecerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //xd
+
+        }
     }
 }
