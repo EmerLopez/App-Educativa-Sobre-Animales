@@ -32,5 +32,15 @@ namespace App_Educativa_Sobre_Animales.Properties {
                 return ((string)(this["FENAHEConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-6SBSS7S;Initial Catalog=FENAHE;Integrated Security=True")]
+        public string FENAHEConnectionString1 {
+            get {
+                return ((string)(this["FENAHEConnectionString1"]));
+            }
+        }
     }
 }

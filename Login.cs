@@ -14,7 +14,7 @@ namespace App_Educativa_Sobre_Animales
 {
     public partial class Login : Form
     {
-        SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-2J7G32A; Initial Catalog=FENAHE; Integrated Security=True");
+        SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-6SBSS7S;Initial Catalog=FENAHE;Integrated Security=True");
         public Login()
         {
             InitializeComponent();
@@ -59,7 +59,12 @@ namespace App_Educativa_Sobre_Animales
 
         private void button2_Click(object sender, EventArgs e)
         {
+            conexion.Open();
+            SqlCommand f = new SqlCommand("insert into PERSONAS ([USUARIOS] ,[CONTRASENA]) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "') ", conexion);
+            f.ExecuteNonQuery();
+            MessageBox.Show("Registro guardado");
 
+            conexion.Close();
         }
     }
 }
