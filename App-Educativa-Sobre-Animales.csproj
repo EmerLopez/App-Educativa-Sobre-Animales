@@ -32,6 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -57,6 +61,17 @@
     </Compile>
     <Compile Include="Anfibios.Designer.cs">
       <DependentUpon>Anfibios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FENAHEDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FENAHEDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportar.cs">
       <SubType>Form</SubType>
@@ -114,6 +129,9 @@
     <EmbeddedResource Include="Anfibios.resx">
       <DependentUpon>Anfibios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportar.resx">
       <DependentUpon>Reportar.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +166,17 @@
     <EmbeddedResource Include="Vivíparos.resx">
       <DependentUpon>Vivíparos.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="FENAHEDataSet.xsc">
+      <DependentUpon>FENAHEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FENAHEDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FENAHEDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FENAHEDataSet.xss">
+      <DependentUpon>FENAHEDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -187,6 +216,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoo-vector-ilustracion-con-animales-salvajes-de-safari-de-dibujos-animados-banner-de-bienvenida-zoologico-animales-animales-de-fauna-rhinoceros-y-flamingo-2b0thxn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unknown %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

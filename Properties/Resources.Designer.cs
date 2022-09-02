@@ -149,5 +149,27 @@ namespace App_Educativa_Sobre_Animales.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unknown__2_ {
+            get {
+                object obj = ResourceManager.GetObject("unknown (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zoo_vector_ilustracion_con_animales_salvajes_de_safari_de_dibujos_animados_banner_de_bienvenida_zoologico_animales_animales_de_fauna_rhinoceros_y_flamingo_2b0thxn {
+            get {
+                object obj = ResourceManager.GetObject("zoo-vector-ilustracion-con-animales-salvajes-de-safari-de-dibujos-animados-banner" +
+                        "-de-bienvenida-zoologico-animales-animales-de-fauna-rhinoceros-y-flamingo-2b0thx" +
+                        "n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

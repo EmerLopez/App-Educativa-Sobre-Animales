@@ -67,7 +67,7 @@ namespace App_Educativa_Sobre_Animales
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Location = new System.Drawing.Point(512, 532);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(213, 50);
             this.button1.TabIndex = 5;
@@ -80,7 +80,7 @@ namespace App_Educativa_Sobre_Animales
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.ovi_3;
             this.pictureBox3.Location = new System.Drawing.Point(431, 374);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(295, 129);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -92,7 +92,7 @@ namespace App_Educativa_Sobre_Animales
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.ovi_2_1;
             this.pictureBox2.Location = new System.Drawing.Point(431, 199);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(295, 143);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -104,7 +104,7 @@ namespace App_Educativa_Sobre_Animales
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.ovi_1;
             this.pictureBox1.Location = new System.Drawing.Point(431, 28);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(295, 153);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -123,7 +123,8 @@ namespace App_Educativa_Sobre_Animales
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Ovíparos";
             this.Text = "Ovíparos";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

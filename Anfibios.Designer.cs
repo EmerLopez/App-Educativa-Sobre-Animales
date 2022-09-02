@@ -44,18 +44,20 @@ namespace App_Educativa_Sobre_Animales
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(70, 9);
+            this.label1.Location = new System.Drawing.Point(93, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 33);
+            this.label1.Size = new System.Drawing.Size(187, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "Anfibios";
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(23, 64);
+            this.label2.Location = new System.Drawing.Point(31, 79);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(271, 188);
+            this.label2.Size = new System.Drawing.Size(361, 231);
             this.label2.TabIndex = 1;
             this.label2.Text = resources.GetString("label2.Text");
             // 
@@ -64,9 +66,10 @@ namespace App_Educativa_Sobre_Animales
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(412, 372);
+            this.button1.Location = new System.Drawing.Point(549, 458);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 29);
+            this.button1.Size = new System.Drawing.Size(107, 36);
             this.button1.TabIndex = 2;
             this.button1.Text = "Aceptar";
             this.button1.UseVisualStyleBackColor = false;
@@ -75,9 +78,10 @@ namespace App_Educativa_Sobre_Animales
             // pictureBox3
             // 
             this.pictureBox3.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.images;
-            this.pictureBox3.Location = new System.Drawing.Point(322, 241);
+            this.pictureBox3.Location = new System.Drawing.Point(429, 297);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(170, 101);
+            this.pictureBox3.Size = new System.Drawing.Size(227, 124);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
@@ -85,9 +89,10 @@ namespace App_Educativa_Sobre_Animales
             // pictureBox2
             // 
             this.pictureBox2.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.pngtree_green_animal_frog_image_1473867;
-            this.pictureBox2.Location = new System.Drawing.Point(322, 124);
+            this.pictureBox2.Location = new System.Drawing.Point(429, 153);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(170, 98);
+            this.pictureBox2.Size = new System.Drawing.Size(227, 121);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -95,25 +100,28 @@ namespace App_Educativa_Sobre_Animales
             // pictureBox1
             // 
             this.pictureBox1.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.pngtree_cute_axolotl_cartoon_vector_illustration_png_image_4689474;
-            this.pictureBox1.Location = new System.Drawing.Point(322, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(429, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(170, 95);
+            this.pictureBox1.Size = new System.Drawing.Size(227, 117);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // Anfibios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
-            this.ClientSize = new System.Drawing.Size(534, 413);
+            this.ClientSize = new System.Drawing.Size(712, 508);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Anfibios";
             this.Text = "Anfibios";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
