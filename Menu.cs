@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Collections;
 
 namespace App_Educativa_Sobre_Animales
 {
@@ -106,8 +108,16 @@ namespace App_Educativa_Sobre_Animales
 
         private void reestablecerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //xd
+            //Diego se la come .l.
 
+        }
+
+        private void ayudaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormularioAyuda f = new FormularioAyuda();
+            f.Show();
+           
+            
         }
     }
 }

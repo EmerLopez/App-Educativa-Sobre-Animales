@@ -72,6 +72,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FENAHEDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FormularioAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioAyuda.Designer.cs">
+      <DependentUpon>FormularioAyuda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Anfibios.resx">
       <DependentUpon>Anfibios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioAyuda.resx">
+      <DependentUpon>FormularioAyuda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
