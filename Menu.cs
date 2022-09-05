@@ -108,7 +108,7 @@ namespace App_Educativa_Sobre_Animales
 
         private void reestablecerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Diego se la come .l.
+            
 
         }
 
