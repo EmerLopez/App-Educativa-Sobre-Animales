@@ -35,7 +35,7 @@ namespace App_Educativa_Sobre_Animales
                 if (label1.Visible == true)
                 {
 
-                    StreamReader Archivo = new StreamReader(@"C:\Users\Edwin\Desktop\Ayuda.txt.txt");
+                    StreamReader Archivo = new StreamReader(@"C:\Users\Diego\Downloads\Ayuda.txt");
                     string Linea = "";
                     ArrayList Contenido = new ArrayList();
                     while (Linea != null)

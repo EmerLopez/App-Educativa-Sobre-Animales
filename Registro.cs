@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace App_Educativa_Sobre_Animales
 {
     public partial class Registro : Form
     {
+        SqlConnection conexion = new SqlConnection("Data Source=desktop-2j7g32a;Initial Catalog=FENAHE;Integrated Security=True");
+
         public Registro()
         {
             InitializeComponent();
@@ -26,15 +29,20 @@ namespace App_Educativa_Sobre_Animales
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Conexion.Open();
-            SqlCommand f = new SqlCommand("insert into PERSONAS ([USUARIOS] ,[CONTRASENA], [CORREO]) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "' ) ", Conexion);
+            conexion.Open();
+            SqlCommand f = new SqlCommand("insert into PERSONAS ([USUARIOS] ,[CONTRASENA], [CORREO]) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "' ) ", conexion);
             f.ExecuteNonQuery();
             MessageBox.Show("Registro guardado");
 
             textBox1.Clear();
             textBox2.Clear();
             textBox3.Clear();
-            Conexion.Close();
+            conexion.Close();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
