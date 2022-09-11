@@ -110,7 +110,27 @@ namespace App_Educativa_Sobre_Animales
 
         private void button3_Click(object sender, EventArgs e)
         {
+            try
+            {
 
-        }
-    }
+
+                conexion_access.Open();
+                OleDbDataAdapter consulta = new OleDbDataAdapter("SELECT * FROM Usuarios", conexion_access);
+
+                DataSet resultado = new DataSet();
+                consulta.Fill(resultado);
+                foreach (DataRow registro in resultado.Tables[0].Rows)
+                {
+                    if ((textBox1.Text == registro["nombre"].ToString()) && (textBox2.Text == registro["password"].ToString()))
+
+                    {
+                        Menu fm = new Menu();
+                        fm.Show();
+                        this.Hide();
+
+                    }
+
+                }
+            }
+
 }
