@@ -73,6 +73,16 @@ namespace App_Educativa_Sobre_Animales.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap equipo_animal_feliz_sosteniendo_llave_grande_116802_2 {
+            get {
+                object obj = ResourceManager.GetObject("equipo-animal-feliz-sosteniendo-llave-grande_116802-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
