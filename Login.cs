@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
+using System.Data.OleDb;
 
 
 namespace App_Educativa_Sobre_Animales
@@ -17,6 +18,7 @@ namespace App_Educativa_Sobre_Animales
     {
         MySqlConnection conn = new MySqlConnection("Server=localhost; Database=fenahe; Uid=Diego; Pwd=12345");
         SqlConnection conexion = new SqlConnection("Data Source=desktop-2j7g32a;Initial Catalog=FENAHE;Integrated Security=True");
+        OleDbConnection conexion_access = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source = C:\Users\Edwin\Documents\LoginAccess.mdb; Persist Security Info=False;");
         public Login()
         {
             InitializeComponent();
@@ -104,6 +106,11 @@ namespace App_Educativa_Sobre_Animales
                 MessageBox.Show("Error de usuario o clave de acceso", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
