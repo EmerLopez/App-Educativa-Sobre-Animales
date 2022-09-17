@@ -53,5 +53,16 @@ namespace App_Educativa_Sobre_Animales.Properties {
                 return ((string)(this["LoginAccessConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\Edwin\\Documents\\LoginAccess" +
+            ".mdb")]
+        public string ConexionAccess {
+            get {
+                return ((string)(this["ConexionAccess"]));
+            }
+        }
     }
 }

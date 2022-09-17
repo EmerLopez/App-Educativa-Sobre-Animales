@@ -44,5 +44,10 @@ namespace App_Educativa_Sobre_Animales
         {
 
         }
+
+        private void Registro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

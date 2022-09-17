@@ -133,6 +133,11 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginAccessDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginAccessDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Registro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +272,17 @@
     </None>
     <None Include="FENAHEDataSet1.xss">
       <DependentUpon>FENAHEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LoginAccessDataSet1.xsc">
+      <DependentUpon>LoginAccessDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LoginAccessDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginAccessDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoginAccessDataSet1.xss">
+      <DependentUpon>LoginAccessDataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
