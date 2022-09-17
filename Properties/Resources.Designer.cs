@@ -133,6 +133,16 @@ namespace App_Educativa_Sobre_Animales.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_computer_icons_user_customer_others {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-computer-icons-user-customer-others", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngtree_cute_axolotl_cartoon_vector_illustration_png_image_4689474 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-cute-axolotl-cartoon-vector-illustration-png-image_4689474", resourceCulture);

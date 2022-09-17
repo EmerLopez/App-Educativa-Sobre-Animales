@@ -121,6 +121,12 @@
     <Compile Include="FormularioAyuda.Designer.cs">
       <DependentUpon>FormularioAyuda.cs</DependentUpon>
     </Compile>
+    <Compile Include="fusuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fusuario.Designer.cs">
+      <DependentUpon>fusuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sistemaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Terminos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioAyuda.resx">
       <DependentUpon>FormularioAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fusuario.resx">
+      <DependentUpon>fusuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -264,6 +278,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="sistemaDataSet.xsc">
+      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sistemaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistemaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistemaDataSet.xss">
+      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -303,6 +328,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\equipo-animal-feliz-sosteniendo-llave-grande_116802-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-user-customer-others.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -119,5 +119,11 @@ namespace App_Educativa_Sobre_Animales
            
             
         }
+
+        private void administrarUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fusuario kk = new fusuario();
+            kk.Show();
+        }
     }
 }
