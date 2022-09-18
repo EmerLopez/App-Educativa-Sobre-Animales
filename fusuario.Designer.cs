@@ -335,7 +335,7 @@ namespace App_Educativa_Sobre_Animales
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fusuario";
-            this.Text = "fusuario";
+            this.Text = "WonderZoo";
             this.Load += new System.EventHandler(this.fusuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginAccessDataSet1)).EndInit();

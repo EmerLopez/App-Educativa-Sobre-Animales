@@ -44,29 +44,26 @@ namespace App_Educativa_Sobre_Animales
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(41, 32);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(31, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(439, 41);
+            this.label1.Size = new System.Drawing.Size(329, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Reportar un problema\r\n";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(47, 76);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Location = new System.Drawing.Point(35, 62);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(549, 121);
+            this.textBox1.Size = new System.Drawing.Size(413, 99);
             this.textBox1.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(41, 230);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(31, 187);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(251, 28);
+            this.label2.Size = new System.Drawing.Size(188, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Informacion adicional";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -75,27 +72,24 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(47, 287);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(35, 233);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 25);
+            this.label3.Size = new System.Drawing.Size(57, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Correo";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(172, 289);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Location = new System.Drawing.Point(129, 235);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(319, 22);
+            this.textBox2.Size = new System.Drawing.Size(240, 20);
             this.textBox2.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(133, 460);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(100, 374);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 7;
             this.button1.Text = "Enviar";
             this.button1.UseVisualStyleBackColor = true;
@@ -103,10 +97,9 @@ namespace App_Educativa_Sobre_Animales
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(325, 460);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(244, 374);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 8;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
@@ -115,10 +108,9 @@ namespace App_Educativa_Sobre_Animales
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(172, 322);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Location = new System.Drawing.Point(129, 262);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(397, 21);
+            this.checkBox1.Size = new System.Drawing.Size(297, 17);
             this.checkBox1.TabIndex = 9;
             this.checkBox1.Text = "Podemos enviarte un correo para pedirte mas informacion";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -126,20 +118,19 @@ namespace App_Educativa_Sobre_Animales
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(172, 366);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox2.Location = new System.Drawing.Point(129, 297);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(222, 21);
+            this.checkBox2.Size = new System.Drawing.Size(168, 17);
             this.checkBox2.TabIndex = 10;
             this.checkBox2.Text = "Enviar informacion del sistema";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // Reportar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
-            this.ClientSize = new System.Drawing.Size(667, 555);
+            this.ClientSize = new System.Drawing.Size(500, 451);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button2);
@@ -150,9 +141,8 @@ namespace App_Educativa_Sobre_Animales
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Reportar";
-            this.Text = "Reportar";
+            this.Text = "WonderZoo";
             this.ResumeLayout(false);
             this.PerformLayout();
 
