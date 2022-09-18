@@ -167,7 +167,40 @@ namespace App_Educativa_Sobre_Animales
 
         private void bactualizar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                OleDbCommand actualizar = new OleDbCommand();
+                miconexion.Open();
+                actualizar.Connection = miconexion;
+                actualizar.CommandType = CommandType.Text;
 
+
+                string nom = txtusuario.Text.ToString();
+                string cla = txtclave.Text.ToString();
+                string niv = lstnivel.Text.ToString();
+
+                actualizar.CommandText = "UPDATE Usuarios set nombre = '" + nom + "'WHERE nombre = '" + usuario_modificar + "'";
+
+                actualizar.CommandText = "UPDATE Usuarios set password = '" + cla + "'  WHERE nombre = '" + usuario_modificar + "'";
+
+                actualizar.CommandText = "UPDATE Usuarios set Nivel = '" + niv + "' WHERE nombre = '" + usuario_modificar + "'";
+
+                actualizar.ExecuteNonQuery();
+                miconexion.Close();
+
+                bmodificar.Visible = true;
+                bactualizar.Visible = false;
+                txtusuario.Enabled = false;
+                txtclave.Enabled = false;
+                lstnivel.Enabled = false;
+
+                MessageBox.Show("Usuario actualizado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
             try
             { 
                 OleDbCommand actualizar = new OleDbCommand();
@@ -180,7 +213,6 @@ namespace App_Educativa_Sobre_Animales
                 string cla = txtclave.Text.ToString();
                 string niv = lstnivel.Text.ToString(); 
 
-                //Podemos actualizar todos los campos de una vez 
                 actualizar.CommandText = "UPDATES Usuarios SET nombre = '" + nom + "', password = '" + cla + "',Nivel = '" + niv + "' WHERE nombre = '" + usuario_modificar + "'";
 
                 actualizar.ExecuteNonQuery();
@@ -193,7 +225,6 @@ namespace App_Educativa_Sobre_Animales
                 txtclave.Enabled = false;
                 lstnivel.Enabled = false;
 
-                //Mensaje que se guardó correctamente 
                 MessageBox.Show("Usuario actualizado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }

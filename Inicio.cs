@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace App_Educativa_Sobre_Animales
 {
-    static class Program
+    static class Inicio
     {
         /// <summary>
         /// Punto de entrada principal para la aplicación.
@@ -16,7 +16,7 @@ namespace App_Educativa_Sobre_Animales
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fusuario());
+            Application.Run(new Login());
         }
     }
 }
