@@ -131,15 +131,16 @@ namespace App_Educativa_Sobre_Animales
                     }
                     else
                     {
-                        MessageBox.Show("Error de usuario o clave de acceso", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                       MessageBox.Show("Error de usuario o clave de acceso", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                       
                     }
                 }
             }
             catch (Exception err)
             {
                 MessageBox.Show(err.Message);
-                MessageBox.Show("Error de usuario o clave de acceso", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //Usuarios.Focus();
+                 MessageBox.Show("Error de usuario o clave de acceso", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox1.Focus();
             }
 
             conexion_access.Close();
