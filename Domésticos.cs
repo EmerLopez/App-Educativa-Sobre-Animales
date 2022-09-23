@@ -31,5 +31,10 @@ namespace App_Educativa_Sobre_Animales
         {
 
         }
+
+        private void Domésticos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
