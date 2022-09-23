@@ -31,11 +31,11 @@ namespace App_Educativa_Sobre_Animales
 
         private void FormularioAyuda_Load(object sender, EventArgs e)
         {
-            {
+            /*{
                 if (label1.Visible == true)
                 {
 
-                    StreamReader Archivo = new StreamReader(@"C:\Users\Diego\Downloads\Ayuda.txt");
+                    StreamReader Archivo = new StreamReader("");
                     string Linea = "";
                     ArrayList Contenido = new ArrayList();
                     while (Linea != null)
@@ -52,8 +52,9 @@ namespace App_Educativa_Sobre_Animales
                         richTextBox1.Text = richTextBox1.Text + Linea_mostrar;
                     }
                 }
-
-            }
+                
+        }
+            */
         }
     }
 }

@@ -117,4 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>¿En que podemos ayudarte?
+
+&gt;&gt;Consultar los temas de ayuda&lt;&lt;
+&gt;Empezar a utilizar WonderZoo.
+   -Barra de menu: presentamos las funciones de nuestra app WonderZoo la cual contiene Herramientas, 
+                               Reportar, Acercade, Terminos y Salir   
+   -Herramientas: Contiene unas funciones especiales de temas personalizables.
+   -Reportar: Ayudar a que nuestra app WonderZoo funcione mejor en donde podra notificar un error o 
+                     enviar tu opinión para mejorar las funciones de nuestra app.
+   -Acercade: Le ofrecemos nuestra información para que pueda conocernos mejor.
+   -Terminos: Mostramos todos los terminos que tenemos como empresa hacia la app WonderZoo.
+
+&gt;WikiBotones.
+   Encontrara las distintas categorias de animales, en donde podra interactuar con cada una de ellas 
+   solamente haciendo clic y podra verificar la información de distintas categorias que le proporciona 
+   WonderZoo</value>
+  </data>
 </root>

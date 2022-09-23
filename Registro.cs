@@ -29,15 +29,25 @@ namespace App_Educativa_Sobre_Animales
 
         private void button1_Click(object sender, EventArgs e)
         {
-            conexion.Open();
-            SqlCommand f = new SqlCommand("insert into PERSONAS ([USUARIOS] ,[CONTRASENA], [CORREO]) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "' ) ", conexion);
-            f.ExecuteNonQuery();
-            MessageBox.Show("Registro guardado");
+            if (checkBox1.Checked == false && textBox1.Text == "" && textBox2.Text == "" && textBox3.Text == "")
+            {
 
-            textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
-            conexion.Close();
+                MessageBox.Show("Ingrese sus datos correctamente y acepte los terminos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                conexion.Open();
+                SqlCommand f = new SqlCommand("insert into PERSONAS ([USUARIOS] ,[CONTRASENA], [CORREO]) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "' ) ", conexion);
+                f.ExecuteNonQuery();
+                MessageBox.Show("Registro guardado");
+
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+                conexion.Close();
+
+            }
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -47,7 +57,7 @@ namespace App_Educativa_Sobre_Animales
 
         private void Registro_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
