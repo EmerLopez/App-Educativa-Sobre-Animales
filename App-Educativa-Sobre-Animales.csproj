@@ -187,6 +187,12 @@
     <Compile Include="Terminos.Designer.cs">
       <DependentUpon>Terminos.cs</DependentUpon>
     </Compile>
+    <Compile Include="UGBVerde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UGBVerde.Designer.cs">
+      <DependentUpon>UGBVerde.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vertebrados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +250,9 @@
     </Compile>
     <EmbeddedResource Include="Terminos.resx">
       <DependentUpon>Terminos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UGBVerde.resx">
+      <DependentUpon>UGBVerde.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vertebrados.resx">
       <DependentUpon>Vertebrados.cs</DependentUpon>
