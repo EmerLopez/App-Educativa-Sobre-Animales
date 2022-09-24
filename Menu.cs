@@ -125,5 +125,11 @@ namespace App_Educativa_Sobre_Animales
             fusuario kk = new fusuario();
             kk.Show();
         }
+
+        private void uGBVerdeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UGBVerde Vd = new UGBVerde();
+            Vd.Show();
+        }
     }
 }
