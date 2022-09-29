@@ -33,18 +33,18 @@ namespace App_Educativa_Sobre_Animales
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtusuario = new System.Windows.Forms.TextBox();
+            this.txtclave = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.lstnivel = new System.Windows.Forms.ComboBox();
+            this.bnuevo = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.bguardar = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -96,19 +96,19 @@ namespace App_Educativa_Sobre_Animales
             this.label4.Text = "Nivel";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // textBox1
+            // txtusuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(255, 101);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(137, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtusuario.Location = new System.Drawing.Point(255, 101);
+            this.txtusuario.Name = "txtusuario";
+            this.txtusuario.Size = new System.Drawing.Size(137, 20);
+            this.txtusuario.TabIndex = 4;
             // 
-            // textBox2
+            // txtclave
             // 
-            this.textBox2.Location = new System.Drawing.Point(255, 145);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(137, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtclave.Location = new System.Drawing.Point(255, 145);
+            this.txtclave.Name = "txtclave";
+            this.txtclave.Size = new System.Drawing.Size(137, 20);
+            this.txtclave.TabIndex = 5;
             // 
             // button1
             // 
@@ -159,26 +159,26 @@ namespace App_Educativa_Sobre_Animales
             this.button4.Text = "Ultimo";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // lstnivel
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(255, 188);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(137, 21);
-            this.comboBox1.TabIndex = 11;
+            this.lstnivel.FormattingEnabled = true;
+            this.lstnivel.Location = new System.Drawing.Point(255, 188);
+            this.lstnivel.Name = "lstnivel";
+            this.lstnivel.Size = new System.Drawing.Size(137, 21);
+            this.lstnivel.TabIndex = 11;
             // 
-            // button5
+            // bnuevo
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(36, 324);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 45);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "Nuevo";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.bnuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
+            this.bnuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bnuevo.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bnuevo.Location = new System.Drawing.Point(36, 324);
+            this.bnuevo.Name = "bnuevo";
+            this.bnuevo.Size = new System.Drawing.Size(75, 45);
+            this.bnuevo.TabIndex = 12;
+            this.bnuevo.Text = "Nuevo";
+            this.bnuevo.UseVisualStyleBackColor = false;
+            this.bnuevo.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -199,7 +199,7 @@ namespace App_Educativa_Sobre_Animales
             this.button7.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(233, 324);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 44);
+            this.button7.Size = new System.Drawing.Size(85, 44);
             this.button7.TabIndex = 14;
             this.button7.Text = "Modificar ";
             this.button7.UseVisualStyleBackColor = false;
@@ -217,18 +217,18 @@ namespace App_Educativa_Sobre_Animales
             this.button8.Text = "Salir";
             this.button8.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // bguardar
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(36, 395);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 43);
-            this.button9.TabIndex = 16;
-            this.button9.Text = "Guardar";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.bguardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
+            this.bguardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bguardar.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bguardar.Location = new System.Drawing.Point(36, 395);
+            this.bguardar.Name = "bguardar";
+            this.bguardar.Size = new System.Drawing.Size(75, 43);
+            this.bguardar.TabIndex = 16;
+            this.bguardar.Text = "Guardar";
+            this.bguardar.UseVisualStyleBackColor = false;
+            this.bguardar.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -294,18 +294,18 @@ namespace App_Educativa_Sobre_Animales
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.bguardar);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.bnuevo);
+            this.Controls.Add(this.lstnivel);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtclave);
+            this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -326,18 +326,18 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtusuario;
+        private System.Windows.Forms.TextBox txtclave;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.ComboBox lstnivel;
+        private System.Windows.Forms.Button bnuevo;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button bguardar;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox3;
