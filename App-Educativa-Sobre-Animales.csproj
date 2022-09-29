@@ -127,6 +127,12 @@
     <Compile Include="fusuario.Designer.cs">
       <DependentUpon>fusuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="fusuariosMySQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fusuariosMySQL.Designer.cs">
+      <DependentUpon>fusuariosMySQL.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fusuario.resx">
       <DependentUpon>fusuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fusuariosMySQL.resx">
+      <DependentUpon>fusuariosMySQL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -356,6 +365,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\png-transparent-computer-icons-user-customer-others.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MicrosoftTeams-image %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MicrosoftTeams-image %281%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
