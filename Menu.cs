@@ -131,5 +131,11 @@ namespace App_Educativa_Sobre_Animales
             UGBVerde Vd = new UGBVerde();
             Vd.Show();
         }
+
+        private void administrarUsuariosConMysqlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fusuariosMySQL rr = new fusuariosMySQL();
+            rr.Show();
+        }
     }
 }

@@ -14,6 +14,8 @@ namespace App_Educativa_Sobre_Animales
 {
     public partial class fusuariosMySQL : Form
     {
+        public string cadena_conexion = "Database=fenahe;Data Source=localhost;User Id=edwin;Password=1234";
+
         public fusuariosMySQL()
         {
             InitializeComponent();
@@ -41,7 +43,7 @@ namespace App_Educativa_Sobre_Animales
 
                 string consulta = "select * from usuarios";
 
-                MySqlConnection conexion = new MySqlConnection server=localhost;user id=Pepito;database=fenahe;
+                MySqlConnection conexion = new MySqlConnection (cadena_conexion);
                 MySqlDataAdapter comando = new MySqlDataAdapter(consulta, conexion);
 
                 System.Data.DataSet ds = new System.Data.DataSet();
@@ -83,10 +85,53 @@ namespace App_Educativa_Sobre_Animales
 
         private void button9_Click(object sender, EventArgs e)
         {
+            try
+            {
 
+                MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+
+                string myInsertQuery = "INSERT INTO personas(nombre,clave,nivel) Values(?nombre,?clave,?nivel)";
+                MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+
+                myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 75).Value = txtusuario.Text;
+                myCommand.Parameters.Add("?clave", MySqlDbType.VarChar, 75).Value = txtclave.Text;
+                myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 11).Value = lstnivel.Text;
+
+                myCommand.Connection = myConnection;
+                myConnection.Open();
+                myCommand.ExecuteNonQuery();
+                myCommand.Connection.Close();
+
+                MessageBox.Show("Usuario agregado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                string consulta = "select * from personas";
+
+                MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+                MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
+                System.Data.DataSet ds = new System.Data.DataSet();
+                da.Fill(ds, "fenahe");
+                dataGridView1.DataSource = ds;
+                dataGridView1.DataMember = "fenahe";
+
+            }
+            catch (MySqlException)
+            {
+                MessageBox.Show("Ya existe el usuario", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            bnuevo.Visible = true;
+            bguardar.Visible = false;
+
+            //Desabilitar campos, se activan al crear nuevo registro
+            txtusuario.Enabled = false;
+            txtclave.Enabled = false;
+            lstnivel.Enabled = false;
+            bnuevo.Focus();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+    
+
+    private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
@@ -112,6 +157,11 @@ namespace App_Educativa_Sobre_Animales
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }

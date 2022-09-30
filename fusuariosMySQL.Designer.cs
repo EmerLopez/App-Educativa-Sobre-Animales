@@ -35,19 +35,19 @@ namespace App_Educativa_Sobre_Animales
             this.label4 = new System.Windows.Forms.Label();
             this.txtusuario = new System.Windows.Forms.TextBox();
             this.txtclave = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.bprimero = new System.Windows.Forms.Button();
+            this.banterior = new System.Windows.Forms.Button();
+            this.bsiguiente = new System.Windows.Forms.Button();
+            this.bultimo = new System.Windows.Forms.Button();
             this.lstnivel = new System.Windows.Forms.ComboBox();
             this.bnuevo = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.beliminar = new System.Windows.Forms.Button();
+            this.bmodificar = new System.Windows.Forms.Button();
+            this.bsalir = new System.Windows.Forms.Button();
             this.bguardar = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.bactualizar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtbuscar = new System.Windows.Forms.TextBox();
             this.button12 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -58,9 +58,10 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(96, 20);
+            this.label1.Location = new System.Drawing.Point(128, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(213, 23);
+            this.label1.Size = new System.Drawing.Size(266, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "INGRESO DE USUARIOS";
             // 
@@ -68,9 +69,10 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(177, 101);
+            this.label2.Location = new System.Drawing.Point(236, 124);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 23);
+            this.label2.Size = new System.Drawing.Size(96, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Usuarios";
             // 
@@ -78,9 +80,10 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(177, 145);
+            this.label3.Location = new System.Drawing.Point(236, 178);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 23);
+            this.label3.Size = new System.Drawing.Size(62, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "Clave";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -89,82 +92,91 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(177, 188);
+            this.label4.Location = new System.Drawing.Point(236, 231);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 23);
+            this.label4.Size = new System.Drawing.Size(61, 29);
             this.label4.TabIndex = 3;
             this.label4.Text = "Nivel";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtusuario
             // 
-            this.txtusuario.Location = new System.Drawing.Point(255, 101);
+            this.txtusuario.Location = new System.Drawing.Point(340, 124);
+            this.txtusuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(137, 20);
+            this.txtusuario.Size = new System.Drawing.Size(181, 22);
             this.txtusuario.TabIndex = 4;
             // 
             // txtclave
             // 
-            this.txtclave.Location = new System.Drawing.Point(255, 145);
+            this.txtclave.Location = new System.Drawing.Point(340, 178);
+            this.txtclave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtclave.Name = "txtclave";
-            this.txtclave.Size = new System.Drawing.Size(137, 20);
+            this.txtclave.Size = new System.Drawing.Size(181, 22);
             this.txtclave.TabIndex = 5;
             // 
-            // button1
+            // bprimero
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(36, 252);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 44);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Primero  ";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.bprimero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
+            this.bprimero.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bprimero.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bprimero.Location = new System.Drawing.Point(48, 310);
+            this.bprimero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bprimero.Name = "bprimero";
+            this.bprimero.Size = new System.Drawing.Size(100, 54);
+            this.bprimero.TabIndex = 7;
+            this.bprimero.Text = "Primero  ";
+            this.bprimero.UseVisualStyleBackColor = false;
+            this.bprimero.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // banterior
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(136, 252);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 44);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Anterior ";
-            this.button2.UseVisualStyleBackColor = false;
+            this.banterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
+            this.banterior.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.banterior.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.banterior.Location = new System.Drawing.Point(181, 310);
+            this.banterior.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.banterior.Name = "banterior";
+            this.banterior.Size = new System.Drawing.Size(100, 54);
+            this.banterior.TabIndex = 8;
+            this.banterior.Text = "Anterior ";
+            this.banterior.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // bsiguiente
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(233, 252);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 44);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Siguiente ";
-            this.button3.UseVisualStyleBackColor = false;
+            this.bsiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
+            this.bsiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bsiguiente.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bsiguiente.Location = new System.Drawing.Point(311, 310);
+            this.bsiguiente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bsiguiente.Name = "bsiguiente";
+            this.bsiguiente.Size = new System.Drawing.Size(100, 54);
+            this.bsiguiente.TabIndex = 9;
+            this.bsiguiente.Text = "Siguiente ";
+            this.bsiguiente.UseVisualStyleBackColor = false;
+            this.bsiguiente.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // bultimo
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(328, 251);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 45);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Ultimo";
-            this.button4.UseVisualStyleBackColor = false;
+            this.bultimo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
+            this.bultimo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bultimo.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bultimo.Location = new System.Drawing.Point(437, 309);
+            this.bultimo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bultimo.Name = "bultimo";
+            this.bultimo.Size = new System.Drawing.Size(100, 55);
+            this.bultimo.TabIndex = 10;
+            this.bultimo.Text = "Ultimo";
+            this.bultimo.UseVisualStyleBackColor = false;
             // 
             // lstnivel
             // 
             this.lstnivel.FormattingEnabled = true;
-            this.lstnivel.Location = new System.Drawing.Point(255, 188);
+            this.lstnivel.Location = new System.Drawing.Point(340, 231);
+            this.lstnivel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstnivel.Name = "lstnivel";
-            this.lstnivel.Size = new System.Drawing.Size(137, 21);
+            this.lstnivel.Size = new System.Drawing.Size(181, 24);
             this.lstnivel.TabIndex = 11;
             // 
             // bnuevo
@@ -172,102 +184,112 @@ namespace App_Educativa_Sobre_Animales
             this.bnuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.bnuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bnuevo.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnuevo.Location = new System.Drawing.Point(36, 324);
+            this.bnuevo.Location = new System.Drawing.Point(48, 399);
+            this.bnuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bnuevo.Name = "bnuevo";
-            this.bnuevo.Size = new System.Drawing.Size(75, 45);
+            this.bnuevo.Size = new System.Drawing.Size(100, 55);
             this.bnuevo.TabIndex = 12;
             this.bnuevo.Text = "Nuevo";
             this.bnuevo.UseVisualStyleBackColor = false;
             this.bnuevo.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button6
+            // beliminar
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(136, 324);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 44);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "Eliminar";
-            this.button6.UseVisualStyleBackColor = false;
+            this.beliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
+            this.beliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.beliminar.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.beliminar.Location = new System.Drawing.Point(181, 399);
+            this.beliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.beliminar.Name = "beliminar";
+            this.beliminar.Size = new System.Drawing.Size(100, 54);
+            this.beliminar.TabIndex = 13;
+            this.beliminar.Text = "Eliminar";
+            this.beliminar.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // bmodificar
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(233, 324);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(85, 44);
-            this.button7.TabIndex = 14;
-            this.button7.Text = "Modificar ";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.bmodificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
+            this.bmodificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bmodificar.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bmodificar.Location = new System.Drawing.Point(311, 399);
+            this.bmodificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bmodificar.Name = "bmodificar";
+            this.bmodificar.Size = new System.Drawing.Size(113, 54);
+            this.bmodificar.TabIndex = 14;
+            this.bmodificar.Text = "Modificar ";
+            this.bmodificar.UseVisualStyleBackColor = false;
+            this.bmodificar.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button8
+            // bsalir
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(328, 323);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 45);
-            this.button8.TabIndex = 15;
-            this.button8.Text = "Salir";
-            this.button8.UseVisualStyleBackColor = false;
+            this.bsalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
+            this.bsalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bsalir.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bsalir.Location = new System.Drawing.Point(437, 398);
+            this.bsalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bsalir.Name = "bsalir";
+            this.bsalir.Size = new System.Drawing.Size(100, 55);
+            this.bsalir.TabIndex = 15;
+            this.bsalir.Text = "Salir";
+            this.bsalir.UseVisualStyleBackColor = false;
             // 
             // bguardar
             // 
             this.bguardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.bguardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bguardar.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bguardar.Location = new System.Drawing.Point(36, 395);
+            this.bguardar.Location = new System.Drawing.Point(48, 486);
+            this.bguardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bguardar.Name = "bguardar";
-            this.bguardar.Size = new System.Drawing.Size(75, 43);
+            this.bguardar.Size = new System.Drawing.Size(100, 53);
             this.bguardar.TabIndex = 16;
             this.bguardar.Text = "Guardar";
             this.bguardar.UseVisualStyleBackColor = false;
             this.bguardar.Click += new System.EventHandler(this.button9_Click);
             // 
-            // button10
+            // bactualizar
             // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(233, 395);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(85, 43);
-            this.button10.TabIndex = 17;
-            this.button10.Text = "Actualizar";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.bactualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
+            this.bactualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bactualizar.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bactualizar.Location = new System.Drawing.Point(311, 486);
+            this.bactualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bactualizar.Name = "bactualizar";
+            this.bactualizar.Size = new System.Drawing.Size(113, 53);
+            this.bactualizar.TabIndex = 17;
+            this.bactualizar.Text = "Actualizar";
+            this.bactualizar.UseVisualStyleBackColor = false;
+            this.bactualizar.Click += new System.EventHandler(this.button10_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(472, 101);
+            this.dataGridView1.Location = new System.Drawing.Point(629, 124);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(304, 150);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(405, 185);
             this.dataGridView1.TabIndex = 18;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // textBox3
+            // txtbuscar
             // 
-            this.textBox3.Location = new System.Drawing.Point(472, 52);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(154, 20);
-            this.textBox3.TabIndex = 19;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged_1);
+            this.txtbuscar.Location = new System.Drawing.Point(629, 64);
+            this.txtbuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbuscar.Name = "txtbuscar";
+            this.txtbuscar.Size = new System.Drawing.Size(204, 22);
+            this.txtbuscar.TabIndex = 19;
+            this.txtbuscar.TextChanged += new System.EventHandler(this.textBox3_TextChanged_1);
             // 
             // button12
             // 
             this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button12.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(677, 42);
+            this.button12.Location = new System.Drawing.Point(903, 52);
+            this.button12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 37);
+            this.button12.Size = new System.Drawing.Size(100, 46);
             this.button12.TabIndex = 21;
             this.button12.Text = "Buscar";
             this.button12.UseVisualStyleBackColor = false;
@@ -276,40 +298,42 @@ namespace App_Educativa_Sobre_Animales
             // pictureBox1
             // 
             this.pictureBox1.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.MicrosoftTeams_image__1_1;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 52);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 64);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(162, 175);
+            this.pictureBox1.Size = new System.Drawing.Size(216, 215);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
             // fusuariosMySQL
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button12);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.bactualizar);
             this.Controls.Add(this.bguardar);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.bsalir);
+            this.Controls.Add(this.bmodificar);
+            this.Controls.Add(this.beliminar);
             this.Controls.Add(this.bnuevo);
             this.Controls.Add(this.lstnivel);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bultimo);
+            this.Controls.Add(this.bsiguiente);
+            this.Controls.Add(this.banterior);
+            this.Controls.Add(this.bprimero);
             this.Controls.Add(this.txtclave);
             this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "fusuariosMySQL";
             this.Text = "fusuariosMySQL";
             this.Load += new System.EventHandler(this.fusuariosMySQL_Load);
@@ -328,19 +352,19 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtusuario;
         private System.Windows.Forms.TextBox txtclave;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button bprimero;
+        private System.Windows.Forms.Button banterior;
+        private System.Windows.Forms.Button bsiguiente;
+        private System.Windows.Forms.Button bultimo;
         private System.Windows.Forms.ComboBox lstnivel;
         private System.Windows.Forms.Button bnuevo;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button beliminar;
+        private System.Windows.Forms.Button bmodificar;
+        private System.Windows.Forms.Button bsalir;
         private System.Windows.Forms.Button bguardar;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button bactualizar;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
