@@ -15,6 +15,7 @@ namespace App_Educativa_Sobre_Animales
     public partial class fusuariosMySQL : Form
     {
         public string cadena_conexion = "Database=fenahe;Data Source=localhost;User Id=edwin;Password=1234";
+        public string usuario_modificar;
 
         public fusuariosMySQL()
         {
@@ -75,11 +76,65 @@ namespace App_Educativa_Sobre_Animales
 
         private void button7_Click(object sender, EventArgs e)
         {
+            txtusuario.Enabled = true;
+            txtclave.Enabled = true;
+            lstnivel.Enabled = true;
 
+            txtusuario.Focus();
+
+            bmodificar.Visible = false;
+            bactualizar.Visible = true;
+
+            usuario_modificar = txtusuario.Text.ToString();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
+            try
+            {
+                MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+
+                string nom = txtusuario.Text.ToString();
+                string cla = txtclave.Text.ToString();
+                string niv = lstnivel.Text;
+
+
+                string myInsertQuery = "UPDATE personas SET nombre = '" + nom + "', clave = '" + cla + "',nivel = '" + niv + "' WHERE nombre = '" + usuario_modificar + "'";
+
+                MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+
+
+
+                myCommand.Connection = myConnection;
+                myConnection.Open();
+                myCommand.ExecuteNonQuery();
+                myCommand.Connection.Close();
+
+                MessageBox.Show("Usuario modificado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                string consulta = "select * from personas";
+
+                MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+                MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
+                System.Data.DataSet ds = new System.Data.DataSet();
+                da.Fill(ds, "fenahe");
+                dataGridView1.DataSource = ds;
+                dataGridView1.DataMember = "fenahe";
+
+            }
+            catch (MySqlException)
+            {
+                MessageBox.Show("Error al modificar el usuario", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            bmodificar.Visible = true;
+            bactualizar.Visible = false;
+
+            //Desabilitar campos, se activan al crear nuevo registro
+            txtusuario.Enabled = false;
+            txtclave.Enabled = false;
+            lstnivel.Enabled = false;
+            bmodificar.Focus();
 
         }
 
