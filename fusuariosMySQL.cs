@@ -29,7 +29,7 @@ namespace App_Educativa_Sobre_Animales
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.usuariosBindingSource1.MoveFirst();
         }
 
         private void fusuariosMySQL_Load(object sender, EventArgs e)
@@ -203,7 +203,47 @@ namespace App_Educativa_Sobre_Animales
 
         private void button12_Click(object sender, EventArgs e)
         {
+            try
+            {
 
+                MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+
+                string myInsertQuery = "select * from personas Where idusuario = " + txtbuscar.Text + "";
+                MySqlCommand myCommand = new MySqlCommand(myInsertQuery, myConnection);
+
+                myCommand.Connection = myConnection;
+                myConnection.Open();
+
+                MySqlDataReader myReader;
+                myReader = myCommand.ExecuteReader();
+
+                if (myReader.Read())
+                {
+                    txtusuario.Text = (myReader.GetString(1));
+                    txtclave.Text = (myReader.GetString(2));
+                    lstnivel.Text = (myReader.GetString(3));
+                }
+                else
+                {
+                    MessageBox.Show("El usuario no existe", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                myReader.Close();
+                myConnection.Close();
+
+            }
+            catch (MySqlException)
+            {
+                MessageBox.Show("Campo de busqueda está vacío", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            bnuevo.Visible = true;
+            bguardar.Visible = false;
+
+            //Desabilitar campos, se activan al crear nuevo registro
+            txtusuario.Enabled = false;
+            txtclave.Enabled = false;
+            lstnivel.Enabled = false;
+            bmodificar.Focus();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -218,7 +258,17 @@ namespace App_Educativa_Sobre_Animales
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.usuariosBindingSource1.MoveNext();
+        }
 
+        private void banterior_Click(object sender, EventArgs e)
+        {
+            this.usuariosBindingSource1.MovePrevious();
+        }
+
+        private void bultimo_Click(object sender, EventArgs e)
+        {
+            this.usuariosBindingSource1.MoveLast();
         }
     }
 }

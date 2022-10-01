@@ -58,10 +58,9 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(128, 25);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(96, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(266, 29);
+            this.label1.Size = new System.Drawing.Size(213, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "INGRESO DE USUARIOS";
             // 
@@ -69,10 +68,9 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(236, 124);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(177, 101);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 29);
+            this.label2.Size = new System.Drawing.Size(75, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Usuarios";
             // 
@@ -80,10 +78,9 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(236, 178);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(177, 145);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 29);
+            this.label3.Size = new System.Drawing.Size(50, 23);
             this.label3.TabIndex = 2;
             this.label3.Text = "Clave";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -92,28 +89,25 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(236, 231);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(177, 188);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 29);
+            this.label4.Size = new System.Drawing.Size(48, 23);
             this.label4.TabIndex = 3;
             this.label4.Text = "Nivel";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtusuario
             // 
-            this.txtusuario.Location = new System.Drawing.Point(340, 124);
-            this.txtusuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtusuario.Location = new System.Drawing.Point(255, 101);
             this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(181, 22);
+            this.txtusuario.Size = new System.Drawing.Size(137, 20);
             this.txtusuario.TabIndex = 4;
             // 
             // txtclave
             // 
-            this.txtclave.Location = new System.Drawing.Point(340, 178);
-            this.txtclave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtclave.Location = new System.Drawing.Point(255, 145);
             this.txtclave.Name = "txtclave";
-            this.txtclave.Size = new System.Drawing.Size(181, 22);
+            this.txtclave.Size = new System.Drawing.Size(137, 20);
             this.txtclave.TabIndex = 5;
             // 
             // bprimero
@@ -121,10 +115,9 @@ namespace App_Educativa_Sobre_Animales
             this.bprimero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.bprimero.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bprimero.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bprimero.Location = new System.Drawing.Point(48, 310);
-            this.bprimero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bprimero.Location = new System.Drawing.Point(36, 252);
             this.bprimero.Name = "bprimero";
-            this.bprimero.Size = new System.Drawing.Size(100, 54);
+            this.bprimero.Size = new System.Drawing.Size(75, 44);
             this.bprimero.TabIndex = 7;
             this.bprimero.Text = "Primero  ";
             this.bprimero.UseVisualStyleBackColor = false;
@@ -135,23 +128,22 @@ namespace App_Educativa_Sobre_Animales
             this.banterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.banterior.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.banterior.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.banterior.Location = new System.Drawing.Point(181, 310);
-            this.banterior.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.banterior.Location = new System.Drawing.Point(136, 252);
             this.banterior.Name = "banterior";
-            this.banterior.Size = new System.Drawing.Size(100, 54);
+            this.banterior.Size = new System.Drawing.Size(75, 44);
             this.banterior.TabIndex = 8;
             this.banterior.Text = "Anterior ";
             this.banterior.UseVisualStyleBackColor = false;
+            this.banterior.Click += new System.EventHandler(this.banterior_Click);
             // 
             // bsiguiente
             // 
             this.bsiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.bsiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bsiguiente.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bsiguiente.Location = new System.Drawing.Point(311, 310);
-            this.bsiguiente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bsiguiente.Location = new System.Drawing.Point(233, 252);
             this.bsiguiente.Name = "bsiguiente";
-            this.bsiguiente.Size = new System.Drawing.Size(100, 54);
+            this.bsiguiente.Size = new System.Drawing.Size(75, 44);
             this.bsiguiente.TabIndex = 9;
             this.bsiguiente.Text = "Siguiente ";
             this.bsiguiente.UseVisualStyleBackColor = false;
@@ -162,21 +154,20 @@ namespace App_Educativa_Sobre_Animales
             this.bultimo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.bultimo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bultimo.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bultimo.Location = new System.Drawing.Point(437, 309);
-            this.bultimo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bultimo.Location = new System.Drawing.Point(328, 251);
             this.bultimo.Name = "bultimo";
-            this.bultimo.Size = new System.Drawing.Size(100, 55);
+            this.bultimo.Size = new System.Drawing.Size(75, 45);
             this.bultimo.TabIndex = 10;
             this.bultimo.Text = "Ultimo";
             this.bultimo.UseVisualStyleBackColor = false;
+            this.bultimo.Click += new System.EventHandler(this.bultimo_Click);
             // 
             // lstnivel
             // 
             this.lstnivel.FormattingEnabled = true;
-            this.lstnivel.Location = new System.Drawing.Point(340, 231);
-            this.lstnivel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstnivel.Location = new System.Drawing.Point(255, 188);
             this.lstnivel.Name = "lstnivel";
-            this.lstnivel.Size = new System.Drawing.Size(181, 24);
+            this.lstnivel.Size = new System.Drawing.Size(137, 21);
             this.lstnivel.TabIndex = 11;
             // 
             // bnuevo
@@ -184,10 +175,9 @@ namespace App_Educativa_Sobre_Animales
             this.bnuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.bnuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bnuevo.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnuevo.Location = new System.Drawing.Point(48, 399);
-            this.bnuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bnuevo.Location = new System.Drawing.Point(36, 324);
             this.bnuevo.Name = "bnuevo";
-            this.bnuevo.Size = new System.Drawing.Size(100, 55);
+            this.bnuevo.Size = new System.Drawing.Size(75, 45);
             this.bnuevo.TabIndex = 12;
             this.bnuevo.Text = "Nuevo";
             this.bnuevo.UseVisualStyleBackColor = false;
@@ -198,10 +188,9 @@ namespace App_Educativa_Sobre_Animales
             this.beliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.beliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.beliminar.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.beliminar.Location = new System.Drawing.Point(181, 399);
-            this.beliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.beliminar.Location = new System.Drawing.Point(136, 324);
             this.beliminar.Name = "beliminar";
-            this.beliminar.Size = new System.Drawing.Size(100, 54);
+            this.beliminar.Size = new System.Drawing.Size(75, 44);
             this.beliminar.TabIndex = 13;
             this.beliminar.Text = "Eliminar";
             this.beliminar.UseVisualStyleBackColor = false;
@@ -211,10 +200,9 @@ namespace App_Educativa_Sobre_Animales
             this.bmodificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.bmodificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bmodificar.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bmodificar.Location = new System.Drawing.Point(311, 399);
-            this.bmodificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bmodificar.Location = new System.Drawing.Point(233, 324);
             this.bmodificar.Name = "bmodificar";
-            this.bmodificar.Size = new System.Drawing.Size(113, 54);
+            this.bmodificar.Size = new System.Drawing.Size(85, 44);
             this.bmodificar.TabIndex = 14;
             this.bmodificar.Text = "Modificar ";
             this.bmodificar.UseVisualStyleBackColor = false;
@@ -225,10 +213,9 @@ namespace App_Educativa_Sobre_Animales
             this.bsalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.bsalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bsalir.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bsalir.Location = new System.Drawing.Point(437, 398);
-            this.bsalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bsalir.Location = new System.Drawing.Point(328, 323);
             this.bsalir.Name = "bsalir";
-            this.bsalir.Size = new System.Drawing.Size(100, 55);
+            this.bsalir.Size = new System.Drawing.Size(75, 45);
             this.bsalir.TabIndex = 15;
             this.bsalir.Text = "Salir";
             this.bsalir.UseVisualStyleBackColor = false;
@@ -238,10 +225,9 @@ namespace App_Educativa_Sobre_Animales
             this.bguardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.bguardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bguardar.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bguardar.Location = new System.Drawing.Point(48, 486);
-            this.bguardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bguardar.Location = new System.Drawing.Point(36, 395);
             this.bguardar.Name = "bguardar";
-            this.bguardar.Size = new System.Drawing.Size(100, 53);
+            this.bguardar.Size = new System.Drawing.Size(75, 43);
             this.bguardar.TabIndex = 16;
             this.bguardar.Text = "Guardar";
             this.bguardar.UseVisualStyleBackColor = false;
@@ -252,10 +238,9 @@ namespace App_Educativa_Sobre_Animales
             this.bactualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.bactualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bactualizar.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bactualizar.Location = new System.Drawing.Point(311, 486);
-            this.bactualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bactualizar.Location = new System.Drawing.Point(233, 395);
             this.bactualizar.Name = "bactualizar";
-            this.bactualizar.Size = new System.Drawing.Size(113, 53);
+            this.bactualizar.Size = new System.Drawing.Size(85, 43);
             this.bactualizar.TabIndex = 17;
             this.bactualizar.Text = "Actualizar";
             this.bactualizar.UseVisualStyleBackColor = false;
@@ -264,20 +249,18 @@ namespace App_Educativa_Sobre_Animales
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(629, 124);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(472, 101);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(405, 185);
+            this.dataGridView1.Size = new System.Drawing.Size(304, 150);
             this.dataGridView1.TabIndex = 18;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(629, 64);
-            this.txtbuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbuscar.Location = new System.Drawing.Point(472, 52);
             this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(204, 22);
+            this.txtbuscar.Size = new System.Drawing.Size(154, 20);
             this.txtbuscar.TabIndex = 19;
             this.txtbuscar.TextChanged += new System.EventHandler(this.textBox3_TextChanged_1);
             // 
@@ -286,10 +269,9 @@ namespace App_Educativa_Sobre_Animales
             this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button12.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(903, 52);
-            this.button12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button12.Location = new System.Drawing.Point(677, 42);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(100, 46);
+            this.button12.Size = new System.Drawing.Size(75, 37);
             this.button12.TabIndex = 21;
             this.button12.Text = "Buscar";
             this.button12.UseVisualStyleBackColor = false;
@@ -298,20 +280,19 @@ namespace App_Educativa_Sobre_Animales
             // pictureBox1
             // 
             this.pictureBox1.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.MicrosoftTeams_image__1_1;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 64);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 52);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(216, 215);
+            this.pictureBox1.Size = new System.Drawing.Size(162, 175);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
             // fusuariosMySQL
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.txtbuscar);
@@ -333,7 +314,6 @@ namespace App_Educativa_Sobre_Animales
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "fusuariosMySQL";
             this.Text = "fusuariosMySQL";
             this.Load += new System.EventHandler(this.fusuariosMySQL_Load);
