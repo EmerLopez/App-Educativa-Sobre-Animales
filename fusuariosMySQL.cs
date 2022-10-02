@@ -88,6 +88,7 @@ namespace App_Educativa_Sobre_Animales
             txtusuario.Focus();
 
             bmodificar.Visible = false;
+
             bactualizar.Visible = true;
 
             usuario_modificar = txtusuario.Text.ToString();
