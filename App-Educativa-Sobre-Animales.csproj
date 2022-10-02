@@ -115,6 +115,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FENAHEDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="fenaheDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fenaheDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormularioAyuda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -290,6 +295,17 @@
     </None>
     <None Include="FENAHEDataSet1.xss">
       <DependentUpon>FENAHEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="fenaheDataSet2.xsc">
+      <DependentUpon>fenaheDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="fenaheDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fenaheDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fenaheDataSet2.xss">
+      <DependentUpon>fenaheDataSet2.xsd</DependentUpon>
     </None>
     <None Include="LoginAccessDataSet1.xsc">
       <DependentUpon>LoginAccessDataSet1.xsd</DependentUpon>

@@ -29,6 +29,7 @@ namespace App_Educativa_Sobre_Animales
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,8 +51,14 @@ namespace App_Educativa_Sobre_Animales
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.button12 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.usuariosTableAdapter = new App_Educativa_Sobre_Animales.sistemaDataSetTableAdapters.UsuariosTableAdapter();
+            this.fenaheDataSet = new App_Educativa_Sobre_Animales.fenaheDataSet();
+            this.personasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.personasTableAdapter = new App_Educativa_Sobre_Animales.fenaheDataSetTableAdapters.personasTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fenaheDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personasBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -98,6 +105,7 @@ namespace App_Educativa_Sobre_Animales
             // 
             // txtusuario
             // 
+            this.txtusuario.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personasBindingSource, "nombre", true));
             this.txtusuario.Location = new System.Drawing.Point(255, 101);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(137, 20);
@@ -105,6 +113,7 @@ namespace App_Educativa_Sobre_Animales
             // 
             // txtclave
             // 
+            this.txtclave.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personasBindingSource, "clave", true));
             this.txtclave.Location = new System.Drawing.Point(255, 145);
             this.txtclave.Name = "txtclave";
             this.txtclave.Size = new System.Drawing.Size(137, 20);
@@ -164,7 +173,13 @@ namespace App_Educativa_Sobre_Animales
             // 
             // lstnivel
             // 
+            this.lstnivel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personasBindingSource, "nivel", true));
             this.lstnivel.FormattingEnabled = true;
+            this.lstnivel.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
             this.lstnivel.Location = new System.Drawing.Point(255, 188);
             this.lstnivel.Name = "lstnivel";
             this.lstnivel.Size = new System.Drawing.Size(137, 21);
@@ -194,6 +209,7 @@ namespace App_Educativa_Sobre_Animales
             this.beliminar.TabIndex = 13;
             this.beliminar.Text = "Eliminar";
             this.beliminar.UseVisualStyleBackColor = false;
+            this.beliminar.Click += new System.EventHandler(this.beliminar_Click);
             // 
             // bmodificar
             // 
@@ -219,6 +235,7 @@ namespace App_Educativa_Sobre_Animales
             this.bsalir.TabIndex = 15;
             this.bsalir.Text = "Salir";
             this.bsalir.UseVisualStyleBackColor = false;
+            this.bsalir.Click += new System.EventHandler(this.bsalir_Click);
             // 
             // bguardar
             // 
@@ -287,6 +304,24 @@ namespace App_Educativa_Sobre_Animales
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
+            // usuariosTableAdapter
+            // 
+            this.usuariosTableAdapter.ClearBeforeFill = true;
+            // 
+            // fenaheDataSet
+            // 
+            this.fenaheDataSet.DataSetName = "fenaheDataSet";
+            this.fenaheDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // personasBindingSource
+            // 
+            this.personasBindingSource.DataMember = "personas";
+            this.personasBindingSource.DataSource = this.fenaheDataSet;
+            // 
+            // personasTableAdapter
+            // 
+            this.personasTableAdapter.ClearBeforeFill = true;
+            // 
             // fusuariosMySQL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -319,6 +354,8 @@ namespace App_Educativa_Sobre_Animales
             this.Load += new System.EventHandler(this.fusuariosMySQL_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fenaheDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personasBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,5 +384,9 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private sistemaDataSetTableAdapters.UsuariosTableAdapter usuariosTableAdapter;
+        private fenaheDataSet fenaheDataSet;
+        private System.Windows.Forms.BindingSource personasBindingSource;
+        private fenaheDataSetTableAdapters.personasTableAdapter personasTableAdapter;
     }
 }

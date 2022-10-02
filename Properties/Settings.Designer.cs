@@ -64,5 +64,15 @@ namespace App_Educativa_Sobre_Animales.Properties {
                 return ((string)(this["ConexionAccess"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=edwin;password=1234;database=fenahe")]
+        public string fenaheConnectionString2 {
+            get {
+                return ((string)(this["fenaheConnectionString2"]));
+            }
+        }
     }
 }

@@ -1,5 +1,4 @@
-﻿using MySql.Data;
-using MySql.Data.MySqlClient;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace App_Educativa_Sobre_Animales
 {
@@ -29,11 +30,15 @@ namespace App_Educativa_Sobre_Animales
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.usuariosBindingSource1.MoveFirst();
+            this.personasBindingSource.MoveFirst();
         }
 
         private void fusuariosMySQL_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet.personas' Puede moverla o quitarla según sea necesario.
+            this.personasTableAdapter.Fill(this.fenaheDataSet.personas);
+            // TODO: esta línea de código carga datos en la tabla 'sistemaDataSet.Usuarios' Puede moverla o quitarla según sea necesario.
+            //this.usuariosTableAdapter.Fill(this.sistemaDataSet.Usuarios);
             //Desabilitar campos, se activan al crear nuevo registro
             txtusuario.Enabled = false;
             txtclave.Enabled = false;
@@ -42,15 +47,15 @@ namespace App_Educativa_Sobre_Animales
             try
             {
 
-                string consulta = "select * from usuarios";
+                string consulta = "select * from personas";
 
                 MySqlConnection conexion = new MySqlConnection (cadena_conexion);
                 MySqlDataAdapter comando = new MySqlDataAdapter(consulta, conexion);
 
                 System.Data.DataSet ds = new System.Data.DataSet();
-                comando.Fill(ds, "sistemapro1");
+                comando.Fill(ds, "fenahe");
                 dataGridView1.DataSource = ds;
-                dataGridView1.DataMember = "sistemapro1";
+                dataGridView1.DataMember = "fenahe";
 
             }
             catch (MySqlException)
@@ -258,17 +263,73 @@ namespace App_Educativa_Sobre_Animales
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.usuariosBindingSource1.MoveNext();
+            this.personasBindingSource.MoveNext();
         }
 
         private void banterior_Click(object sender, EventArgs e)
         {
-            this.usuariosBindingSource1.MovePrevious();
+            this.personasBindingSource.MovePrevious();
         }
 
         private void bultimo_Click(object sender, EventArgs e)
         {
-            this.usuariosBindingSource1.MoveLast();
+            this.personasBindingSource.MoveLast();
+        }
+
+        private void beliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+
+                string myInsertQuery = "delete from personas Where idusuario = " + txtbuscar.Text + "";
+                MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+
+                myCommand.Connection = myConnection;
+                myConnection.Open();
+                myCommand.ExecuteNonQuery();
+                myCommand.Connection.Close();
+
+                MessageBox.Show("Usuario eliminado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                string consulta = "select * from personas";
+
+                MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+                MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
+                System.Data.DataSet ds = new System.Data.DataSet();
+                da.Fill(ds, "fenahe");
+                dataGridView1.DataSource = ds;
+                dataGridView1.DataMember = "fenahe";
+
+            }
+            catch (MySqlException)
+            {
+                MessageBox.Show("Error al eliminar el usuario, primero realice búsqueda del usuario y después puede eliminar.", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            bnuevo.Visible = true;
+            bguardar.Visible = false;
+
+            //Desabilitar campos, se activan al crear nuevo registro
+            txtusuario.Enabled = false;
+            txtclave.Enabled = false;
+            lstnivel.Enabled = false;
+
+            txtusuario.Text = "";
+            txtclave.Text = "";
+            lstnivel.Text = "Seleccione nivel";
+            txtbuscar.Focus();
+        }
+
+        private void bsalir_Click(object sender, EventArgs e)
+        {
+            
+            Menu f = new Menu();
+            f.Show();
+            this.Hide();
+
         }
     }
 }
