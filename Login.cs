@@ -17,7 +17,7 @@ namespace App_Educativa_Sobre_Animales
     public partial class Login : Form
     {
         MySqlConnection conn = new MySqlConnection("Server=localhost; Database=fenahe; Uid=Diego; Pwd=12345");
-        SqlConnection conexion = new SqlConnection("Data Source=desktop-2j7g32a;Initial Catalog=FENAHE;Integrated Security=True");
+        SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-LMJ3198;Initial Catalog=FENAHE;Integrated Security=True");
         OleDbConnection conexion_access = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source = C:\Users\Edwin\Documents\LoginAccess.mdb; Persist Security Info=False;");
         public Login()
         {
