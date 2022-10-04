@@ -115,6 +115,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FENAHEDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="fenaheDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fenaheDataSet11.xsd</DependentUpon>
+    </Compile>
     <Compile Include="fenaheDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -295,6 +300,17 @@
     </None>
     <None Include="FENAHEDataSet1.xss">
       <DependentUpon>FENAHEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="fenaheDataSet11.xsc">
+      <DependentUpon>fenaheDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="fenaheDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fenaheDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fenaheDataSet11.xss">
+      <DependentUpon>fenaheDataSet11.xsd</DependentUpon>
     </None>
     <None Include="fenaheDataSet2.xsc">
       <DependentUpon>fenaheDataSet2.xsd</DependentUpon>
