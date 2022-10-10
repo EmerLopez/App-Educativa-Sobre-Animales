@@ -117,6 +117,12 @@
     <Compile Include="animalesvertebrados.Designer.cs">
       <DependentUpon>animalesvertebrados.cs</DependentUpon>
     </Compile>
+    <Compile Include="domestico animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="domestico animales.Designer.cs">
+      <DependentUpon>domestico animales.cs</DependentUpon>
+    </Compile>
     <Compile Include="FENAHEDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -250,6 +256,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="animalesvertebrados.resx">
       <DependentUpon>animalesvertebrados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="domestico animales.resx">
+      <DependentUpon>domestico animales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioAyuda.resx">
       <DependentUpon>FormularioAyuda.cs</DependentUpon>
