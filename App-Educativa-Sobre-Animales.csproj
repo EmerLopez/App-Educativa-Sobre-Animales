@@ -99,6 +99,12 @@
     <Compile Include="Acercade.Designer.cs">
       <DependentUpon>Acercade.cs</DependentUpon>
     </Compile>
+    <Compile Include="AnfibioAnimales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnfibioAnimales.Designer.cs">
+      <DependentUpon>AnfibioAnimales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Anfibios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +229,9 @@
     </Compile>
     <EmbeddedResource Include="Acercade.resx">
       <DependentUpon>Acercade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnfibioAnimales.resx">
+      <DependentUpon>AnfibioAnimales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Anfibios.resx">
       <DependentUpon>Anfibios.cs</DependentUpon>
