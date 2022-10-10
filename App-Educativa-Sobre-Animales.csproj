@@ -111,6 +111,12 @@
     <Compile Include="Anfibios.Designer.cs">
       <DependentUpon>Anfibios.cs</DependentUpon>
     </Compile>
+    <Compile Include="animalesvertebrados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="animalesvertebrados.Designer.cs">
+      <DependentUpon>animalesvertebrados.cs</DependentUpon>
+    </Compile>
     <Compile Include="FENAHEDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -241,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Anfibios.resx">
       <DependentUpon>Anfibios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="animalesvertebrados.resx">
+      <DependentUpon>animalesvertebrados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioAyuda.resx">
       <DependentUpon>FormularioAyuda.cs</DependentUpon>
