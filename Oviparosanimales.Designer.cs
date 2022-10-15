@@ -1,5 +1,5 @@
 ﻿
-namespace Oviparos
+namespace App_Educativa_Sobre_Animales
 {
     partial class Oviparosanimales
     {
@@ -49,21 +49,21 @@ namespace Oviparos
             this.button5 = new System.Windows.Forms.Button();
             this.txtbuscar = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.fenaheDataSet4 = new global::Oviparos.fenaheDataSet4();
-            this.oviparosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.oviparosTableAdapter = new global::Oviparos.fenaheDataSet4TableAdapters.oviparosTableAdapter();
             this.button6 = new System.Windows.Forms.Button();
             this.ppinguinos = new System.Windows.Forms.PictureBox();
             this.ppollos = new System.Windows.Forms.PictureBox();
             this.ptorogoz = new System.Windows.Forms.PictureBox();
             this.pavestruz = new System.Windows.Forms.PictureBox();
+            this.wonderZooDataSet = new App_Educativa_Sobre_Animales.WonderZooDataSet();
+            this.oviparosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.oviparosTableAdapter = new App_Educativa_Sobre_Animales.WonderZooDataSetTableAdapters.oviparosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.ptortuga)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fenaheDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.oviparosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ppinguinos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ppollos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptorogoz)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pavestruz)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.oviparosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnombre
@@ -72,11 +72,12 @@ namespace Oviparos
             this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtnombre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.oviparosBindingSource, "nombre", true));
             this.txtnombre.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombre.Location = new System.Drawing.Point(238, 73);
+            this.txtnombre.Location = new System.Drawing.Point(178, 59);
+            this.txtnombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtnombre.Multiline = true;
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.ReadOnly = true;
-            this.txtnombre.Size = new System.Drawing.Size(342, 38);
+            this.txtnombre.Size = new System.Drawing.Size(257, 31);
             this.txtnombre.TabIndex = 0;
             // 
             // txtpeso
@@ -85,11 +86,12 @@ namespace Oviparos
             this.txtpeso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtpeso.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.oviparosBindingSource, "peso", true));
             this.txtpeso.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpeso.Location = new System.Drawing.Point(238, 142);
+            this.txtpeso.Location = new System.Drawing.Point(178, 115);
+            this.txtpeso.Margin = new System.Windows.Forms.Padding(2);
             this.txtpeso.Multiline = true;
             this.txtpeso.Name = "txtpeso";
             this.txtpeso.ReadOnly = true;
-            this.txtpeso.Size = new System.Drawing.Size(342, 56);
+            this.txtpeso.Size = new System.Drawing.Size(257, 46);
             this.txtpeso.TabIndex = 1;
             // 
             // txtalimentacion
@@ -98,11 +100,12 @@ namespace Oviparos
             this.txtalimentacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtalimentacion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.oviparosBindingSource, "alimentacion", true));
             this.txtalimentacion.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtalimentacion.Location = new System.Drawing.Point(238, 215);
+            this.txtalimentacion.Location = new System.Drawing.Point(178, 175);
+            this.txtalimentacion.Margin = new System.Windows.Forms.Padding(2);
             this.txtalimentacion.Multiline = true;
             this.txtalimentacion.Name = "txtalimentacion";
             this.txtalimentacion.ReadOnly = true;
-            this.txtalimentacion.Size = new System.Drawing.Size(342, 68);
+            this.txtalimentacion.Size = new System.Drawing.Size(257, 56);
             this.txtalimentacion.TabIndex = 2;
             // 
             // txthabitat
@@ -111,12 +114,13 @@ namespace Oviparos
             this.txthabitat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txthabitat.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.oviparosBindingSource, "habitat", true));
             this.txthabitat.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txthabitat.Location = new System.Drawing.Point(238, 310);
+            this.txthabitat.Location = new System.Drawing.Point(178, 252);
+            this.txthabitat.Margin = new System.Windows.Forms.Padding(2);
             this.txthabitat.Multiline = true;
             this.txthabitat.Name = "txthabitat";
             this.txthabitat.ReadOnly = true;
             this.txthabitat.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txthabitat.Size = new System.Drawing.Size(342, 92);
+            this.txthabitat.Size = new System.Drawing.Size(257, 75);
             this.txthabitat.TabIndex = 3;
             // 
             // txtcomportamiento
@@ -125,21 +129,23 @@ namespace Oviparos
             this.txtcomportamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtcomportamiento.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.oviparosBindingSource, "comportamiento", true));
             this.txtcomportamiento.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcomportamiento.Location = new System.Drawing.Point(238, 440);
+            this.txtcomportamiento.Location = new System.Drawing.Point(178, 358);
+            this.txtcomportamiento.Margin = new System.Windows.Forms.Padding(2);
             this.txtcomportamiento.Multiline = true;
             this.txtcomportamiento.Name = "txtcomportamiento";
             this.txtcomportamiento.ReadOnly = true;
             this.txtcomportamiento.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtcomportamiento.Size = new System.Drawing.Size(342, 117);
+            this.txtcomportamiento.Size = new System.Drawing.Size(257, 95);
             this.txtcomportamiento.TabIndex = 4;
             // 
             // ptortuga
             // 
             this.ptortuga.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptortuga.BackgroundImage")));
             this.ptortuga.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptortuga.Location = new System.Drawing.Point(679, 73);
+            this.ptortuga.Location = new System.Drawing.Point(509, 59);
+            this.ptortuga.Margin = new System.Windows.Forms.Padding(2);
             this.ptortuga.Name = "ptortuga";
-            this.ptortuga.Size = new System.Drawing.Size(461, 407);
+            this.ptortuga.Size = new System.Drawing.Size(346, 331);
             this.ptortuga.TabIndex = 6;
             this.ptortuga.TabStop = false;
             this.ptortuga.Visible = false;
@@ -150,9 +156,10 @@ namespace Oviparos
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(679, 575);
+            this.button1.Location = new System.Drawing.Point(509, 467);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(228, 49);
+            this.button1.Size = new System.Drawing.Size(171, 40);
             this.button1.TabIndex = 7;
             this.button1.Text = "Primero";
             this.button1.UseVisualStyleBackColor = false;
@@ -163,9 +170,10 @@ namespace Oviparos
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(678, 520);
+            this.button2.Location = new System.Drawing.Point(508, 422);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(228, 49);
+            this.button2.Size = new System.Drawing.Size(171, 40);
             this.button2.TabIndex = 8;
             this.button2.Text = "Anterior";
             this.button2.UseVisualStyleBackColor = false;
@@ -176,9 +184,10 @@ namespace Oviparos
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(912, 520);
+            this.button3.Location = new System.Drawing.Point(684, 422);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(228, 49);
+            this.button3.Size = new System.Drawing.Size(171, 40);
             this.button3.TabIndex = 9;
             this.button3.Text = "Siguiente";
             this.button3.UseVisualStyleBackColor = false;
@@ -189,9 +198,10 @@ namespace Oviparos
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(912, 575);
+            this.button4.Location = new System.Drawing.Point(684, 467);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(228, 49);
+            this.button4.Size = new System.Drawing.Size(171, 40);
             this.button4.TabIndex = 10;
             this.button4.Text = "Ultimo";
             this.button4.UseVisualStyleBackColor = false;
@@ -200,45 +210,50 @@ namespace Oviparos
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 73);
+            this.label1.Location = new System.Drawing.Point(19, 59);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 38);
+            this.label1.Size = new System.Drawing.Size(147, 31);
             this.label1.TabIndex = 11;
             this.label1.Text = "Nombre";
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 142);
+            this.label2.Location = new System.Drawing.Point(19, 115);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(196, 38);
+            this.label2.Size = new System.Drawing.Size(147, 31);
             this.label2.TabIndex = 12;
             this.label2.Text = "Peso";
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 215);
+            this.label3.Location = new System.Drawing.Point(19, 175);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(196, 38);
+            this.label3.Size = new System.Drawing.Size(147, 31);
             this.label3.TabIndex = 13;
             this.label3.Text = "Alimentacion";
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(25, 310);
+            this.label4.Location = new System.Drawing.Point(19, 252);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(196, 38);
+            this.label4.Size = new System.Drawing.Size(147, 31);
             this.label4.TabIndex = 14;
             this.label4.Text = "Habitat";
             // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(20, 440);
+            this.label5.Location = new System.Drawing.Point(15, 358);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(212, 38);
+            this.label5.Size = new System.Drawing.Size(159, 31);
             this.label5.TabIndex = 15;
             this.label5.Text = "Comportamiento";
             // 
@@ -246,9 +261,11 @@ namespace Oviparos
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Location = new System.Drawing.Point(977, 28);
+            this.button5.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(704, 3);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(121, 24);
+            this.button5.Size = new System.Drawing.Size(171, 40);
             this.button5.TabIndex = 16;
             this.button5.Text = "Buscar";
             this.button5.UseVisualStyleBackColor = false;
@@ -257,6 +274,7 @@ namespace Oviparos
             // txtbuscar
             // 
             this.txtbuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtbuscar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.txtbuscar.FormattingEnabled = true;
             this.txtbuscar.Items.AddRange(new object[] {
@@ -265,42 +283,31 @@ namespace Oviparos
             "Gallina",
             "Torogoz",
             "Avestruz"});
-            this.txtbuscar.Location = new System.Drawing.Point(743, 28);
+            this.txtbuscar.Location = new System.Drawing.Point(509, 11);
+            this.txtbuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(228, 24);
+            this.txtbuscar.Size = new System.Drawing.Size(172, 21);
             this.txtbuscar.TabIndex = 17;
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(220, 1);
+            this.label6.Location = new System.Drawing.Point(165, 1);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(250, 51);
+            this.label6.Size = new System.Drawing.Size(188, 41);
             this.label6.TabIndex = 18;
             this.label6.Text = "Oviparos";
-            // 
-            // fenaheDataSet4
-            // 
-            this.fenaheDataSet4.DataSetName = "fenaheDataSet4";
-            this.fenaheDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // oviparosBindingSource
-            // 
-            this.oviparosBindingSource.DataMember = "oviparos";
-            this.oviparosBindingSource.DataSource = this.fenaheDataSet4;
-            // 
-            // oviparosTableAdapter
-            // 
-            this.oviparosTableAdapter.ClearBeforeFill = true;
             // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(26, 586);
+            this.button6.Location = new System.Drawing.Point(20, 476);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(228, 49);
+            this.button6.Size = new System.Drawing.Size(171, 40);
             this.button6.TabIndex = 19;
             this.button6.Text = "Salir";
             this.button6.UseVisualStyleBackColor = false;
@@ -310,9 +317,10 @@ namespace Oviparos
             // 
             this.ppinguinos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ppinguinos.BackgroundImage")));
             this.ppinguinos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ppinguinos.Location = new System.Drawing.Point(678, 73);
+            this.ppinguinos.Location = new System.Drawing.Point(508, 59);
+            this.ppinguinos.Margin = new System.Windows.Forms.Padding(2);
             this.ppinguinos.Name = "ppinguinos";
-            this.ppinguinos.Size = new System.Drawing.Size(461, 407);
+            this.ppinguinos.Size = new System.Drawing.Size(346, 331);
             this.ppinguinos.TabIndex = 20;
             this.ppinguinos.TabStop = false;
             this.ppinguinos.Visible = false;
@@ -321,9 +329,10 @@ namespace Oviparos
             // 
             this.ppollos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ppollos.BackgroundImage")));
             this.ppollos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ppollos.Location = new System.Drawing.Point(678, 71);
+            this.ppollos.Location = new System.Drawing.Point(508, 58);
+            this.ppollos.Margin = new System.Windows.Forms.Padding(2);
             this.ppollos.Name = "ppollos";
-            this.ppollos.Size = new System.Drawing.Size(461, 407);
+            this.ppollos.Size = new System.Drawing.Size(346, 331);
             this.ppollos.TabIndex = 21;
             this.ppollos.TabStop = false;
             this.ppollos.Visible = false;
@@ -332,9 +341,10 @@ namespace Oviparos
             // 
             this.ptorogoz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptorogoz.BackgroundImage")));
             this.ptorogoz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptorogoz.Location = new System.Drawing.Point(679, 71);
+            this.ptorogoz.Location = new System.Drawing.Point(509, 58);
+            this.ptorogoz.Margin = new System.Windows.Forms.Padding(2);
             this.ptorogoz.Name = "ptorogoz";
-            this.ptorogoz.Size = new System.Drawing.Size(461, 407);
+            this.ptorogoz.Size = new System.Drawing.Size(346, 331);
             this.ptorogoz.TabIndex = 22;
             this.ptorogoz.TabStop = false;
             this.ptorogoz.Visible = false;
@@ -343,19 +353,34 @@ namespace Oviparos
             // 
             this.pavestruz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pavestruz.BackgroundImage")));
             this.pavestruz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pavestruz.Location = new System.Drawing.Point(678, 73);
+            this.pavestruz.Location = new System.Drawing.Point(508, 59);
+            this.pavestruz.Margin = new System.Windows.Forms.Padding(2);
             this.pavestruz.Name = "pavestruz";
-            this.pavestruz.Size = new System.Drawing.Size(461, 407);
+            this.pavestruz.Size = new System.Drawing.Size(346, 331);
             this.pavestruz.TabIndex = 23;
             this.pavestruz.TabStop = false;
             this.pavestruz.Visible = false;
             // 
-            // Form1
+            // wonderZooDataSet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.wonderZooDataSet.DataSetName = "WonderZooDataSet";
+            this.wonderZooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // oviparosBindingSource
+            // 
+            this.oviparosBindingSource.DataMember = "oviparos";
+            this.oviparosBindingSource.DataSource = this.wonderZooDataSet;
+            // 
+            // oviparosTableAdapter
+            // 
+            this.oviparosTableAdapter.ClearBeforeFill = true;
+            // 
+            // Oviparosanimales
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
-            this.ClientSize = new System.Drawing.Size(1181, 666);
+            this.ClientSize = new System.Drawing.Size(886, 541);
             this.Controls.Add(this.pavestruz);
             this.Controls.Add(this.ptorogoz);
             this.Controls.Add(this.ppollos);
@@ -380,17 +405,19 @@ namespace Oviparos
             this.Controls.Add(this.txtpeso);
             this.Controls.Add(this.txtnombre);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.Name = "Oviparosanimales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Animales Oviparos";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptortuga)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fenaheDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.oviparosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ppinguinos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ppollos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptorogoz)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pavestruz)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.oviparosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -416,14 +443,16 @@ namespace Oviparos
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.ComboBox txtbuscar;
         private System.Windows.Forms.Label label6;
-        private fenaheDataSet4 fenaheDataSet4;
-        private System.Windows.Forms.BindingSource oviparosBindingSource;
-        private fenaheDataSet4TableAdapters.oviparosTableAdapter oviparosTableAdapter;
+        //private fenaheDataSet4TableAdapters.oviparosTableAdapter oviparosTableAdapter;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox ppinguinos;
         private System.Windows.Forms.PictureBox ppollos;
         private System.Windows.Forms.PictureBox ptorogoz;
         private System.Windows.Forms.PictureBox pavestruz;
+        private WonderZooDataSet wonderZooDataSet;
+        private System.Windows.Forms.BindingSource oviparosBindingSource;
+        private WonderZooDataSetTableAdapters.oviparosTableAdapter oviparosTableAdapter;
+        // private App_Educativa_Sobre_Animales.fenaheDataSetTableAdapters.oviparosTableAdapter oviparosTableAdapter;
     }
 }
 

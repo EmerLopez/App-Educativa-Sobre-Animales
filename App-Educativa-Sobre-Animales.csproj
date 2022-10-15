@@ -99,17 +99,17 @@
     <Compile Include="Acercade.Designer.cs">
       <DependentUpon>Acercade.cs</DependentUpon>
     </Compile>
-    <Compile Include="AnfibioAnimales.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AnfibioAnimales.Designer.cs">
-      <DependentUpon>AnfibioAnimales.cs</DependentUpon>
-    </Compile>
     <Compile Include="Anfibios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Anfibios.Designer.cs">
       <DependentUpon>Anfibios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalesAnfibios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnimalesAnfibios.Designer.cs">
+      <DependentUpon>AnimalesAnfibios.cs</DependentUpon>
     </Compile>
     <Compile Include="AnimalesOmnivoros.cs">
       <SubType>Form</SubType>
@@ -123,31 +123,23 @@
     <Compile Include="animalesvertebrados.Designer.cs">
       <DependentUpon>animalesvertebrados.cs</DependentUpon>
     </Compile>
+    <Compile Include="AnimalesViviparos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnimalesViviparos.Designer.cs">
+      <DependentUpon>AnimalesViviparos.cs</DependentUpon>
+    </Compile>
     <Compile Include="domestico animales.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="domestico animales.Designer.cs">
       <DependentUpon>domestico animales.cs</DependentUpon>
     </Compile>
-    <Compile Include="FENAHEDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>FENAHEDataSet.xsd</DependentUpon>
+    <Compile Include="Domésticos.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FENAHEDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>FENAHEDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="fenaheDataSet11.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>fenaheDataSet11.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="fenaheDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>fenaheDataSet2.xsd</DependentUpon>
+    <Compile Include="Domésticos.Designer.cs">
+      <DependentUpon>Domésticos.cs</DependentUpon>
     </Compile>
     <Compile Include="FormularioAyuda.cs">
       <SubType>Form</SubType>
@@ -155,52 +147,18 @@
     <Compile Include="FormularioAyuda.Designer.cs">
       <DependentUpon>FormularioAyuda.cs</DependentUpon>
     </Compile>
-    <Compile Include="fusuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fusuario.Designer.cs">
-      <DependentUpon>fusuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="fusuariosMySQL.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fusuariosMySQL.Designer.cs">
       <DependentUpon>fusuariosMySQL.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inicio.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LoginAccessDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LoginAccessDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Oviparosanimales.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Oviparosanimales.designer.cs">
-      <DependentUpon>Oviparosanimales.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Registro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Registro.Designer.cs">
-      <DependentUpon>Registro.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reportar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reportar.Designer.cs">
-      <DependentUpon>Reportar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Domésticos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Domésticos.Designer.cs">
-      <DependentUpon>Domésticos.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -214,18 +172,30 @@
     <Compile Include="Omnívoros.Designer.cs">
       <DependentUpon>Omnívoros.cs</DependentUpon>
     </Compile>
+    <Compile Include="Oviparosanimales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oviparosanimales.Designer.cs">
+      <DependentUpon>Oviparosanimales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ovíparos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ovíparos.Designer.cs">
       <DependentUpon>Ovíparos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inicio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="sistemaDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    <Compile Include="Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportar.Designer.cs">
+      <DependentUpon>Reportar.cs</DependentUpon>
     </Compile>
     <Compile Include="Terminos.cs">
       <SubType>Form</SubType>
@@ -251,14 +221,19 @@
     <Compile Include="Vivíparos.Designer.cs">
       <DependentUpon>Vivíparos.cs</DependentUpon>
     </Compile>
+    <Compile Include="WonderZooDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WonderZooDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Acercade.resx">
       <DependentUpon>Acercade.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AnfibioAnimales.resx">
-      <DependentUpon>AnfibioAnimales.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Anfibios.resx">
       <DependentUpon>Anfibios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimalesAnfibios.resx">
+      <DependentUpon>AnimalesAnfibios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AnimalesOmnivoros.resx">
       <DependentUpon>AnimalesOmnivoros.cs</DependentUpon>
@@ -266,14 +241,17 @@
     <EmbeddedResource Include="animalesvertebrados.resx">
       <DependentUpon>animalesvertebrados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AnimalesViviparos.resx">
+      <DependentUpon>AnimalesViviparos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="domestico animales.resx">
       <DependentUpon>domestico animales.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Domésticos.resx">
+      <DependentUpon>Domésticos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormularioAyuda.resx">
       <DependentUpon>FormularioAyuda.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fusuario.resx">
-      <DependentUpon>fusuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fusuariosMySQL.resx">
       <DependentUpon>fusuariosMySQL.cs</DependentUpon>
@@ -281,23 +259,14 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Oviparosanimales.resx">
-      <DependentUpon>Oviparosanimales.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Registro.resx">
-      <DependentUpon>Registro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reportar.resx">
-      <DependentUpon>Reportar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Domésticos.resx">
-      <DependentUpon>Domésticos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Omnívoros.resx">
       <DependentUpon>Omnívoros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oviparosanimales.resx">
+      <DependentUpon>Oviparosanimales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ovíparos.resx">
       <DependentUpon>Ovíparos.cs</DependentUpon>
@@ -312,6 +281,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportar.resx">
+      <DependentUpon>Reportar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Terminos.resx">
       <DependentUpon>Terminos.cs</DependentUpon>
     </EmbeddedResource>
@@ -324,61 +299,6 @@
     <EmbeddedResource Include="Vivíparos.resx">
       <DependentUpon>Vivíparos.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="FENAHEDataSet.xsc">
-      <DependentUpon>FENAHEDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="FENAHEDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>FENAHEDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="FENAHEDataSet.xss">
-      <DependentUpon>FENAHEDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="FENAHEDataSet1.xsc">
-      <DependentUpon>FENAHEDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="FENAHEDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>FENAHEDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="FENAHEDataSet1.xss">
-      <DependentUpon>FENAHEDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="fenaheDataSet11.xsc">
-      <DependentUpon>fenaheDataSet11.xsd</DependentUpon>
-    </None>
-    <None Include="fenaheDataSet11.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>fenaheDataSet11.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="fenaheDataSet11.xss">
-      <DependentUpon>fenaheDataSet11.xsd</DependentUpon>
-    </None>
-    <None Include="fenaheDataSet2.xsc">
-      <DependentUpon>fenaheDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="fenaheDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>fenaheDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="fenaheDataSet2.xss">
-      <DependentUpon>fenaheDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="LoginAccessDataSet1.xsc">
-      <DependentUpon>LoginAccessDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="LoginAccessDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>LoginAccessDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="LoginAccessDataSet1.xss">
-      <DependentUpon>LoginAccessDataSet1.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -389,16 +309,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="sistemaDataSet.xsc">
-      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    <None Include="WonderZooDataSet.xsc">
+      <DependentUpon>WonderZooDataSet.xsd</DependentUpon>
     </None>
-    <None Include="sistemaDataSet.xsd">
+    <None Include="WonderZooDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>sistemaDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>WonderZooDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="sistemaDataSet.xss">
-      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    <None Include="WonderZooDataSet.xss">
+      <DependentUpon>WonderZooDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

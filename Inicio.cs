@@ -17,6 +17,7 @@ namespace App_Educativa_Sobre_Animales
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
+
         }
     }
 }

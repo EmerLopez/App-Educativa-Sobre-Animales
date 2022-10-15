@@ -10,11 +10,11 @@ using System.Windows.Forms;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
-namespace Oviparos
+namespace App_Educativa_Sobre_Animales
 {
     public partial class AnimalesOmnivoros : Form
     {
-        public string cadena_conexion = "server=Localhost;user id=Diego;password=12345;database=fenahe";
+        public string cadena_conexion = "server=Localhost;user id=edwin;password=1234;database=fenahe";
 
         public AnimalesOmnivoros()
         {
@@ -23,10 +23,11 @@ namespace Oviparos
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet4.oviparos' Puede moverla o quitarla según sea necesario.
-            //this.oviparosTableAdapter.Fill(this.fenaheDataSet4.oviparos);
-            // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet3.oviparos' Puede moverla o quitarla según sea necesario.
-            //this.oviparosTableAdapter.Fill(this.fenaheDataSet3.oviparos);
+            // TODO: esta línea de código carga datos en la tabla 'wonderZooDataSet.omnivoros' Puede moverla o quitarla según sea necesario.
+            this.omnivorosTableAdapter.Fill(this.wonderZooDataSet.omnivoros);
+            // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet.omnivoros' Puede moverla o quitarla según sea necesario.
+           // this.omnivorosTableAdapter.Fill(this.fenaheDataSet.omnivoros);
+
 
             Pgorila.Visible = true;
         }
@@ -108,7 +109,7 @@ namespace Oviparos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.OmnivorosBindingSource.MoveFirst();
+            this.omnivorosBindingSource.MoveFirst();
             if (txtnombre.Text == "gorila")
             {
                 Ptucan.Visible = false;
@@ -153,7 +154,7 @@ namespace Oviparos
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.OmnivorosBindingSource.MovePrevious();
+            this.omnivorosBindingSource.MovePrevious();
             if (txtnombre.Text == "gorila")
             {
                 Ptucan.Visible = false;
@@ -198,7 +199,7 @@ namespace Oviparos
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.OmnivorosBindingSource.MoveNext();
+            this.omnivorosBindingSource.MoveNext();
             if (txtnombre.Text == "gorila")
             {
                 Ptucan.Visible = false;
@@ -243,7 +244,7 @@ namespace Oviparos
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.OmnivorosBindingSource.MoveLast();
+            this.omnivorosBindingSource.MoveLast();
             if (txtnombre.Text == "gorila")
             {
                 Ptucan.Visible = false;

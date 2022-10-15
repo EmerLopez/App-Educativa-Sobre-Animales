@@ -21,5 +21,12 @@ namespace App_Educativa_Sobre_Animales
         {
             Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AnimalesViviparos av = new AnimalesViviparos();
+            this.Hide();
+            av.Show();
+        }
     }
 }

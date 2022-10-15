@@ -10,13 +10,13 @@ using System.Windows.Forms;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
-namespace vertebrados
+namespace App_Educativa_Sobre_Animales
 {
-    public partial class Vertebrados : Form
+    public partial class animalesvertebrados : Form
 
     {
-        public string cadena_conexion = "server=Localhost;user id=root;password=;database=vertebrados";
-        public Vertebrados()
+        public string cadena_conexion = "server=Localhost;user id=edwin;password=1234;database=fenahe";
+        public animalesvertebrados()
         {
             InitializeComponent();
         }
@@ -34,7 +34,7 @@ namespace vertebrados
         private void button3_Click(object sender, EventArgs e)
         {
             this.vertebradosBindingSource.MoveFirst();
-            if (txtnombre.Text == "Elefante")
+            if (txtnombre.Text == "elefante")
             {
                 pvaca.Visible = false;
                 pajolote.Visible = false;
@@ -43,7 +43,7 @@ namespace vertebrados
                 pelefante.Visible = true;
 
             }
-            if (txtnombre.Text == "Lemur")
+            if (txtnombre.Text == "lemur")
             {
                 pajolote.Visible = false;
                 pvaca.Visible = false;
@@ -51,7 +51,7 @@ namespace vertebrados
                 pelefante.Visible = false;
                 plemur.Visible = true;
             }
-            if (txtnombre.Text == "Vacas")
+            if (txtnombre.Text == "vaca")
             {
                 plemur.Visible = false;
                 pajolote.Visible = false;
@@ -59,7 +59,7 @@ namespace vertebrados
                 pelefante.Visible = false;
                 pvaca.Visible = true;
             }
-            if (txtnombre.Text == "Ajolote")
+            if (txtnombre.Text == "ajolote")
             {
                 pvaca.Visible = false;
                 plemur.Visible = false;
@@ -67,7 +67,7 @@ namespace vertebrados
                 pelefante.Visible = false;
                 pajolote.Visible = true;
             }
-            if (txtnombre.Text == "Caballo")
+            if (txtnombre.Text == "caballo")
             {
                 pvaca.Visible = false;
                 pajolote.Visible = false;
@@ -79,8 +79,12 @@ namespace vertebrados
 
         private void Vertebrados_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'vertebradosDataSet.vertebrados' Puede moverla o quitarla según sea necesario.
-            this.vertebradosTableAdapter.Fill(this.vertebradosDataSet.vertebrados);
+            // TODO: esta línea de código carga datos en la tabla 'wonderZooDataSet.vertebrados' Puede moverla o quitarla según sea necesario.
+            this.vertebradosTableAdapter.Fill(this.wonderZooDataSet.vertebrados);
+            // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet.vertebrados' Puede moverla o quitarla según sea necesario.
+            //
+            //this.vertebradosTableAdapter.Fill(this.fenaheDataSet.vertebrados);
+
             pelefante.Visible = true;
 
         }
@@ -88,7 +92,7 @@ namespace vertebrados
         private void banterior_Click(object sender, EventArgs e)
         {
             this.vertebradosBindingSource.MovePrevious();
-            if (txtnombre.Text == "Elefante")
+            if (txtnombre.Text == "elefante")
             {
                 pvaca.Visible = false;
                 pajolote.Visible = false;
@@ -97,7 +101,7 @@ namespace vertebrados
                 pelefante.Visible = true;
 
             }
-            if (txtnombre.Text == "Lemur")
+            if (txtnombre.Text == "lemur")
             {
                 pajolote.Visible = false;
                 pvaca.Visible = false;
@@ -105,7 +109,7 @@ namespace vertebrados
                 pelefante.Visible = false;
                 plemur.Visible = true;
             }
-            if (txtnombre.Text == "Vacas")
+            if (txtnombre.Text == "vaca")
             {
                 plemur.Visible = false;
                 pajolote.Visible = false;
@@ -113,7 +117,7 @@ namespace vertebrados
                 pelefante.Visible = false;
                 pvaca.Visible = true;
             }
-            if (txtnombre.Text == "Ajolote")
+            if (txtnombre.Text == "ajolote")
             {
                 pvaca.Visible = false;
                 plemur.Visible = false;
@@ -121,7 +125,7 @@ namespace vertebrados
                 pelefante.Visible = false;
                 pajolote.Visible = true;
             }
-            if (txtnombre.Text == "Caballo")
+            if (txtnombre.Text == "caballo")
             {
                 pvaca.Visible = false;
                 pajolote.Visible = false;
@@ -134,7 +138,7 @@ namespace vertebrados
         private void bsiguiente_Click(object sender, EventArgs e)
         {
             this.vertebradosBindingSource.MoveNext();
-            if (txtnombre.Text == "Elefante")
+            if (txtnombre.Text == "elefante")
             {
                 pvaca.Visible = false;
                 pajolote.Visible = false;
@@ -143,7 +147,7 @@ namespace vertebrados
                 pelefante.Visible = true;
 
             }
-            if (txtnombre.Text == "Lemur")
+            if (txtnombre.Text == "lemur")
             {
                 pajolote.Visible = false;
                 pvaca.Visible = false;
@@ -151,7 +155,7 @@ namespace vertebrados
                 pelefante.Visible = false;
                 plemur.Visible = true;
             }
-            if (txtnombre.Text == "Vacas")
+            if (txtnombre.Text == "vaca")
             {
                 plemur.Visible = false;
                 pajolote.Visible = false;
@@ -159,7 +163,7 @@ namespace vertebrados
                 pelefante.Visible = false;
                 pvaca.Visible = true;
             }
-            if (txtnombre.Text == "Ajolote")
+            if (txtnombre.Text == "ajolote")
             {
                 pvaca.Visible = false;
                 plemur.Visible = false;
@@ -167,7 +171,7 @@ namespace vertebrados
                 pelefante.Visible = false;
                 pajolote.Visible = true;
             }
-            if (txtnombre.Text == "Caballo")
+            if (txtnombre.Text == "caballo")
             {
                 pvaca.Visible = false;
                 pajolote.Visible = false;
@@ -180,7 +184,7 @@ namespace vertebrados
         private void bultimo_Click(object sender, EventArgs e)
         {
             this.vertebradosBindingSource.MoveLast();
-            if (txtnombre.Text == "Elefante")
+            if (txtnombre.Text == "elefante")
             {
                 pvaca.Visible = false;
                 pajolote.Visible = false;
@@ -189,7 +193,7 @@ namespace vertebrados
                 pelefante.Visible = true;
 
             }
-            if (txtnombre.Text == "Lemur")
+            if (txtnombre.Text == "lemur")
             {
                 pajolote.Visible = false;
                 pvaca.Visible = false;
@@ -197,7 +201,7 @@ namespace vertebrados
                 pelefante.Visible = false;
                 plemur.Visible = true;
             }
-            if (txtnombre.Text == "Vacas")
+            if (txtnombre.Text == "vaca")
             {
                 plemur.Visible = false;
                 pajolote.Visible = false;
@@ -205,7 +209,7 @@ namespace vertebrados
                 pelefante.Visible = false;
                 pvaca.Visible = true;
             }
-            if (txtnombre.Text == "Ajolote")
+            if (txtnombre.Text == "ajolote")
             {
                 pvaca.Visible = false;
                 plemur.Visible = false;
@@ -213,7 +217,7 @@ namespace vertebrados
                 pelefante.Visible = false;
                 pajolote.Visible = true;
             }
-            if (txtnombre.Text == "Caballo")
+            if (txtnombre.Text == "caballo")
             {
                 pvaca.Visible = false;
                 pajolote.Visible = false;
@@ -253,7 +257,7 @@ namespace vertebrados
                 MessageBox.Show("Campo de busqueda está vacío", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //throw;
             }
-            if (txtnombre.Text == "Elefante")
+            if (txtnombre.Text == "elefante")
             {
                 pvaca.Visible = false;
                 pajolote.Visible = false;
@@ -262,7 +266,7 @@ namespace vertebrados
                 pelefante.Visible = true;
 
             }
-            if (txtnombre.Text == "Lemur")
+            if (txtnombre.Text == "lemur")
             {
                 pajolote.Visible = false;
                 pvaca.Visible = false;
@@ -270,7 +274,7 @@ namespace vertebrados
                 pelefante.Visible = false;
                 plemur.Visible = true;
             }
-            if (txtnombre.Text == "Vacas")
+            if (txtnombre.Text == "vaca")
             {
                 plemur.Visible = false;
                 pajolote.Visible = false;
@@ -278,7 +282,7 @@ namespace vertebrados
                 pelefante.Visible = false;
                 pvaca.Visible = true;
             }
-            if (txtnombre.Text == "Ajolote")
+            if (txtnombre.Text == "ajolote")
             {
                 pvaca.Visible = false;
                 plemur.Visible = false;
@@ -286,7 +290,7 @@ namespace vertebrados
                 pelefante.Visible = false;
                 pajolote.Visible = true;
             }
-            if (txtnombre.Text == "Caballo")
+            if (txtnombre.Text == "caballo")
             {
                 pvaca.Visible = false;
                 pajolote.Visible = false;

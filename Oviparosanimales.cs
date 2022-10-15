@@ -10,11 +10,11 @@ using System.Windows.Forms;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
-namespace Oviparos
+namespace App_Educativa_Sobre_Animales
 {
     public partial class Oviparosanimales : Form
     {
-        public string cadena_conexion = "server=Localhost;user id=Diego;password=12345;database=fenahe";
+        public string cadena_conexion = "server=Localhost;user id=edwin;password=1234;database=fenahe";
 
         public Oviparosanimales()
         {
@@ -23,7 +23,11 @@ namespace Oviparos
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.oviparosTableAdapter.Fill(this.fenaheDataSet4.oviparos);
+            // TODO: esta línea de código carga datos en la tabla 'wonderZooDataSet.oviparos' Puede moverla o quitarla según sea necesario.
+            this.oviparosTableAdapter.Fill(this.wonderZooDataSet.oviparos);
+            // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet.oviparos' Puede moverla o quitarla según sea necesario.
+            //this.oviparosTableAdapter.Fill(this.fenaheDataSet.oviparos);
+           // this.oviparosTableAdapter.Fill(this.fenaheDataSet4.oviparos);
             ptortuga.Visible = true;
            
         }

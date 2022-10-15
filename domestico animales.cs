@@ -10,11 +10,11 @@ using System.Windows.Forms;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
-namespace Oviparos
+namespace App_Educativa_Sobre_Animales
 {
     public partial class domestico : Form
     {
-        public string cadena_conexion = "server=localhost;user id=root;database=wonderzo";
+        public string cadena_conexion = "server = Localhost; user id = edwin; password=1234;database=fenahe";
         private object domesticosTableAdapter;
         private object wonderzoDataSet;
 
@@ -25,8 +25,12 @@ namespace Oviparos
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'wonderZooDataSet.domesticos' Puede moverla o quitarla según sea necesario.
+            this.domesticosTableAdapter1.Fill(this.wonderZooDataSet.domesticos);
+            // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet.domesticos' Puede moverla o quitarla según sea necesario.
+            //this.domesticosTableAdapter1.Fill(this.fenaheDataSet.domesticos);
             // TODO: esta línea de código carga datos en la tabla 'wonderzoDataSet1.domesticos' Puede moverla o quitarla según sea necesario.
-            this.domesticosTableAdapter1.Fill(this.wonderzoDataSet1.domesticos);
+            //this.domesticosTableAdapter1.Fill(this.wonderzoDataSet1.domesticos);
             pPerro.Visible = true;
         }
 

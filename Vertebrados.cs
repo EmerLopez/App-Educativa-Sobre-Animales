@@ -21,5 +21,19 @@ namespace App_Educativa_Sobre_Animales
         {
             Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            animalesvertebrados av = new animalesvertebrados();
+            this.Hide();
+            av.Show();
+
+
+        }
+
+        private void Vertebrados_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

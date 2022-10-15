@@ -68,7 +68,7 @@ namespace App_Educativa_Sobre_Animales
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -122,8 +122,8 @@ namespace App_Educativa_Sobre_Animales
 
         private void administrarUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fusuario kk = new fusuario();
-            kk.Show();
+            //fusuario kk = new fusuario();
+            //kk.Show();
         }
 
         private void uGBVerdeToolStripMenuItem_Click(object sender, EventArgs e)

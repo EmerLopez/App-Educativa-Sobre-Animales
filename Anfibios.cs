@@ -21,5 +21,17 @@ namespace App_Educativa_Sobre_Animales
         {
             Close();
         }
+
+        private void Anfibios_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AnimalesAnfibios af = new AnimalesAnfibios();
+            this.Hide();
+            af.Show();
+        }
     }
 }

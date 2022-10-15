@@ -1,5 +1,5 @@
 ﻿
-namespace Oviparos
+namespace App_Educativa_Sobre_Animales
 {
     partial class domestico
     {
@@ -32,8 +32,6 @@ namespace Oviparos
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(domestico));
             this.txtnombre = new System.Windows.Forms.TextBox();
-            this.domesticosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.wonderzoDataSet1 = new Oviparos.wonderzoDataSet();
             this.txtpeso = new System.Windows.Forms.TextBox();
             this.txtalimentacion = new System.Windows.Forms.TextBox();
             this.txthabitat = new System.Windows.Forms.TextBox();
@@ -56,14 +54,16 @@ namespace Oviparos
             this.pConejo = new System.Windows.Forms.PictureBox();
             this.pCerdo = new System.Windows.Forms.PictureBox();
             this.pPato = new System.Windows.Forms.PictureBox();
-            this.domesticosTableAdapter1 = new Oviparos.wonderzoDataSetTableAdapters.domesticosTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.domesticosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderzoDataSet1)).BeginInit();
+            this.wonderZooDataSet = new App_Educativa_Sobre_Animales.WonderZooDataSet();
+            this.domesticosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.domesticosTableAdapter1 = new App_Educativa_Sobre_Animales.WonderZooDataSetTableAdapters.domesticosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pPerro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pGato)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pConejo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCerdo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pPato)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.domesticosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnombre
@@ -79,16 +79,6 @@ namespace Oviparos
             this.txtnombre.ReadOnly = true;
             this.txtnombre.Size = new System.Drawing.Size(257, 31);
             this.txtnombre.TabIndex = 0;
-            // 
-            // domesticosBindingSource
-            // 
-            this.domesticosBindingSource.DataMember = "domesticos";
-            this.domesticosBindingSource.DataSource = this.wonderzoDataSet1;
-            // 
-            // wonderzoDataSet1
-            // 
-            this.wonderzoDataSet1.DataSetName = "wonderzoDataSet";
-            this.wonderzoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtpeso
             // 
@@ -140,7 +130,7 @@ namespace Oviparos
             this.txtcomportamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtcomportamiento.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.domesticosBindingSource, "comportamiento", true));
             this.txtcomportamiento.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcomportamiento.Location = new System.Drawing.Point(179, 357);
+            this.txtcomportamiento.Location = new System.Drawing.Point(178, 357);
             this.txtcomportamiento.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtcomportamiento.Multiline = true;
             this.txtcomportamiento.Name = "txtcomportamiento";
@@ -257,17 +247,21 @@ namespace Oviparos
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(733, 23);
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(685, 12);
             this.button5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(91, 19);
+            this.button5.Size = new System.Drawing.Size(171, 40);
             this.button5.TabIndex = 16;
             this.button5.Text = "Buscar";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // txtbuscar
             // 
+            this.txtbuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtbuscar.FormattingEnabled = true;
             this.txtbuscar.Items.AddRange(new object[] {
             "Perro",
@@ -275,7 +269,7 @@ namespace Oviparos
             "Conejo",
             "Cerdo",
             "Pato"});
-            this.txtbuscar.Location = new System.Drawing.Point(557, 23);
+            this.txtbuscar.Location = new System.Drawing.Point(509, 22);
             this.txtbuscar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(172, 21);
@@ -361,6 +355,16 @@ namespace Oviparos
             this.pPato.TabStop = false;
             this.pPato.Visible = false;
             // 
+            // wonderZooDataSet
+            // 
+            this.wonderZooDataSet.DataSetName = "WonderZooDataSet";
+            this.wonderZooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // domesticosBindingSource
+            // 
+            this.domesticosBindingSource.DataMember = "domesticos";
+            this.domesticosBindingSource.DataSource = this.wonderZooDataSet;
+            // 
             // domesticosTableAdapter1
             // 
             this.domesticosTableAdapter1.ClearBeforeFill = true;
@@ -396,17 +400,18 @@ namespace Oviparos
             this.Controls.Add(this.txtnombre);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.MaximizeBox = false;
             this.Name = "domestico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WonderZoo";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.domesticosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderzoDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pPerro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pGato)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pConejo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCerdo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pPato)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.domesticosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -437,9 +442,11 @@ namespace Oviparos
         private System.Windows.Forms.PictureBox pConejo;
         private System.Windows.Forms.PictureBox pCerdo;
         private System.Windows.Forms.PictureBox pPato;
-        private wonderzoDataSet wonderzoDataSet1;
+        private WonderZooDataSet wonderZooDataSet;
         private System.Windows.Forms.BindingSource domesticosBindingSource;
-        private wonderzoDataSetTableAdapters.domesticosTableAdapter domesticosTableAdapter1;
+        private WonderZooDataSetTableAdapters.domesticosTableAdapter domesticosTableAdapter1;
+        //private App_Educativa_Sobre_Animales.fenaheDataSetTableAdapters.domesticosTableAdapter domesticosTableAdapter1;
+        // private wonderzoDataSetTableAdapters.domesticosTableAdapter domesticosTableAdapter1;
     }
 }
 

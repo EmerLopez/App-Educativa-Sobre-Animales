@@ -1,7 +1,7 @@
 ﻿
-namespace vertebrados
+namespace App_Educativa_Sobre_Animales
 {
-    partial class Vertebrados
+    partial class animalesvertebrados
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -30,11 +30,13 @@ namespace vertebrados
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vertebrados));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(animalesvertebrados));
             this.label1 = new System.Windows.Forms.Label();
             this.banterior = new System.Windows.Forms.Button();
             this.bsiguiente = new System.Windows.Forms.Button();
             this.txtnombre = new System.Windows.Forms.TextBox();
+            this.vertebradosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.wonderZooDataSet = new App_Educativa_Sobre_Animales.WonderZooDataSet();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -45,7 +47,6 @@ namespace vertebrados
             this.bprimero = new System.Windows.Forms.Button();
             this.bultimo = new System.Windows.Forms.Button();
             this.bbuscar = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtbuscar = new System.Windows.Forms.ComboBox();
             this.bcerrar = new System.Windows.Forms.Button();
             this.txthabitat = new System.Windows.Forms.TextBox();
@@ -55,23 +56,21 @@ namespace vertebrados
             this.pvaca = new System.Windows.Forms.PictureBox();
             this.plemur = new System.Windows.Forms.PictureBox();
             this.pelefante = new System.Windows.Forms.PictureBox();
-            this.vertebradosDataSet = new vertebrados.vertebradosDataSet();
-            this.vertebradosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vertebradosTableAdapter = new vertebrados.vertebradosDataSetTableAdapters.vertebradosTableAdapter();
+            this.vertebradosTableAdapter = new App_Educativa_Sobre_Animales.WonderZooDataSetTableAdapters.vertebradosTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.vertebradosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcaballo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pajolote)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pvaca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.plemur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pelefante)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vertebradosDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vertebradosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(51, 50);
+            this.label1.Location = new System.Drawing.Point(102, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(270, 35);
             this.label1.TabIndex = 0;
@@ -115,6 +114,16 @@ namespace vertebrados
             this.txtnombre.ReadOnly = true;
             this.txtnombre.Size = new System.Drawing.Size(342, 38);
             this.txtnombre.TabIndex = 4;
+            // 
+            // vertebradosBindingSource
+            // 
+            this.vertebradosBindingSource.DataMember = "vertebrados";
+            this.vertebradosBindingSource.DataSource = this.wonderZooDataSet;
+            // 
+            // wonderZooDataSet
+            // 
+            this.wonderZooDataSet.DataSetName = "WonderZooDataSet";
+            this.wonderZooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label2
             // 
@@ -222,23 +231,14 @@ namespace vertebrados
             // 
             this.bbuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.bbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bbuscar.Location = new System.Drawing.Point(752, 13);
+            this.bbuscar.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bbuscar.Location = new System.Drawing.Point(865, 4);
             this.bbuscar.Name = "bbuscar";
-            this.bbuscar.Size = new System.Drawing.Size(121, 24);
+            this.bbuscar.Size = new System.Drawing.Size(171, 40);
             this.bbuscar.TabIndex = 18;
             this.bbuscar.Text = "Buscar ";
             this.bbuscar.UseVisualStyleBackColor = false;
             this.bbuscar.Click += new System.EventHandler(this.bbuscar_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(285, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 23);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Busquemos un animal";
             // 
             // txtbuscar
             // 
@@ -246,12 +246,12 @@ namespace vertebrados
             this.txtbuscar.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbuscar.FormattingEnabled = true;
             this.txtbuscar.Items.AddRange(new object[] {
-            "Elefante",
-            "Lemur",
-            "Vacas",
-            "Ajolote",
-            "Caballo"});
-            this.txtbuscar.Location = new System.Drawing.Point(472, 15);
+            "elefante",
+            "lemur",
+            "vaca",
+            "ajolote",
+            "caballo"});
+            this.txtbuscar.Location = new System.Drawing.Point(575, 11);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(274, 30);
             this.txtbuscar.TabIndex = 20;
@@ -299,8 +299,8 @@ namespace vertebrados
             // 
             // pcaballo
             // 
-            this.pcaballo.Image = global::vertebrados.Properties.Resources.caballos_e1626738164508_800x400;
-            this.pcaballo.Location = new System.Drawing.Point(575, 50);
+            this.pcaballo.Image = ((System.Drawing.Image)(resources.GetObject("pcaballo.Image")));
+            this.pcaballo.Location = new System.Drawing.Point(575, 62);
             this.pcaballo.Name = "pcaballo";
             this.pcaballo.Size = new System.Drawing.Size(461, 407);
             this.pcaballo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -310,8 +310,8 @@ namespace vertebrados
             // 
             // pajolote
             // 
-            this.pajolote.Image = global::vertebrados.Properties.Resources.Ajolote;
-            this.pajolote.Location = new System.Drawing.Point(575, 50);
+            this.pajolote.Image = ((System.Drawing.Image)(resources.GetObject("pajolote.Image")));
+            this.pajolote.Location = new System.Drawing.Point(575, 62);
             this.pajolote.Name = "pajolote";
             this.pajolote.Size = new System.Drawing.Size(461, 407);
             this.pajolote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -321,8 +321,8 @@ namespace vertebrados
             // 
             // pvaca
             // 
-            this.pvaca.Image = global::vertebrados.Properties.Resources.frisona_1280x720;
-            this.pvaca.Location = new System.Drawing.Point(575, 50);
+            this.pvaca.Image = ((System.Drawing.Image)(resources.GetObject("pvaca.Image")));
+            this.pvaca.Location = new System.Drawing.Point(575, 62);
             this.pvaca.Name = "pvaca";
             this.pvaca.Size = new System.Drawing.Size(461, 407);
             this.pvaca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -332,19 +332,19 @@ namespace vertebrados
             // 
             // plemur
             // 
-            this.plemur.BackgroundImage = global::vertebrados.Properties.Resources.habitat_del_lemur_21036_600;
-            this.plemur.Location = new System.Drawing.Point(575, 50);
+            this.plemur.Image = ((System.Drawing.Image)(resources.GetObject("plemur.Image")));
+            this.plemur.Location = new System.Drawing.Point(575, 62);
             this.plemur.Name = "plemur";
             this.plemur.Size = new System.Drawing.Size(461, 407);
-            this.plemur.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.plemur.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.plemur.TabIndex = 24;
             this.plemur.TabStop = false;
             this.plemur.Visible = false;
             // 
             // pelefante
             // 
-            this.pelefante.Image = global::vertebrados.Properties.Resources.wolfgang_hasselmann_ldav4eljbt0_unsplash11;
-            this.pelefante.Location = new System.Drawing.Point(575, 50);
+            this.pelefante.Image = ((System.Drawing.Image)(resources.GetObject("pelefante.Image")));
+            this.pelefante.Location = new System.Drawing.Point(575, 62);
             this.pelefante.Name = "pelefante";
             this.pelefante.Size = new System.Drawing.Size(461, 407);
             this.pelefante.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -353,21 +353,11 @@ namespace vertebrados
             this.pelefante.Visible = false;
             this.pelefante.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // vertebradosDataSet
-            // 
-            this.vertebradosDataSet.DataSetName = "vertebradosDataSet";
-            this.vertebradosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vertebradosBindingSource
-            // 
-            this.vertebradosBindingSource.DataMember = "vertebrados";
-            this.vertebradosBindingSource.DataSource = this.vertebradosDataSet;
-            // 
             // vertebradosTableAdapter
             // 
             this.vertebradosTableAdapter.ClearBeforeFill = true;
             // 
-            // Vertebrados
+            // animalesvertebrados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -381,7 +371,6 @@ namespace vertebrados
             this.Controls.Add(this.txthabitat);
             this.Controls.Add(this.bcerrar);
             this.Controls.Add(this.txtbuscar);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.bbuscar);
             this.Controls.Add(this.bultimo);
             this.Controls.Add(this.bprimero);
@@ -398,16 +387,18 @@ namespace vertebrados
             this.Controls.Add(this.banterior);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Vertebrados";
+            this.MaximizeBox = false;
+            this.Name = "animalesvertebrados";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WonderZoo";
             this.Load += new System.EventHandler(this.Vertebrados_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.vertebradosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcaballo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pajolote)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pvaca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.plemur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pelefante)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vertebradosDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vertebradosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -430,7 +421,6 @@ namespace vertebrados
         private System.Windows.Forms.Button bprimero;
         private System.Windows.Forms.Button bultimo;
         private System.Windows.Forms.Button bbuscar;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox txtbuscar;
         private System.Windows.Forms.Button bcerrar;
         private System.Windows.Forms.TextBox txthabitat;
@@ -439,9 +429,11 @@ namespace vertebrados
         private System.Windows.Forms.PictureBox pvaca;
         private System.Windows.Forms.PictureBox pajolote;
         private System.Windows.Forms.PictureBox pcaballo;
-        private vertebradosDataSet vertebradosDataSet;
+        private WonderZooDataSet wonderZooDataSet;
         private System.Windows.Forms.BindingSource vertebradosBindingSource;
-        private vertebradosDataSetTableAdapters.vertebradosTableAdapter vertebradosTableAdapter;
+        private WonderZooDataSetTableAdapters.vertebradosTableAdapter vertebradosTableAdapter;
+        // private fenaheDataSetTableAdapters.vertebradosTableAdapter vertebradosTableAdapter;
+        //private vertebradosDataSetTableAdapters.vertebradosTableAdapter vertebradosTableAdapter;
     }
 }
 

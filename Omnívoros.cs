@@ -21,5 +21,13 @@ namespace App_Educativa_Sobre_Animales
         {
             Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AnimalesOmnivoros ov = new AnimalesOmnivoros();
+            this.Hide();
+            ov.Show();
+
+        }
     }
 }

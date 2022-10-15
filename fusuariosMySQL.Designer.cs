@@ -35,8 +35,6 @@ namespace App_Educativa_Sobre_Animales
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtusuario = new System.Windows.Forms.TextBox();
-            this.personasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fenaheDataSet1 = new App_Educativa_Sobre_Animales.fenaheDataSet1();
             this.txtclave = new System.Windows.Forms.TextBox();
             this.bprimero = new System.Windows.Forms.Button();
             this.banterior = new System.Windows.Forms.Button();
@@ -53,12 +51,13 @@ namespace App_Educativa_Sobre_Animales
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.button12 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.usuariosTableAdapter = new App_Educativa_Sobre_Animales.sistemaDataSetTableAdapters.UsuariosTableAdapter();
-            this.personasTableAdapter1 = new App_Educativa_Sobre_Animales.fenaheDataSet1TableAdapters.personasTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.personasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fenaheDataSet1)).BeginInit();
+            this.wonderZooDataSet = new App_Educativa_Sobre_Animales.WonderZooDataSet();
+            this.personasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.personasTableAdapter = new App_Educativa_Sobre_Animales.WonderZooDataSetTableAdapters.personasTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personasBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -110,16 +109,6 @@ namespace App_Educativa_Sobre_Animales
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(137, 20);
             this.txtusuario.TabIndex = 4;
-            // 
-            // personasBindingSource
-            // 
-            this.personasBindingSource.DataMember = "personas";
-            this.personasBindingSource.DataSource = this.fenaheDataSet1;
-            // 
-            // fenaheDataSet1
-            // 
-            this.fenaheDataSet1.DataSetName = "fenaheDataSet1";
-            this.fenaheDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtclave
             // 
@@ -314,13 +303,19 @@ namespace App_Educativa_Sobre_Animales
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
-            // usuariosTableAdapter
+            // wonderZooDataSet
             // 
-            this.usuariosTableAdapter.ClearBeforeFill = true;
+            this.wonderZooDataSet.DataSetName = "WonderZooDataSet";
+            this.wonderZooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // personasTableAdapter1
+            // personasBindingSource
             // 
-            this.personasTableAdapter1.ClearBeforeFill = true;
+            this.personasBindingSource.DataMember = "personas";
+            this.personasBindingSource.DataSource = this.wonderZooDataSet;
+            // 
+            // personasTableAdapter
+            // 
+            this.personasTableAdapter.ClearBeforeFill = true;
             // 
             // fusuariosMySQL
             // 
@@ -353,10 +348,10 @@ namespace App_Educativa_Sobre_Animales
             this.Name = "fusuariosMySQL";
             this.Text = "WonderZoo";
             this.Load += new System.EventHandler(this.fusuariosMySQL_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.personasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fenaheDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personasBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -385,11 +380,15 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private sistemaDataSetTableAdapters.UsuariosTableAdapter usuariosTableAdapter;
-        private fenaheDataSet fenaheDataSet;
-        private fenaheDataSetTableAdapters.personasTableAdapter personasTableAdapter;
-        private fenaheDataSet1 fenaheDataSet1;
+        private WonderZooDataSet wonderZooDataSet;
         private System.Windows.Forms.BindingSource personasBindingSource;
-        private fenaheDataSet1TableAdapters.personasTableAdapter personasTableAdapter1;
+        private WonderZooDataSetTableAdapters.personasTableAdapter personasTableAdapter;
+        //private sistemaDataSetTableAdapters.UsuariosTableAdapter usuariosTableAdapter;
+        // private fenaheDataSet fenaheDataSet;
+        //private fenaheDataSetTableAdapters.personasTableAdapter personasTableAdapter;
+        //private fenaheDataSet fenaheDataSet1;
+        //private System.Windows.Forms.BindingSource personasBindingSource;
+        // private fenaheDataSetTableAdapters.personasTableAdapter personasTableAdapter1;
+        //private fenaheDataSet1TableAdapters.personasTableAdapter personasTableAdapter1;
     }
 }
