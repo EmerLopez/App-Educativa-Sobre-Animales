@@ -54,23 +54,23 @@ namespace App_Educativa_Sobre_Animales
             this.pConejo = new System.Windows.Forms.PictureBox();
             this.pCerdo = new System.Windows.Forms.PictureBox();
             this.pPato = new System.Windows.Forms.PictureBox();
-            this.wonderzooDataSet = new App_Educativa_Sobre_Animales.wonderzooDataSet();
-            this.domesticosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.domesticosTableAdapter1 = new App_Educativa_Sobre_Animales.wonderzooDataSetTableAdapters.domesticosTableAdapter();
+            //this.wonderzooDataSet = new App_Educativa_Sobre_Animales.wonderzooDataSet();
+            //this.domesticosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            //this.domesticosTableAdapter1 = new App_Educativa_Sobre_Animales.wonderzooDataSetTableAdapters.domesticosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pPerro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pGato)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pConejo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCerdo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pPato)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.domesticosBindingSource)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.domesticosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnombre
             // 
             this.txtnombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtnombre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.domesticosBindingSource, "nombre", true));
+            //this.txtnombre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.domesticosBindingSource, "nombre", true));
             this.txtnombre.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombre.Location = new System.Drawing.Point(179, 59);
             this.txtnombre.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -84,7 +84,7 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtpeso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtpeso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtpeso.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.domesticosBindingSource, "peso", true));
+            //this.txtpeso.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.domesticosBindingSource, "peso", true));
             this.txtpeso.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpeso.Location = new System.Drawing.Point(179, 116);
             this.txtpeso.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -98,7 +98,7 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtalimentacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtalimentacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtalimentacion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.domesticosBindingSource, "alimentacion", true));
+           // this.txtalimentacion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.domesticosBindingSource, "alimentacion", true));
             this.txtalimentacion.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtalimentacion.Location = new System.Drawing.Point(179, 175);
             this.txtalimentacion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -113,7 +113,7 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txthabitat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txthabitat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txthabitat.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.domesticosBindingSource, "habitat", true));
+            //this.txthabitat.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.domesticosBindingSource, "habitat", true));
             this.txthabitat.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txthabitat.Location = new System.Drawing.Point(179, 252);
             this.txthabitat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -128,7 +128,7 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtcomportamiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtcomportamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtcomportamiento.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.domesticosBindingSource, "comportamiento", true));
+            //this.txtcomportamiento.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.domesticosBindingSource, "comportamiento", true));
             this.txtcomportamiento.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcomportamiento.Location = new System.Drawing.Point(178, 357);
             this.txtcomportamiento.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -357,17 +357,17 @@ namespace App_Educativa_Sobre_Animales
             // 
             // wonderzooDataSet
             // 
-            this.wonderzooDataSet.DataSetName = "wonderzooDataSet";
-            this.wonderzooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            //this.wonderzooDataSet.DataSetName = "wonderzooDataSet";
+            //this.wonderzooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // domesticosBindingSource
             // 
-            this.domesticosBindingSource.DataMember = "domesticos";
-            this.domesticosBindingSource.DataSource = this.wonderzooDataSet;
+            //this.domesticosBindingSource.DataMember = "domesticos";
+           // this.domesticosBindingSource.DataSource = this.wonderzooDataSet;
             // 
             // domesticosTableAdapter1
             // 
-            this.domesticosTableAdapter1.ClearBeforeFill = true;
+           // this.domesticosTableAdapter1.ClearBeforeFill = true;
             // 
             // domestico
             // 
@@ -410,8 +410,8 @@ namespace App_Educativa_Sobre_Animales
             ((System.ComponentModel.ISupportInitialize)(this.pConejo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCerdo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pPato)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.domesticosBindingSource)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.domesticosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -442,9 +442,9 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.PictureBox pConejo;
         private System.Windows.Forms.PictureBox pCerdo;
         private System.Windows.Forms.PictureBox pPato;
-        private wonderzooDataSet wonderzooDataSet;
-        private System.Windows.Forms.BindingSource domesticosBindingSource;
-        private wonderzooDataSetTableAdapters.domesticosTableAdapter domesticosTableAdapter1;
+        //private wonderzooDataSet wonderzooDataSet;
+       // private System.Windows.Forms.BindingSource domesticosBindingSource;
+        //private wonderzooDataSetTableAdapters.domesticosTableAdapter domesticosTableAdapter1;
         //private App_Educativa_Sobre_Animales.fenaheDataSetTableAdapters.domesticosTableAdapter domesticosTableAdapter1;
         // private wonderzoDataSetTableAdapters.domesticosTableAdapter domesticosTableAdapter1;
     }

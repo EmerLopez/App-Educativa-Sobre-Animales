@@ -49,7 +49,7 @@ namespace App_Educativa_Sobre_Animales
             this.label1.Location = new System.Drawing.Point(214, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(534, 55);
+            this.label1.Size = new System.Drawing.Size(433, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "Clasificacion De La Basura";
             // 
@@ -70,7 +70,7 @@ namespace App_Educativa_Sobre_Animales
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(35, 343);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(334, 28);
+            this.label2.Size = new System.Drawing.Size(260, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tipos de clasificación de residuos \r\n";
             // 
@@ -149,7 +149,7 @@ namespace App_Educativa_Sobre_Animales
             // 
             // UGBVerde
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(24F, 55F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 45F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(914, 726);
@@ -164,6 +164,7 @@ namespace App_Educativa_Sobre_Animales
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(10);
             this.MaximizeBox = false;
             this.Name = "UGBVerde";

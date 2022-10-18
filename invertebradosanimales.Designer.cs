@@ -65,11 +65,12 @@ namespace App_Educativa_Sobre_Animales
             this.txtnombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtnombre.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombre.Location = new System.Drawing.Point(238, 73);
+            this.txtnombre.Location = new System.Drawing.Point(178, 59);
+            this.txtnombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtnombre.Multiline = true;
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.ReadOnly = true;
-            this.txtnombre.Size = new System.Drawing.Size(342, 38);
+            this.txtnombre.Size = new System.Drawing.Size(257, 31);
             this.txtnombre.TabIndex = 0;
             // 
             // txtpeso
@@ -77,11 +78,12 @@ namespace App_Educativa_Sobre_Animales
             this.txtpeso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtpeso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtpeso.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpeso.Location = new System.Drawing.Point(238, 142);
+            this.txtpeso.Location = new System.Drawing.Point(178, 115);
+            this.txtpeso.Margin = new System.Windows.Forms.Padding(2);
             this.txtpeso.Multiline = true;
             this.txtpeso.Name = "txtpeso";
             this.txtpeso.ReadOnly = true;
-            this.txtpeso.Size = new System.Drawing.Size(342, 56);
+            this.txtpeso.Size = new System.Drawing.Size(257, 46);
             this.txtpeso.TabIndex = 1;
             // 
             // txtalimentacion
@@ -89,12 +91,13 @@ namespace App_Educativa_Sobre_Animales
             this.txtalimentacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtalimentacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtalimentacion.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtalimentacion.Location = new System.Drawing.Point(238, 215);
+            this.txtalimentacion.Location = new System.Drawing.Point(178, 175);
+            this.txtalimentacion.Margin = new System.Windows.Forms.Padding(2);
             this.txtalimentacion.Multiline = true;
             this.txtalimentacion.Name = "txtalimentacion";
             this.txtalimentacion.ReadOnly = true;
             this.txtalimentacion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtalimentacion.Size = new System.Drawing.Size(342, 68);
+            this.txtalimentacion.Size = new System.Drawing.Size(257, 56);
             this.txtalimentacion.TabIndex = 2;
             // 
             // txthabitat
@@ -102,12 +105,13 @@ namespace App_Educativa_Sobre_Animales
             this.txthabitat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txthabitat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txthabitat.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txthabitat.Location = new System.Drawing.Point(238, 310);
+            this.txthabitat.Location = new System.Drawing.Point(178, 252);
+            this.txthabitat.Margin = new System.Windows.Forms.Padding(2);
             this.txthabitat.Multiline = true;
             this.txthabitat.Name = "txthabitat";
             this.txthabitat.ReadOnly = true;
             this.txthabitat.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txthabitat.Size = new System.Drawing.Size(342, 92);
+            this.txthabitat.Size = new System.Drawing.Size(257, 75);
             this.txthabitat.TabIndex = 3;
             // 
             // txtcomportamiento
@@ -115,21 +119,23 @@ namespace App_Educativa_Sobre_Animales
             this.txtcomportamiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtcomportamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtcomportamiento.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcomportamiento.Location = new System.Drawing.Point(238, 440);
+            this.txtcomportamiento.Location = new System.Drawing.Point(178, 358);
+            this.txtcomportamiento.Margin = new System.Windows.Forms.Padding(2);
             this.txtcomportamiento.Multiline = true;
             this.txtcomportamiento.Name = "txtcomportamiento";
             this.txtcomportamiento.ReadOnly = true;
             this.txtcomportamiento.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtcomportamiento.Size = new System.Drawing.Size(342, 117);
+            this.txtcomportamiento.Size = new System.Drawing.Size(257, 95);
             this.txtcomportamiento.TabIndex = 4;
             // 
             // pmariquitas
             // 
             this.pmariquitas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pmariquitas.BackgroundImage")));
             this.pmariquitas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pmariquitas.Location = new System.Drawing.Point(669, 73);
+            this.pmariquitas.Location = new System.Drawing.Point(502, 59);
+            this.pmariquitas.Margin = new System.Windows.Forms.Padding(2);
             this.pmariquitas.Name = "pmariquitas";
-            this.pmariquitas.Size = new System.Drawing.Size(461, 407);
+            this.pmariquitas.Size = new System.Drawing.Size(346, 331);
             this.pmariquitas.TabIndex = 6;
             this.pmariquitas.TabStop = false;
             this.pmariquitas.Visible = false;
@@ -140,9 +146,10 @@ namespace App_Educativa_Sobre_Animales
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(912, 575);
+            this.button1.Location = new System.Drawing.Point(684, 467);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(228, 49);
+            this.button1.Size = new System.Drawing.Size(171, 40);
             this.button1.TabIndex = 7;
             this.button1.Text = "Primero";
             this.button1.UseVisualStyleBackColor = false;
@@ -153,9 +160,10 @@ namespace App_Educativa_Sobre_Animales
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(678, 520);
+            this.button2.Location = new System.Drawing.Point(508, 422);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(228, 49);
+            this.button2.Size = new System.Drawing.Size(171, 40);
             this.button2.TabIndex = 8;
             this.button2.Text = "Anterior";
             this.button2.UseVisualStyleBackColor = false;
@@ -166,9 +174,10 @@ namespace App_Educativa_Sobre_Animales
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(912, 520);
+            this.button3.Location = new System.Drawing.Point(684, 422);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(228, 49);
+            this.button3.Size = new System.Drawing.Size(171, 40);
             this.button3.TabIndex = 9;
             this.button3.Text = "Siguiente";
             this.button3.UseVisualStyleBackColor = false;
@@ -179,9 +188,10 @@ namespace App_Educativa_Sobre_Animales
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(678, 575);
+            this.button4.Location = new System.Drawing.Point(508, 467);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(228, 49);
+            this.button4.Size = new System.Drawing.Size(171, 40);
             this.button4.TabIndex = 10;
             this.button4.Text = "Ultimo";
             this.button4.UseVisualStyleBackColor = false;
@@ -190,45 +200,50 @@ namespace App_Educativa_Sobre_Animales
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 73);
+            this.label1.Location = new System.Drawing.Point(19, 59);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 38);
+            this.label1.Size = new System.Drawing.Size(147, 31);
             this.label1.TabIndex = 11;
             this.label1.Text = "Nombre";
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 142);
+            this.label2.Location = new System.Drawing.Point(19, 115);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(196, 38);
+            this.label2.Size = new System.Drawing.Size(147, 31);
             this.label2.TabIndex = 12;
             this.label2.Text = "Peso";
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 215);
+            this.label3.Location = new System.Drawing.Point(19, 175);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(196, 38);
+            this.label3.Size = new System.Drawing.Size(147, 31);
             this.label3.TabIndex = 13;
             this.label3.Text = "Alimentacion";
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(25, 310);
+            this.label4.Location = new System.Drawing.Point(19, 252);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(196, 38);
+            this.label4.Size = new System.Drawing.Size(147, 31);
             this.label4.TabIndex = 14;
             this.label4.Text = "Habitat";
             // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(20, 440);
+            this.label5.Location = new System.Drawing.Point(15, 358);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(212, 38);
+            this.label5.Size = new System.Drawing.Size(159, 31);
             this.label5.TabIndex = 15;
             this.label5.Text = "Comportamiento";
             // 
@@ -236,9 +251,11 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Location = new System.Drawing.Point(977, 28);
+            this.button5.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(733, 23);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(121, 24);
+            this.button5.Size = new System.Drawing.Size(102, 31);
             this.button5.TabIndex = 16;
             this.button5.Text = "Buscar";
             this.button5.UseVisualStyleBackColor = false;
@@ -254,17 +271,19 @@ namespace App_Educativa_Sobre_Animales
             "medusas",
             "estrella de mar",
             "orugas"});
-            this.txtbuscar.Location = new System.Drawing.Point(743, 28);
+            this.txtbuscar.Location = new System.Drawing.Point(557, 23);
+            this.txtbuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(228, 24);
+            this.txtbuscar.Size = new System.Drawing.Size(172, 21);
             this.txtbuscar.TabIndex = 17;
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(220, 1);
+            this.label6.Location = new System.Drawing.Point(165, 1);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(250, 51);
+            this.label6.Size = new System.Drawing.Size(188, 41);
             this.label6.TabIndex = 18;
             this.label6.Text = "Invertebrados";
             // 
@@ -273,9 +292,10 @@ namespace App_Educativa_Sobre_Animales
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(26, 586);
+            this.button6.Location = new System.Drawing.Point(20, 476);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(228, 49);
+            this.button6.Size = new System.Drawing.Size(171, 40);
             this.button6.TabIndex = 19;
             this.button6.Text = "Salir";
             this.button6.UseVisualStyleBackColor = false;
@@ -285,9 +305,10 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.pabeja.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pabeja.BackgroundImage")));
             this.pabeja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pabeja.Location = new System.Drawing.Point(669, 71);
+            this.pabeja.Location = new System.Drawing.Point(502, 58);
+            this.pabeja.Margin = new System.Windows.Forms.Padding(2);
             this.pabeja.Name = "pabeja";
-            this.pabeja.Size = new System.Drawing.Size(461, 407);
+            this.pabeja.Size = new System.Drawing.Size(346, 331);
             this.pabeja.TabIndex = 20;
             this.pabeja.TabStop = false;
             this.pabeja.Visible = false;
@@ -296,9 +317,10 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.pmedusas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pmedusas.BackgroundImage")));
             this.pmedusas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pmedusas.Location = new System.Drawing.Point(669, 71);
+            this.pmedusas.Location = new System.Drawing.Point(502, 58);
+            this.pmedusas.Margin = new System.Windows.Forms.Padding(2);
             this.pmedusas.Name = "pmedusas";
-            this.pmedusas.Size = new System.Drawing.Size(461, 407);
+            this.pmedusas.Size = new System.Drawing.Size(346, 331);
             this.pmedusas.TabIndex = 21;
             this.pmedusas.TabStop = false;
             this.pmedusas.Visible = false;
@@ -307,9 +329,10 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.pestrella.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pestrella.BackgroundImage")));
             this.pestrella.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pestrella.Location = new System.Drawing.Point(669, 71);
+            this.pestrella.Location = new System.Drawing.Point(502, 58);
+            this.pestrella.Margin = new System.Windows.Forms.Padding(2);
             this.pestrella.Name = "pestrella";
-            this.pestrella.Size = new System.Drawing.Size(461, 407);
+            this.pestrella.Size = new System.Drawing.Size(346, 331);
             this.pestrella.TabIndex = 22;
             this.pestrella.TabStop = false;
             this.pestrella.Visible = false;
@@ -318,9 +341,10 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.porugas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("porugas.BackgroundImage")));
             this.porugas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.porugas.Location = new System.Drawing.Point(669, 71);
+            this.porugas.Location = new System.Drawing.Point(502, 58);
+            this.porugas.Margin = new System.Windows.Forms.Padding(2);
             this.porugas.Name = "porugas";
-            this.porugas.Size = new System.Drawing.Size(461, 407);
+            this.porugas.Size = new System.Drawing.Size(346, 331);
             this.porugas.TabIndex = 23;
             this.porugas.TabStop = false;
             this.porugas.Visible = false;
@@ -328,10 +352,10 @@ namespace App_Educativa_Sobre_Animales
             // 
             // invertebradosanimales
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
-            this.ClientSize = new System.Drawing.Size(1181, 666);
+            this.ClientSize = new System.Drawing.Size(886, 541);
             this.Controls.Add(this.porugas);
             this.Controls.Add(this.pestrella);
             this.Controls.Add(this.pmedusas);
@@ -356,6 +380,8 @@ namespace App_Educativa_Sobre_Animales
             this.Controls.Add(this.txtpeso);
             this.Controls.Add(this.txtnombre);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "invertebradosanimales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Invertebrados";

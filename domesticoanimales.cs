@@ -25,14 +25,7 @@ namespace App_Educativa_Sobre_Animales
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.domesticos' Puede moverla o quitarla según sea necesario.
-            this.domesticosTableAdapter1.Fill(this.wonderzooDataSet.domesticos);
-            // TODO: esta línea de código carga datos en la tabla 'wonderZooDataSet.domesticos' Puede moverla o quitarla según sea necesario.
-            //this.domesticosTableAdapter1.Fill(this.wonderZooDataSet.domesticos);
-            // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet.domesticos' Puede moverla o quitarla según sea necesario.
-            //this.domesticosTableAdapter1.Fill(this.fenaheDataSet.domesticos);
-            // TODO: esta línea de código carga datos en la tabla 'wonderzoDataSet1.domesticos' Puede moverla o quitarla según sea necesario.
-            //this.domesticosTableAdapter1.Fill(this.wonderzoDataSet1.domesticos);
+            
             pPerro.Visible = true;
         }
 
@@ -56,7 +49,7 @@ namespace App_Educativa_Sobre_Animales
                 }
                 else
                 {
-                    MessageBox.Show("El usuario no existe", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("ENo fue posible encontrar el animal ingresado", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 myConnection.Close();
             }

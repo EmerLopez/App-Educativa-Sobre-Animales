@@ -115,11 +115,11 @@ namespace App_Educativa_Sobre_Animales
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(35, 362);
+            this.button2.Location = new System.Drawing.Point(36, 362);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(179, 37);
+            this.button2.Size = new System.Drawing.Size(117, 37);
             this.button2.TabIndex = 7;
-            this.button2.Text = "Animales Vertebrados";
+            this.button2.Text = "Animales";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

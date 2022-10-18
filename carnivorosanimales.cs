@@ -12,7 +12,7 @@ using MySql.Data.MySqlClient;
 
 namespace App_Educativa_Sobre_Animales
 {
-    public partial class WonderZoo : Form
+    public partial class carnivorosanimales : Form
     {
         public string cadena_conexion = "server=localhost;user id=wzadmins;database=wonderzoo;persistsecurityinfo=True";
 
@@ -23,8 +23,7 @@ namespace App_Educativa_Sobre_Animales
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.carnivoros' Puede moverla o quitarla según sea necesario.
-            //this.carnivorosTableAdapter.Fill(this.wonderzooDataSet.carnivoros);
+            
             pAguila.Visible = true;
         }
 
@@ -48,7 +47,7 @@ namespace App_Educativa_Sobre_Animales
                 }
                 else
                 {
-                    MessageBox.Show("El usuario no existe", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("No fue posible encontrar el animal ingresado", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 myConnection.Close();
             }

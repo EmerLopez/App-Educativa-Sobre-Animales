@@ -29,7 +29,6 @@ namespace App_Educativa_Sobre_Animales
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(animalesvertebrados));
             this.label1 = new System.Windows.Forms.Label();
             this.banterior = new System.Windows.Forms.Button();
@@ -54,27 +53,22 @@ namespace App_Educativa_Sobre_Animales
             this.pvaca = new System.Windows.Forms.PictureBox();
             this.plemur = new System.Windows.Forms.PictureBox();
             this.pelefante = new System.Windows.Forms.PictureBox();
-            this.wonderzooDataSet = new App_Educativa_Sobre_Animales.wonderzooDataSet();
-            this.vertebradosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vertebradosTableAdapter = new App_Educativa_Sobre_Animales.wonderzooDataSetTableAdapters.vertebradosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pcaballo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pajolote)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pvaca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.plemur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pelefante)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vertebradosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(102, 25);
+            this.label1.Location = new System.Drawing.Point(155, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(270, 35);
+            this.label1.Size = new System.Drawing.Size(158, 35);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Animales Vertebrados";
+            this.label1.Text = "Vertebrados";
             // 
             // banterior
             // 
@@ -106,7 +100,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtnombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtnombre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vertebradosBindingSource, "nombre", true));
             this.txtnombre.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombre.Location = new System.Drawing.Point(170, 96);
             this.txtnombre.Multiline = true;
@@ -169,7 +162,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtalimentacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtalimentacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtalimentacion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vertebradosBindingSource, "alimentacion", true));
             this.txtalimentacion.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtalimentacion.Location = new System.Drawing.Point(170, 210);
             this.txtalimentacion.Multiline = true;
@@ -182,7 +174,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtpeso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtpeso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtpeso.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vertebradosBindingSource, "peso", true));
             this.txtpeso.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpeso.Location = new System.Drawing.Point(170, 148);
             this.txtpeso.Multiline = true;
@@ -263,7 +254,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txthabitat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txthabitat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txthabitat.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vertebradosBindingSource, "habitat", true));
             this.txthabitat.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txthabitat.Location = new System.Drawing.Point(170, 300);
             this.txthabitat.Multiline = true;
@@ -277,7 +267,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtcomportamiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtcomportamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtcomportamiento.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vertebradosBindingSource, "comportamiento", true));
             this.txtcomportamiento.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcomportamiento.Location = new System.Drawing.Point(170, 412);
             this.txtcomportamiento.Multiline = true;
@@ -343,20 +332,6 @@ namespace App_Educativa_Sobre_Animales
             this.pelefante.Visible = false;
             this.pelefante.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // wonderzooDataSet
-            // 
-            this.wonderzooDataSet.DataSetName = "wonderzooDataSet";
-            this.wonderzooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vertebradosBindingSource
-            // 
-            this.vertebradosBindingSource.DataMember = "vertebrados";
-            this.vertebradosBindingSource.DataSource = this.wonderzooDataSet;
-            // 
-            // vertebradosTableAdapter
-            // 
-            this.vertebradosTableAdapter.ClearBeforeFill = true;
-            // 
             // animalesvertebrados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -397,8 +372,6 @@ namespace App_Educativa_Sobre_Animales
             ((System.ComponentModel.ISupportInitialize)(this.pvaca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.plemur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pelefante)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vertebradosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -429,9 +402,9 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.PictureBox pvaca;
         private System.Windows.Forms.PictureBox pajolote;
         private System.Windows.Forms.PictureBox pcaballo;
-        private wonderzooDataSet wonderzooDataSet;
-        private System.Windows.Forms.BindingSource vertebradosBindingSource;
-        private wonderzooDataSetTableAdapters.vertebradosTableAdapter vertebradosTableAdapter;
+       // private wonderzooDataSet wonderzooDataSet;
+       // private System.Windows.Forms.BindingSource vertebradosBindingSource;
+        //private wonderzooDataSetTableAdapters.vertebradosTableAdapter vertebradosTableAdapter;
         // private fenaheDataSetTableAdapters.vertebradosTableAdapter vertebradosTableAdapter;
         //private vertebradosDataSetTableAdapters.vertebradosTableAdapter vertebradosTableAdapter;
     }

@@ -29,7 +29,6 @@ namespace App_Educativa_Sobre_Animales
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnimalesOmnivoros));
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtpeso = new System.Windows.Forms.TextBox();
@@ -54,23 +53,17 @@ namespace App_Educativa_Sobre_Animales
             this.Perizo = new System.Windows.Forms.PictureBox();
             this.Pmapache = new System.Windows.Forms.PictureBox();
             this.Pgorila = new System.Windows.Forms.PictureBox();
-            this.wonderzooDataSet = new App_Educativa_Sobre_Animales.wonderzooDataSet();
-            this.omnivorosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.omnivorosTableAdapter = new App_Educativa_Sobre_Animales.wonderzooDataSetTableAdapters.omnivorosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.Ptucan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pzorro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Perizo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pmapache)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pgorila)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.omnivorosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnombre
             // 
             this.txtnombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtnombre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.omnivorosBindingSource, "nombre", true));
             this.txtnombre.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombre.Location = new System.Drawing.Point(178, 59);
             this.txtnombre.Margin = new System.Windows.Forms.Padding(2);
@@ -84,7 +77,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtpeso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtpeso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtpeso.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.omnivorosBindingSource, "peso", true));
             this.txtpeso.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpeso.Location = new System.Drawing.Point(178, 115);
             this.txtpeso.Margin = new System.Windows.Forms.Padding(2);
@@ -98,7 +90,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtalimentacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtalimentacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtalimentacion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.omnivorosBindingSource, "alimentacion", true));
             this.txtalimentacion.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtalimentacion.Location = new System.Drawing.Point(178, 175);
             this.txtalimentacion.Margin = new System.Windows.Forms.Padding(2);
@@ -112,7 +103,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txthabitat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txthabitat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txthabitat.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.omnivorosBindingSource, "habitat", true));
             this.txthabitat.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txthabitat.Location = new System.Drawing.Point(178, 252);
             this.txthabitat.Margin = new System.Windows.Forms.Padding(2);
@@ -127,7 +117,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtcomportamiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtcomportamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtcomportamiento.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.omnivorosBindingSource, "comportamiento", true));
             this.txtcomportamiento.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcomportamiento.Location = new System.Drawing.Point(178, 358);
             this.txtcomportamiento.Margin = new System.Windows.Forms.Padding(2);
@@ -365,20 +354,6 @@ namespace App_Educativa_Sobre_Animales
             this.Pgorila.Visible = false;
             this.Pgorila.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // wonderzooDataSet
-            // 
-            this.wonderzooDataSet.DataSetName = "wonderzooDataSet";
-            this.wonderzooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // omnivorosBindingSource
-            // 
-            this.omnivorosBindingSource.DataMember = "omnivoros";
-            this.omnivorosBindingSource.DataSource = this.wonderzooDataSet;
-            // 
-            // omnivorosTableAdapter
-            // 
-            this.omnivorosTableAdapter.ClearBeforeFill = true;
-            // 
             // AnimalesOmnivoros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -420,8 +395,6 @@ namespace App_Educativa_Sobre_Animales
             ((System.ComponentModel.ISupportInitialize)(this.Perizo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pmapache)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pgorila)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.omnivorosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -453,9 +426,7 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.PictureBox Perizo;
         private System.Windows.Forms.PictureBox Pzorro;
         private System.Windows.Forms.PictureBox Ptucan;
-        private wonderzooDataSet wonderzooDataSet;
-        private System.Windows.Forms.BindingSource omnivorosBindingSource;
-        private wonderzooDataSetTableAdapters.omnivorosTableAdapter omnivorosTableAdapter;
+        //private wonderzooDataSetTableAdapters.omnivorosTableAdapter omnivorosTableAdapter;
         // private fenaheDataSetTableAdapters.omnivorosTableAdapter omnivorosTableAdapter;
     }
 }

@@ -23,19 +23,10 @@ namespace App_Educativa_Sobre_Animales
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.viviparos' Puede moverla o quitarla según sea necesario.
-            this.viviparosTableAdapter.Fill(this.wonderzooDataSet.viviparos);
-            // TODO: esta línea de código carga datos en la tabla 'wonderZooDataSet.viviparos' Puede moverla o quitarla según sea necesario.
-            //this.viviparosTableAdapter.Fill(this.wonderZooDataSet.viviparos);
-            // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet.viviparos' Puede moverla o quitarla según sea necesario.
-            //this.viviparosTableAdapter.Fill(this.fenaheDataSet.viviparos);
-            // TODO: esta línea de código carga datos en la tabla 'viviparosDataSet.viviparos' Puede moverla o quitarla según sea necesario.
-            //this.viviparosTableAdapter.Fill(this.viviparosDataSet.viviparos);
-            // TODO: esta línea de código carga datos en la tabla 'viviparosDataSet.viviparos' Puede moverla o quitarla según sea necesario.
-            //this.viviparosTableAdapter.Fill(this.viviparosDataSet.viviparos);
+           
 
             prinoceronte.Visible = true;
-            //prinoceronte.Visible = true;
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -58,7 +49,7 @@ namespace App_Educativa_Sobre_Animales
                 }
                 else
                 {
-                    MessageBox.Show("El usuario no existe", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("No fue posible encontrar el animal ingresado", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 myConnection.Close();
             }

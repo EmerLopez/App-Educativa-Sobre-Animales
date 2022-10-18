@@ -29,11 +29,8 @@ namespace App_Educativa_Sobre_Animales
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pcobra));
             this.txtnombre = new System.Windows.Forms.TextBox();
-            this.oviparosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            //this.fenaheDataSet4 = new Oviparos.fenaheDataSet4();
             this.txtpeso = new System.Windows.Forms.TextBox();
             this.txtalimentacion = new System.Windows.Forms.TextBox();
             this.txthabitat = new System.Windows.Forms.TextBox();
@@ -50,15 +47,12 @@ namespace App_Educativa_Sobre_Animales
             this.button5 = new System.Windows.Forms.Button();
             this.txtbuscar = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            //this.oviparosTableAdapter = new Oviparos.fenaheDataSet4TableAdapters.oviparosTableAdapter();
             this.button6 = new System.Windows.Forms.Button();
             this.Pcobras = new System.Windows.Forms.PictureBox();
             this.Plobos = new System.Windows.Forms.PictureBox();
             this.Ptiburon = new System.Windows.Forms.PictureBox();
             this.Ptigre = new System.Windows.Forms.PictureBox();
             this.Pleopardo = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.oviparosBindingSource)).BeginInit();
-            //((System.ComponentModel.ISupportInitialize)(this.fenaheDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pcobras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Plobos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ptiburon)).BeginInit();
@@ -70,7 +64,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtnombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtnombre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.oviparosBindingSource, "nombre", true));
             this.txtnombre.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombre.Location = new System.Drawing.Point(178, 59);
             this.txtnombre.Margin = new System.Windows.Forms.Padding(2);
@@ -80,21 +73,10 @@ namespace App_Educativa_Sobre_Animales
             this.txtnombre.Size = new System.Drawing.Size(257, 31);
             this.txtnombre.TabIndex = 0;
             // 
-            // oviparosBindingSource
-            // 
-            this.oviparosBindingSource.DataMember = "oviparos";
-            //this.oviparosBindingSource.DataSource = this.fenaheDataSet4;
-            // 
-            // fenaheDataSet4
-            // 
-            //this.fenaheDataSet4.DataSetName = "fenaheDataSet4";
-            //this.fenaheDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // txtpeso
             // 
             this.txtpeso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtpeso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtpeso.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.oviparosBindingSource, "peso", true));
             this.txtpeso.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpeso.Location = new System.Drawing.Point(178, 115);
             this.txtpeso.Margin = new System.Windows.Forms.Padding(2);
@@ -108,7 +90,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtalimentacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtalimentacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtalimentacion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.oviparosBindingSource, "alimentacion", true));
             this.txtalimentacion.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtalimentacion.Location = new System.Drawing.Point(178, 175);
             this.txtalimentacion.Margin = new System.Windows.Forms.Padding(2);
@@ -122,7 +103,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txthabitat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txthabitat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txthabitat.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.oviparosBindingSource, "habitat", true));
             this.txthabitat.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txthabitat.Location = new System.Drawing.Point(178, 252);
             this.txthabitat.Margin = new System.Windows.Forms.Padding(2);
@@ -137,7 +117,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtcomportamiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtcomportamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtcomportamiento.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.oviparosBindingSource, "comportamiento", true));
             this.txtcomportamiento.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcomportamiento.Location = new System.Drawing.Point(178, 358);
             this.txtcomportamiento.Margin = new System.Windows.Forms.Padding(2);
@@ -256,24 +235,27 @@ namespace App_Educativa_Sobre_Animales
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(733, 16);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(98, 32);
             this.button5.TabIndex = 16;
             this.button5.Text = "Buscar";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // txtbuscar
             // 
+            this.txtbuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtbuscar.FormattingEnabled = true;
             this.txtbuscar.Items.AddRange(new object[] {
             "Tortuga Marina",
             "Pinguinos",
             "Pollos"});
-            this.txtbuscar.Location = new System.Drawing.Point(557, 23);
+            this.txtbuscar.Location = new System.Drawing.Point(528, 20);
             this.txtbuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(172, 21);
@@ -288,10 +270,6 @@ namespace App_Educativa_Sobre_Animales
             this.label6.Size = new System.Drawing.Size(132, 41);
             this.label6.TabIndex = 18;
             this.label6.Text = " Salvajes";
-            // 
-            // oviparosTableAdapter
-            // 
-            //this.oviparosTableAdapter.ClearBeforeFill = true;
             // 
             // button6
             // 
@@ -309,57 +287,67 @@ namespace App_Educativa_Sobre_Animales
             // 
             // Pcobras
             // 
-            //this.Pcobras.BackgroundImage = global::Oviparos.Properties.Resources.cobra;
             this.Pcobras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Pcobras.Location = new System.Drawing.Point(507, 59);
+            this.Pcobras.Image = ((System.Drawing.Image)(resources.GetObject("Pcobras.Image")));
+            this.Pcobras.Location = new System.Drawing.Point(508, 59);
             this.Pcobras.Name = "Pcobras";
             this.Pcobras.Size = new System.Drawing.Size(347, 332);
+            this.Pcobras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pcobras.TabIndex = 23;
             this.Pcobras.TabStop = false;
+            this.Pcobras.Visible = false;
             // 
             // Plobos
             // 
-            // this.Plobos.BackgroundImage = global::Oviparos.Properties.Resources.MiConv_com__lobos;
             this.Plobos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Plobos.Location = new System.Drawing.Point(507, 59);
+            this.Plobos.Image = ((System.Drawing.Image)(resources.GetObject("Plobos.Image")));
+            this.Plobos.Location = new System.Drawing.Point(508, 59);
             this.Plobos.Name = "Plobos";
             this.Plobos.Size = new System.Drawing.Size(347, 332);
+            this.Plobos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Plobos.TabIndex = 22;
             this.Plobos.TabStop = false;
+            this.Plobos.Visible = false;
             // 
             // Ptiburon
             // 
-            //this.Ptiburon.BackgroundImage = global::Oviparos.Properties.Resources.MiConv_com__tiburon;
             this.Ptiburon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Ptiburon.Location = new System.Drawing.Point(509, 59);
+            this.Ptiburon.Image = ((System.Drawing.Image)(resources.GetObject("Ptiburon.Image")));
+            this.Ptiburon.Location = new System.Drawing.Point(509, 60);
             this.Ptiburon.Margin = new System.Windows.Forms.Padding(2);
             this.Ptiburon.Name = "Ptiburon";
             this.Ptiburon.Size = new System.Drawing.Size(346, 331);
+            this.Ptiburon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Ptiburon.TabIndex = 21;
             this.Ptiburon.TabStop = false;
+            this.Ptiburon.Visible = false;
             // 
             // Ptigre
             // 
-            //this.Ptigre.BackgroundImage = global::Oviparos.Properties.Resources.Tigre;
             this.Ptigre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Ptigre.Location = new System.Drawing.Point(508, 59);
+            this.Ptigre.Image = ((System.Drawing.Image)(resources.GetObject("Ptigre.Image")));
+            this.Ptigre.Location = new System.Drawing.Point(508, 60);
             this.Ptigre.Margin = new System.Windows.Forms.Padding(2);
             this.Ptigre.Name = "Ptigre";
             this.Ptigre.Size = new System.Drawing.Size(346, 331);
+            this.Ptigre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Ptigre.TabIndex = 20;
             this.Ptigre.TabStop = false;
+            this.Ptigre.Visible = false;
             this.Ptigre.Click += new System.EventHandler(this.Ptigre_Click);
             // 
             // Pleopardo
             // 
-            //this.Pleopardo.BackgroundImage = global::Oviparos.Properties.Resources.MiConv_com__leopardo;
             this.Pleopardo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Pleopardo.Location = new System.Drawing.Point(508, 58);
+            this.Pleopardo.Image = ((System.Drawing.Image)(resources.GetObject("Pleopardo.Image")));
+            this.Pleopardo.Location = new System.Drawing.Point(509, 59);
             this.Pleopardo.Margin = new System.Windows.Forms.Padding(2);
             this.Pleopardo.Name = "Pleopardo";
             this.Pleopardo.Size = new System.Drawing.Size(346, 331);
+            this.Pleopardo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pleopardo.TabIndex = 6;
             this.Pleopardo.TabStop = false;
+            this.Pleopardo.Visible = false;
             this.Pleopardo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Pcobra
@@ -393,11 +381,11 @@ namespace App_Educativa_Sobre_Animales
             this.Controls.Add(this.txtnombre);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "Pcobra";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WonderZoo";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.oviparosBindingSource)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.fenaheDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pcobras)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Plobos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ptiburon)).EndInit();
@@ -428,8 +416,6 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.ComboBox txtbuscar;
         private System.Windows.Forms.Label label6;
-        //private fenaheDataSet4 fenaheDataSet4;
-        private System.Windows.Forms.BindingSource oviparosBindingSource;
         //private fenaheDataSet4TableAdapters.oviparosTableAdapter oviparosTableAdapter;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox Ptigre;

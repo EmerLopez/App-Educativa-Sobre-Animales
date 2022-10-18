@@ -22,10 +22,7 @@ namespace App_Educativa_Sobre_Animales
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet4.oviparos' Puede moverla o quitarla según sea necesario.
-            this.oviparosTableAdapter.Fill(this.fenaheDataSet4.oviparos);
-            // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet3.oviparos' Puede moverla o quitarla según sea necesario.
-            //this.oviparosTableAdapter.Fill(this.fenaheDataSet3.oviparos);
+            
             Pleopardo.Visible = true;
 
         }
@@ -50,7 +47,7 @@ namespace App_Educativa_Sobre_Animales
                 }
                 else
                 {
-                    MessageBox.Show("El usuario no existe", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("No fue posible encontrar el animal ingresado", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 myConnection.Close();
             }

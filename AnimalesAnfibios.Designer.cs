@@ -29,7 +29,6 @@ namespace App_Educativa_Sobre_Animales
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnimalesAnfibios));
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtpeso = new System.Windows.Forms.TextBox();
@@ -54,23 +53,17 @@ namespace App_Educativa_Sobre_Animales
             this.ptortuga = new System.Windows.Forms.PictureBox();
             this.piguana = new System.Windows.Forms.PictureBox();
             this.pcoco = new System.Windows.Forms.PictureBox();
-            this.wonderzooDataSet = new App_Educativa_Sobre_Animales.wonderzooDataSet();
-            this.anfibiosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.anfibiosTableAdapter = new App_Educativa_Sobre_Animales.wonderzooDataSetTableAdapters.anfibiosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.prana)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pserpiente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptortuga)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.piguana)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcoco)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.anfibiosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnombre
             // 
             this.txtnombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtnombre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.anfibiosBindingSource, "nombre", true));
             this.txtnombre.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombre.Location = new System.Drawing.Point(178, 61);
             this.txtnombre.Margin = new System.Windows.Forms.Padding(2);
@@ -84,7 +77,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtpeso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtpeso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtpeso.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.anfibiosBindingSource, "peso", true));
             this.txtpeso.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpeso.Location = new System.Drawing.Point(178, 115);
             this.txtpeso.Margin = new System.Windows.Forms.Padding(2);
@@ -98,7 +90,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtalimentacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtalimentacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtalimentacion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.anfibiosBindingSource, "alimentacion", true));
             this.txtalimentacion.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtalimentacion.Location = new System.Drawing.Point(178, 175);
             this.txtalimentacion.Margin = new System.Windows.Forms.Padding(2);
@@ -113,7 +104,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txthabitat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txthabitat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txthabitat.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.anfibiosBindingSource, "habitat", true));
             this.txthabitat.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txthabitat.Location = new System.Drawing.Point(178, 252);
             this.txthabitat.Margin = new System.Windows.Forms.Padding(2);
@@ -128,7 +118,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtcomportamiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtcomportamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtcomportamiento.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.anfibiosBindingSource, "comportamiento", true));
             this.txtcomportamiento.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcomportamiento.Location = new System.Drawing.Point(178, 358);
             this.txtcomportamiento.Margin = new System.Windows.Forms.Padding(2);
@@ -352,7 +341,7 @@ namespace App_Educativa_Sobre_Animales
             // pcoco
             // 
             this.pcoco.Image = ((System.Drawing.Image)(resources.GetObject("pcoco.Image")));
-            this.pcoco.Location = new System.Drawing.Point(508, 59);
+            this.pcoco.Location = new System.Drawing.Point(508, 61);
             this.pcoco.Margin = new System.Windows.Forms.Padding(2);
             this.pcoco.Name = "pcoco";
             this.pcoco.Size = new System.Drawing.Size(346, 334);
@@ -360,20 +349,6 @@ namespace App_Educativa_Sobre_Animales
             this.pcoco.TabIndex = 24;
             this.pcoco.TabStop = false;
             this.pcoco.Visible = false;
-            // 
-            // wonderzooDataSet
-            // 
-            this.wonderzooDataSet.DataSetName = "wonderzooDataSet";
-            this.wonderzooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // anfibiosBindingSource
-            // 
-            this.anfibiosBindingSource.DataMember = "anfibios";
-            this.anfibiosBindingSource.DataSource = this.wonderzooDataSet;
-            // 
-            // anfibiosTableAdapter
-            // 
-            this.anfibiosTableAdapter.ClearBeforeFill = true;
             // 
             // AnimalesAnfibios
             // 
@@ -407,6 +382,7 @@ namespace App_Educativa_Sobre_Animales
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "AnimalesAnfibios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WonderZoo";
@@ -416,8 +392,6 @@ namespace App_Educativa_Sobre_Animales
             ((System.ComponentModel.ISupportInitialize)(this.ptortuga)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.piguana)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcoco)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.anfibiosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -448,9 +422,9 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.PictureBox ptortuga;
         private System.Windows.Forms.PictureBox piguana;
         private System.Windows.Forms.PictureBox pcoco;
-        private wonderzooDataSet wonderzooDataSet;
-        private System.Windows.Forms.BindingSource anfibiosBindingSource;
-        private wonderzooDataSetTableAdapters.anfibiosTableAdapter anfibiosTableAdapter;
+        //private wonderzooDataSet wonderzooDataSet;
+        //private System.Windows.Forms.BindingSource anfibiosBindingSource;
+        //private wonderzooDataSetTableAdapters.anfibiosTableAdapter anfibiosTableAdapter;
     }
 }
 

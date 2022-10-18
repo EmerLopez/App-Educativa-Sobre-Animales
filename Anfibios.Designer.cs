@@ -44,19 +44,19 @@ namespace App_Educativa_Sobre_Animales
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(70, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 33);
+            this.label1.Size = new System.Drawing.Size(154, 44);
             this.label1.TabIndex = 0;
             this.label1.Text = "Anfibios";
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(23, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(271, 188);
+            this.label2.Size = new System.Drawing.Size(271, 253);
             this.label2.TabIndex = 1;
             this.label2.Text = resources.GetString("label2.Text");
             // 
@@ -64,7 +64,7 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(412, 372);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 29);
@@ -108,11 +108,11 @@ namespace App_Educativa_Sobre_Animales
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(31, 364);
+            this.button2.Location = new System.Drawing.Point(27, 364);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(179, 37);
             this.button2.TabIndex = 8;
-            this.button2.Text = "Animales Anfibios";
+            this.button2.Text = "Animales";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

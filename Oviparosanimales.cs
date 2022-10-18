@@ -23,13 +23,7 @@ namespace App_Educativa_Sobre_Animales
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.oviparos' Puede moverla o quitarla según sea necesario.
-            this.oviparosTableAdapter.Fill(this.wonderzooDataSet.oviparos);
-            // TODO: esta línea de código carga datos en la tabla 'wonderZooDataSet.oviparos' Puede moverla o quitarla según sea necesario.
-            //this.oviparosTableAdapter.Fill(this.wonderZooDataSet.oviparos);
-            // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet.oviparos' Puede moverla o quitarla según sea necesario.
-            //this.oviparosTableAdapter.Fill(this.fenaheDataSet.oviparos);
-           // this.oviparosTableAdapter.Fill(this.fenaheDataSet4.oviparos);
+           
             ptortuga.Visible = true;
            
         }
@@ -54,7 +48,7 @@ namespace App_Educativa_Sobre_Animales
                 }
                 else
                 {
-                    MessageBox.Show("El usuario no existe", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("No fue posible encontrar el animal ingresado", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 myConnection.Close();
             }

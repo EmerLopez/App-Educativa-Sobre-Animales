@@ -44,7 +44,7 @@ namespace App_Educativa_Sobre_Animales
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(36, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(196, 42);
@@ -53,7 +53,7 @@ namespace App_Educativa_Sobre_Animales
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(38, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(258, 285);
@@ -97,9 +97,9 @@ namespace App_Educativa_Sobre_Animales
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(583, 344);
+            this.button1.Location = new System.Drawing.Point(595, 354);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 47);
+            this.button1.Size = new System.Drawing.Size(123, 32);
             this.button1.TabIndex = 5;
             this.button1.Text = "Aceptar";
             this.button1.UseVisualStyleBackColor = false;

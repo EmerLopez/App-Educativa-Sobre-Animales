@@ -54,23 +54,23 @@ namespace App_Educativa_Sobre_Animales
             this.pjirafa = new System.Windows.Forms.PictureBox();
             this.poso = new System.Windows.Forms.PictureBox();
             this.pkoala = new System.Windows.Forms.PictureBox();
-            this.wonderzooDataSet = new App_Educativa_Sobre_Animales.wonderzooDataSet();
-            this.viviparosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.viviparosTableAdapter = new App_Educativa_Sobre_Animales.wonderzooDataSetTableAdapters.viviparosTableAdapter();
+            //this.wonderzooDataSet = new App_Educativa_Sobre_Animales.wonderzooDataSet();
+            //this.viviparosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            //this.viviparosTableAdapter = new App_Educativa_Sobre_Animales.wonderzooDataSetTableAdapters.viviparosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.prinoceronte)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pdelfin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pjirafa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.poso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkoala)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viviparosBindingSource)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.viviparosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnombre
             // 
             this.txtnombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtnombre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viviparosBindingSource, "nombre", true));
+            //this.txtnombre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viviparosBindingSource, "nombre", true));
             this.txtnombre.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombre.Location = new System.Drawing.Point(171, 59);
             this.txtnombre.Margin = new System.Windows.Forms.Padding(2);
@@ -84,7 +84,7 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtpeso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtpeso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtpeso.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viviparosBindingSource, "peso", true));
+            //this.txtpeso.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viviparosBindingSource, "peso", true));
             this.txtpeso.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpeso.Location = new System.Drawing.Point(178, 115);
             this.txtpeso.Margin = new System.Windows.Forms.Padding(2);
@@ -98,7 +98,7 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtalimentacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtalimentacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtalimentacion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viviparosBindingSource, "alimentacion", true));
+            //this.txtalimentacion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viviparosBindingSource, "alimentacion", true));
             this.txtalimentacion.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtalimentacion.Location = new System.Drawing.Point(178, 175);
             this.txtalimentacion.Margin = new System.Windows.Forms.Padding(2);
@@ -113,7 +113,7 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txthabitat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txthabitat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txthabitat.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viviparosBindingSource, "habitat", true));
+            //this.txthabitat.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viviparosBindingSource, "habitat", true));
             this.txthabitat.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txthabitat.Location = new System.Drawing.Point(178, 252);
             this.txthabitat.Margin = new System.Windows.Forms.Padding(2);
@@ -128,7 +128,7 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtcomportamiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtcomportamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtcomportamiento.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viviparosBindingSource, "comportamiento", true));
+            //this.txtcomportamiento.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viviparosBindingSource, "comportamiento", true));
             this.txtcomportamiento.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcomportamiento.Location = new System.Drawing.Point(178, 358);
             this.txtcomportamiento.Margin = new System.Windows.Forms.Padding(2);
@@ -363,17 +363,17 @@ namespace App_Educativa_Sobre_Animales
             // 
             // wonderzooDataSet
             // 
-            this.wonderzooDataSet.DataSetName = "wonderzooDataSet";
-            this.wonderzooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            //this.wonderzooDataSet.DataSetName = "wonderzooDataSet";
+           // this.wonderzooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // viviparosBindingSource
             // 
-            this.viviparosBindingSource.DataMember = "viviparos";
-            this.viviparosBindingSource.DataSource = this.wonderzooDataSet;
+           // this.viviparosBindingSource.DataMember = "viviparos";
+            //this.viviparosBindingSource.DataSource = this.wonderzooDataSet;
             // 
             // viviparosTableAdapter
             // 
-            this.viviparosTableAdapter.ClearBeforeFill = true;
+           // this.viviparosTableAdapter.ClearBeforeFill = true;
             // 
             // AnimalesViviparos
             // 
@@ -417,8 +417,8 @@ namespace App_Educativa_Sobre_Animales
             ((System.ComponentModel.ISupportInitialize)(this.pjirafa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.poso)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkoala)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viviparosBindingSource)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.viviparosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -449,9 +449,9 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.PictureBox pjirafa;
         private System.Windows.Forms.PictureBox poso;
         private System.Windows.Forms.PictureBox pkoala;
-        private wonderzooDataSet wonderzooDataSet;
-        private System.Windows.Forms.BindingSource viviparosBindingSource;
-        private wonderzooDataSetTableAdapters.viviparosTableAdapter viviparosTableAdapter;
+       // private wonderzooDataSet wonderzooDataSet;
+        //private System.Windows.Forms.BindingSource viviparosBindingSource;
+        //private wonderzooDataSetTableAdapters.viviparosTableAdapter viviparosTableAdapter;
         //private App_Educativa_Sobre_Animales.fenaheDataSetTableAdapters.viviparosTableAdapter viviparosTableAdapter;
     }
 }

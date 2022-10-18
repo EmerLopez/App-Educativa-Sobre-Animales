@@ -26,5 +26,11 @@ namespace App_Educativa_Sobre_Animales
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            carnivorosanimales ca = new carnivorosanimales();
+            ca.Show();
+        }
     }
 }

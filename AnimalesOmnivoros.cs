@@ -23,12 +23,7 @@ namespace App_Educativa_Sobre_Animales
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.omnivoros' Puede moverla o quitarla según sea necesario.
-            this.omnivorosTableAdapter.Fill(this.wonderzooDataSet.omnivoros);
-            // TODO: esta línea de código carga datos en la tabla 'wonderZooDataSet.omnivoros' Puede moverla o quitarla según sea necesario.
-            //this.omnivorosTableAdapter.Fill(this.wonderZooDataSet.omnivoros);
-            // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet.omnivoros' Puede moverla o quitarla según sea necesario.
-           // this.omnivorosTableAdapter.Fill(this.fenaheDataSet.omnivoros);
+         
 
 
             Pgorila.Visible = true;
@@ -54,7 +49,7 @@ namespace App_Educativa_Sobre_Animales
                 }
                 else
                 {
-                    MessageBox.Show("El usuario no existe", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("No fue posible encontrar el animal ingresadote", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 myConnection.Close();
             }

@@ -1,7 +1,7 @@
 ﻿
 namespace App_Educativa_Sobre_Animales
 {
-    partial class WonderZoo
+    partial class carnivorosanimales
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -248,17 +248,21 @@ namespace App_Educativa_Sobre_Animales
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(733, 23);
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(733, 16);
             this.button5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(91, 19);
+            this.button5.Size = new System.Drawing.Size(104, 29);
             this.button5.TabIndex = 16;
             this.button5.Text = "Buscar";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // txtbuscar
             // 
+            this.txtbuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtbuscar.FormattingEnabled = true;
             this.txtbuscar.Items.AddRange(new object[] {
             "aguila",

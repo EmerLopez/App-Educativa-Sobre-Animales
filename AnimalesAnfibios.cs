@@ -23,12 +23,7 @@ namespace App_Educativa_Sobre_Animales
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.anfibios' Puede moverla o quitarla según sea necesario.
-            this.anfibiosTableAdapter.Fill(this.wonderzooDataSet.anfibios);
-            // TODO: esta línea de código carga datos en la tabla 'wonderZooDataSet.anfibios' Puede moverla o quitarla según sea necesario.
-            //this.anfibiosTableAdapter.Fill(this.wonderZooDataSet.anfibios);
-            // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet.anfibios' Puede moverla o quitarla según sea necesario.
-            //this.anfibiosTableAdapter.Fill(this.fenaheDataSet.anfibios);
+           
 
             piguana.Visible = true;
             
@@ -54,7 +49,7 @@ namespace App_Educativa_Sobre_Animales
                 }
                 else
                 {
-                    MessageBox.Show("El usuario no existe", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("No fue posible encontrar el animal ingresado", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 myConnection.Close();
             }
