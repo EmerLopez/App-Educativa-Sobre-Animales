@@ -15,7 +15,7 @@ namespace App_Educativa_Sobre_Animales
     public partial class animalesvertebrados : Form
 
     {
-        public string cadena_conexion = "server=Localhost;user id=edwin;password=1234;database=fenahe";
+        public string cadena_conexion = "server=Localhost;user id=wzadmins;password=12345;database=wonderzoo";
         public animalesvertebrados()
         {
             InitializeComponent();
@@ -79,8 +79,10 @@ namespace App_Educativa_Sobre_Animales
 
         private void Vertebrados_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.vertebrados' Puede moverla o quitarla según sea necesario.
+            this.vertebradosTableAdapter.Fill(this.wonderzooDataSet.vertebrados);
             // TODO: esta línea de código carga datos en la tabla 'wonderZooDataSet.vertebrados' Puede moverla o quitarla según sea necesario.
-            this.vertebradosTableAdapter.Fill(this.wonderZooDataSet.vertebrados);
+            //this.vertebradosTableAdapter.Fill(this.wonderZooDataSet.vertebrados);
             // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet.vertebrados' Puede moverla o quitarla según sea necesario.
             //
             //this.vertebradosTableAdapter.Fill(this.fenaheDataSet.vertebrados);

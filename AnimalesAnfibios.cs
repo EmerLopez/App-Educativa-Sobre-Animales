@@ -14,7 +14,7 @@ namespace App_Educativa_Sobre_Animales
 {
     public partial class AnimalesAnfibios : Form
     {
-        public string cadena_conexion = "server=Localhost;user id=edwin;password=1234;database=fenahe";
+        public string cadena_conexion = "server=Localhost;user id=wzadmins;password=12345;database=wonderzoo";
 
         public AnimalesAnfibios()
         {
@@ -23,8 +23,10 @@ namespace App_Educativa_Sobre_Animales
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.anfibios' Puede moverla o quitarla según sea necesario.
+            this.anfibiosTableAdapter.Fill(this.wonderzooDataSet.anfibios);
             // TODO: esta línea de código carga datos en la tabla 'wonderZooDataSet.anfibios' Puede moverla o quitarla según sea necesario.
-            this.anfibiosTableAdapter.Fill(this.wonderZooDataSet.anfibios);
+            //this.anfibiosTableAdapter.Fill(this.wonderZooDataSet.anfibios);
             // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet.anfibios' Puede moverla o quitarla según sea necesario.
             //this.anfibiosTableAdapter.Fill(this.fenaheDataSet.anfibios);
 

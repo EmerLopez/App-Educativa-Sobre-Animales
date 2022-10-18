@@ -54,15 +54,15 @@ namespace App_Educativa_Sobre_Animales
             this.pjirafa = new System.Windows.Forms.PictureBox();
             this.poso = new System.Windows.Forms.PictureBox();
             this.pkoala = new System.Windows.Forms.PictureBox();
-            this.wonderZooDataSet = new App_Educativa_Sobre_Animales.WonderZooDataSet();
+            this.wonderzooDataSet = new App_Educativa_Sobre_Animales.wonderzooDataSet();
             this.viviparosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.viviparosTableAdapter = new App_Educativa_Sobre_Animales.WonderZooDataSetTableAdapters.viviparosTableAdapter();
+            this.viviparosTableAdapter = new App_Educativa_Sobre_Animales.wonderzooDataSetTableAdapters.viviparosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.prinoceronte)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pdelfin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pjirafa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.poso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkoala)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viviparosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -361,15 +361,15 @@ namespace App_Educativa_Sobre_Animales
             this.pkoala.Visible = false;
             this.pkoala.Click += new System.EventHandler(this.pcaballo_Click);
             // 
-            // wonderZooDataSet
+            // wonderzooDataSet
             // 
-            this.wonderZooDataSet.DataSetName = "WonderZooDataSet";
-            this.wonderZooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.wonderzooDataSet.DataSetName = "wonderzooDataSet";
+            this.wonderzooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // viviparosBindingSource
             // 
             this.viviparosBindingSource.DataMember = "viviparos";
-            this.viviparosBindingSource.DataSource = this.wonderZooDataSet;
+            this.viviparosBindingSource.DataSource = this.wonderzooDataSet;
             // 
             // viviparosTableAdapter
             // 
@@ -417,7 +417,7 @@ namespace App_Educativa_Sobre_Animales
             ((System.ComponentModel.ISupportInitialize)(this.pjirafa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.poso)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkoala)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viviparosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -449,9 +449,9 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.PictureBox pjirafa;
         private System.Windows.Forms.PictureBox poso;
         private System.Windows.Forms.PictureBox pkoala;
-        private WonderZooDataSet wonderZooDataSet;
+        private wonderzooDataSet wonderzooDataSet;
         private System.Windows.Forms.BindingSource viviparosBindingSource;
-        private WonderZooDataSetTableAdapters.viviparosTableAdapter viviparosTableAdapter;
+        private wonderzooDataSetTableAdapters.viviparosTableAdapter viviparosTableAdapter;
         //private App_Educativa_Sobre_Animales.fenaheDataSetTableAdapters.viviparosTableAdapter viviparosTableAdapter;
     }
 }

@@ -35,8 +35,6 @@ namespace App_Educativa_Sobre_Animales
             this.banterior = new System.Windows.Forms.Button();
             this.bsiguiente = new System.Windows.Forms.Button();
             this.txtnombre = new System.Windows.Forms.TextBox();
-            this.vertebradosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.wonderZooDataSet = new App_Educativa_Sobre_Animales.WonderZooDataSet();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -56,14 +54,16 @@ namespace App_Educativa_Sobre_Animales
             this.pvaca = new System.Windows.Forms.PictureBox();
             this.plemur = new System.Windows.Forms.PictureBox();
             this.pelefante = new System.Windows.Forms.PictureBox();
-            this.vertebradosTableAdapter = new App_Educativa_Sobre_Animales.WonderZooDataSetTableAdapters.vertebradosTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.vertebradosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).BeginInit();
+            this.wonderzooDataSet = new App_Educativa_Sobre_Animales.wonderzooDataSet();
+            this.vertebradosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vertebradosTableAdapter = new App_Educativa_Sobre_Animales.wonderzooDataSetTableAdapters.vertebradosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pcaballo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pajolote)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pvaca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.plemur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pelefante)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vertebradosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -114,16 +114,6 @@ namespace App_Educativa_Sobre_Animales
             this.txtnombre.ReadOnly = true;
             this.txtnombre.Size = new System.Drawing.Size(342, 38);
             this.txtnombre.TabIndex = 4;
-            // 
-            // vertebradosBindingSource
-            // 
-            this.vertebradosBindingSource.DataMember = "vertebrados";
-            this.vertebradosBindingSource.DataSource = this.wonderZooDataSet;
-            // 
-            // wonderZooDataSet
-            // 
-            this.wonderZooDataSet.DataSetName = "WonderZooDataSet";
-            this.wonderZooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label2
             // 
@@ -353,6 +343,16 @@ namespace App_Educativa_Sobre_Animales
             this.pelefante.Visible = false;
             this.pelefante.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // wonderzooDataSet
+            // 
+            this.wonderzooDataSet.DataSetName = "wonderzooDataSet";
+            this.wonderzooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vertebradosBindingSource
+            // 
+            this.vertebradosBindingSource.DataMember = "vertebrados";
+            this.vertebradosBindingSource.DataSource = this.wonderzooDataSet;
+            // 
             // vertebradosTableAdapter
             // 
             this.vertebradosTableAdapter.ClearBeforeFill = true;
@@ -392,13 +392,13 @@ namespace App_Educativa_Sobre_Animales
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WonderZoo";
             this.Load += new System.EventHandler(this.Vertebrados_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.vertebradosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcaballo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pajolote)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pvaca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.plemur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pelefante)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vertebradosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -429,9 +429,9 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.PictureBox pvaca;
         private System.Windows.Forms.PictureBox pajolote;
         private System.Windows.Forms.PictureBox pcaballo;
-        private WonderZooDataSet wonderZooDataSet;
+        private wonderzooDataSet wonderzooDataSet;
         private System.Windows.Forms.BindingSource vertebradosBindingSource;
-        private WonderZooDataSetTableAdapters.vertebradosTableAdapter vertebradosTableAdapter;
+        private wonderzooDataSetTableAdapters.vertebradosTableAdapter vertebradosTableAdapter;
         // private fenaheDataSetTableAdapters.vertebradosTableAdapter vertebradosTableAdapter;
         //private vertebradosDataSetTableAdapters.vertebradosTableAdapter vertebradosTableAdapter;
     }

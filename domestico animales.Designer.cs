@@ -54,15 +54,15 @@ namespace App_Educativa_Sobre_Animales
             this.pConejo = new System.Windows.Forms.PictureBox();
             this.pCerdo = new System.Windows.Forms.PictureBox();
             this.pPato = new System.Windows.Forms.PictureBox();
-            this.wonderZooDataSet = new App_Educativa_Sobre_Animales.WonderZooDataSet();
+            this.wonderzooDataSet = new App_Educativa_Sobre_Animales.wonderzooDataSet();
             this.domesticosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.domesticosTableAdapter1 = new App_Educativa_Sobre_Animales.WonderZooDataSetTableAdapters.domesticosTableAdapter();
+            this.domesticosTableAdapter1 = new App_Educativa_Sobre_Animales.wonderzooDataSetTableAdapters.domesticosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pPerro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pGato)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pConejo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCerdo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pPato)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.domesticosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -264,11 +264,11 @@ namespace App_Educativa_Sobre_Animales
             this.txtbuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtbuscar.FormattingEnabled = true;
             this.txtbuscar.Items.AddRange(new object[] {
-            "Perro",
-            "Gato",
-            "Conejo",
-            "Cerdo",
-            "Pato"});
+            "perro",
+            "gato",
+            "conejo",
+            "cerdo",
+            "pato"});
             this.txtbuscar.Location = new System.Drawing.Point(509, 22);
             this.txtbuscar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtbuscar.Name = "txtbuscar";
@@ -355,15 +355,15 @@ namespace App_Educativa_Sobre_Animales
             this.pPato.TabStop = false;
             this.pPato.Visible = false;
             // 
-            // wonderZooDataSet
+            // wonderzooDataSet
             // 
-            this.wonderZooDataSet.DataSetName = "WonderZooDataSet";
-            this.wonderZooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.wonderzooDataSet.DataSetName = "wonderzooDataSet";
+            this.wonderzooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // domesticosBindingSource
             // 
             this.domesticosBindingSource.DataMember = "domesticos";
-            this.domesticosBindingSource.DataSource = this.wonderZooDataSet;
+            this.domesticosBindingSource.DataSource = this.wonderzooDataSet;
             // 
             // domesticosTableAdapter1
             // 
@@ -410,7 +410,7 @@ namespace App_Educativa_Sobre_Animales
             ((System.ComponentModel.ISupportInitialize)(this.pConejo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCerdo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pPato)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.domesticosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -442,9 +442,9 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.PictureBox pConejo;
         private System.Windows.Forms.PictureBox pCerdo;
         private System.Windows.Forms.PictureBox pPato;
-        private WonderZooDataSet wonderZooDataSet;
+        private wonderzooDataSet wonderzooDataSet;
         private System.Windows.Forms.BindingSource domesticosBindingSource;
-        private WonderZooDataSetTableAdapters.domesticosTableAdapter domesticosTableAdapter1;
+        private wonderzooDataSetTableAdapters.domesticosTableAdapter domesticosTableAdapter1;
         //private App_Educativa_Sobre_Animales.fenaheDataSetTableAdapters.domesticosTableAdapter domesticosTableAdapter1;
         // private wonderzoDataSetTableAdapters.domesticosTableAdapter domesticosTableAdapter1;
     }

@@ -14,7 +14,7 @@ namespace App_Educativa_Sobre_Animales
 {
     public partial class Oviparosanimales : Form
     {
-        public string cadena_conexion = "server=Localhost;user id=edwin;password=1234;database=fenahe";
+        public string cadena_conexion = "server=Localhost;user id=wzadmins;password=12345;database=wonderzoo";
 
         public Oviparosanimales()
         {
@@ -23,8 +23,10 @@ namespace App_Educativa_Sobre_Animales
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.oviparos' Puede moverla o quitarla según sea necesario.
+            this.oviparosTableAdapter.Fill(this.wonderzooDataSet.oviparos);
             // TODO: esta línea de código carga datos en la tabla 'wonderZooDataSet.oviparos' Puede moverla o quitarla según sea necesario.
-            this.oviparosTableAdapter.Fill(this.wonderZooDataSet.oviparos);
+            //this.oviparosTableAdapter.Fill(this.wonderZooDataSet.oviparos);
             // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet.oviparos' Puede moverla o quitarla según sea necesario.
             //this.oviparosTableAdapter.Fill(this.fenaheDataSet.oviparos);
            // this.oviparosTableAdapter.Fill(this.fenaheDataSet4.oviparos);
@@ -61,7 +63,7 @@ namespace App_Educativa_Sobre_Animales
                 MessageBox.Show("Campo de busqueda está vacío", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //throw;
             }
-            if (txtnombre.Text == "Pinguino")
+            if (txtnombre.Text == "pinguino")
             {
                 pavestruz.Visible = false;
                 ppinguinos.Visible = true;
@@ -70,7 +72,7 @@ namespace App_Educativa_Sobre_Animales
                 ptortuga.Visible = false;
 
             }
-            if (txtnombre.Text == "Gallina")
+            if (txtnombre.Text == "gallina")
             {
                 pavestruz.Visible = false;
                 ppinguinos.Visible = false;
@@ -79,7 +81,7 @@ namespace App_Educativa_Sobre_Animales
                 ptortuga.Visible = false;
 
             }
-            if (txtnombre.Text == "Torogoz")
+            if (txtnombre.Text == "torogoz")
             {
                 pavestruz.Visible = false;
                 ppinguinos.Visible = false;
@@ -88,7 +90,7 @@ namespace App_Educativa_Sobre_Animales
                 ptortuga.Visible = false;
 
             }
-            if (txtnombre.Text == "Tortuga Marina")
+            if (txtnombre.Text == "tortuga Marina")
             {
                 pavestruz.Visible = false;
                 ppinguinos.Visible = false;
@@ -97,7 +99,7 @@ namespace App_Educativa_Sobre_Animales
                 ptortuga.Visible = true;
 
             }
-            if (txtnombre.Text == "Avestruz")
+            if (txtnombre.Text == "avestruz")
             {
                 pavestruz.Visible = true;
                 ppinguinos.Visible = false;
@@ -113,21 +115,7 @@ namespace App_Educativa_Sobre_Animales
         private void button1_Click(object sender, EventArgs e)
         {
             this.oviparosBindingSource.MoveFirst();
-            if(txtnombre.Text =="Tortuga Marina")
-            {
-                pavestruz.Visible = false;
-                ppinguinos.Visible = false;
-                ppollos.Visible = false;
-                ptorogoz.Visible = false;
-                ptortuga.Visible = true;
-
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.oviparosBindingSource.MovePrevious();
-            if (txtnombre.Text == "Pinguino")
+            if (txtnombre.Text == "pinguino")
             {
                 pavestruz.Visible = false;
                 ppinguinos.Visible = true;
@@ -136,7 +124,7 @@ namespace App_Educativa_Sobre_Animales
                 ptortuga.Visible = false;
 
             }
-            if (txtnombre.Text == "Gallina")
+            if (txtnombre.Text == "gallina")
             {
                 pavestruz.Visible = false;
                 ppinguinos.Visible = false;
@@ -145,7 +133,7 @@ namespace App_Educativa_Sobre_Animales
                 ptortuga.Visible = false;
 
             }
-            if (txtnombre.Text == "Torogoz")
+            if (txtnombre.Text == "torogoz")
             {
                 pavestruz.Visible = false;
                 ppinguinos.Visible = false;
@@ -154,13 +142,72 @@ namespace App_Educativa_Sobre_Animales
                 ptortuga.Visible = false;
 
             }
-            if (txtnombre.Text == "Tortuga Marina")
+            if (txtnombre.Text == "tortuga Marina")
             {
                 pavestruz.Visible = false;
                 ppinguinos.Visible = false;
                 ppollos.Visible = false;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = true;
+
+            }
+            if (txtnombre.Text == "avestruz")
+            {
+                pavestruz.Visible = true;
+                ppinguinos.Visible = false;
+                ppollos.Visible = false;
+                ptorogoz.Visible = false;
+                ptortuga.Visible = false;
+
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.oviparosBindingSource.MovePrevious();
+            if (txtnombre.Text == "pinguino")
+            {
+                pavestruz.Visible = false;
+                ppinguinos.Visible = true;
+                ppollos.Visible = false;
+                ptorogoz.Visible = false;
+                ptortuga.Visible = false;
+
+            }
+            if (txtnombre.Text == "gallina")
+            {
+                pavestruz.Visible = false;
+                ppinguinos.Visible = false;
+                ppollos.Visible = true;
+                ptorogoz.Visible = false;
+                ptortuga.Visible = false;
+
+            }
+            if (txtnombre.Text == "torogoz")
+            {
+                pavestruz.Visible = false;
+                ppinguinos.Visible = false;
+                ppollos.Visible = false;
+                ptorogoz.Visible = true;
+                ptortuga.Visible = false;
+
+            }
+            if (txtnombre.Text == "tortuga Marina")
+            {
+                pavestruz.Visible = false;
+                ppinguinos.Visible = false;
+                ppollos.Visible = false;
+                ptorogoz.Visible = false;
+                ptortuga.Visible = true;
+
+            }
+            if (txtnombre.Text == "avestruz")
+            {
+                pavestruz.Visible = true;
+                ppinguinos.Visible = false;
+                ppollos.Visible = false;
+                ptorogoz.Visible = false;
+                ptortuga.Visible = false;
 
             }
 
@@ -169,7 +216,7 @@ namespace App_Educativa_Sobre_Animales
         private void button3_Click(object sender, EventArgs e)
         {
             this.oviparosBindingSource.MoveNext();
-            if (txtnombre.Text == "Pinguino")
+            if (txtnombre.Text == "pinguino")
             {
                 pavestruz.Visible = false;
                 ppinguinos.Visible = true;
@@ -178,7 +225,7 @@ namespace App_Educativa_Sobre_Animales
                 ptortuga.Visible = false;
 
             }
-            if (txtnombre.Text == "Gallina")
+            if (txtnombre.Text == "gallina")
             {
                 pavestruz.Visible = false;
                 ppinguinos.Visible = false;
@@ -187,7 +234,7 @@ namespace App_Educativa_Sobre_Animales
                 ptortuga.Visible = false;
 
             }
-            if (txtnombre.Text == "Torogoz")
+            if (txtnombre.Text == "torogoz")
             {
                 pavestruz.Visible = false;
                 ppinguinos.Visible = false;
@@ -196,7 +243,16 @@ namespace App_Educativa_Sobre_Animales
                 ptortuga.Visible = false;
 
             }
-            if (txtnombre.Text == "Avestruz")
+            if (txtnombre.Text == "tortuga Marina")
+            {
+                pavestruz.Visible = false;
+                ppinguinos.Visible = false;
+                ppollos.Visible = false;
+                ptorogoz.Visible = false;
+                ptortuga.Visible = true;
+
+            }
+            if (txtnombre.Text == "avestruz")
             {
                 pavestruz.Visible = true;
                 ppinguinos.Visible = false;
@@ -210,7 +266,43 @@ namespace App_Educativa_Sobre_Animales
         private void button4_Click(object sender, EventArgs e)
         {
             this.oviparosBindingSource.MoveLast();
-            if (txtnombre.Text == "Avestruz")
+            if (txtnombre.Text == "pinguino")
+            {
+                pavestruz.Visible = false;
+                ppinguinos.Visible = true;
+                ppollos.Visible = false;
+                ptorogoz.Visible = false;
+                ptortuga.Visible = false;
+
+            }
+            if (txtnombre.Text == "gallina")
+            {
+                pavestruz.Visible = false;
+                ppinguinos.Visible = false;
+                ppollos.Visible = true;
+                ptorogoz.Visible = false;
+                ptortuga.Visible = false;
+
+            }
+            if (txtnombre.Text == "torogoz")
+            {
+                pavestruz.Visible = false;
+                ppinguinos.Visible = false;
+                ppollos.Visible = false;
+                ptorogoz.Visible = true;
+                ptortuga.Visible = false;
+
+            }
+            if (txtnombre.Text == "tortuga Marina")
+            {
+                pavestruz.Visible = false;
+                ppinguinos.Visible = false;
+                ppollos.Visible = false;
+                ptorogoz.Visible = false;
+                ptortuga.Visible = true;
+
+            }
+            if (txtnombre.Text == "avestruz")
             {
                 pavestruz.Visible = true;
                 ppinguinos.Visible = false;

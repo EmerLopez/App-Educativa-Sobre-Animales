@@ -16,9 +16,9 @@ namespace App_Educativa_Sobre_Animales
 {
     public partial class Login : Form
     {
-        MySqlConnection conn = new MySqlConnection("Server=localhost; Database=fenahe; Uid=edwin; Pwd=1234");
+        MySqlConnection conn = new MySqlConnection("server=Localhost;user id=wzadmins;password=12345;database=wonderzoo");
         SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-LMJ3198;Initial Catalog=FENAHE;Integrated Security=True");
-        OleDbConnection conexion_access = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source = C:\Users\Edwin\Documents\LoginAccess.mdb; Persist Security Info=False;");
+        
         public Login()
         {
             InitializeComponent();
@@ -68,22 +68,38 @@ namespace App_Educativa_Sobre_Animales
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void lmysql_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lmysql_Click_1(object sender, EventArgs e)
         {
             try
             {
                 conn.Open();
-                MySqlCommand Pedir = new MySqlCommand("Select Nombre, Contrasena, CORREO from usuarios where Nombre = '" + textBox1.Text + "'And Contrasena = '" + textBox2.Text + "'", conn);
+                MySqlCommand Pedir = new MySqlCommand("Select nombre, clave, correo from usuarios where nombre = '" + textBox1.Text + "'And clave = '" + textBox2.Text + "'", conn);
                 Pedir.ExecuteNonQuery();
                 DataSet fe = new DataSet();
                 MySqlDataAdapter te = new MySqlDataAdapter(Pedir);
 
                 te.Fill(fe, "usuarios");
 
+
                 DataRow res;
                 res = fe.Tables["usuarios"].Rows[0];
 
-                if ((textBox1.Text == res["Nombre"].ToString()) || (textBox2.Text == res["Contrasena"].ToString()))
+                if ((textBox1.Text == res["nombre"].ToString()) || (textBox2.Text == res["clave"].ToString()))
                 {
 
                     Menu fprincipal = new Menu();
@@ -106,49 +122,6 @@ namespace App_Educativa_Sobre_Animales
                 MessageBox.Show("Error de usuario o clave de acceso", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            try
-            {
-
-
-                conexion_access.Open();
-                OleDbDataAdapter consulta = new OleDbDataAdapter("SELECT * FROM Usuarios", conexion_access);
-
-                DataSet resultado = new DataSet();
-                consulta.Fill(resultado);
-                foreach (DataRow registro in resultado.Tables[0].Rows)
-                {
-                    if ((textBox1.Text == registro["nombre"].ToString()) && (textBox2.Text == registro["password"].ToString()))
-
-                    {
-                        Menu fm = new Menu();
-                        fm.Show();
-                        this.Hide();
-
-                    }
-                    else
-                    {
-                       MessageBox.Show("Error de usuario o clave de acceso", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                       
-                    }
-                }
-            }
-            catch (Exception err)
-            {
-                MessageBox.Show(err.Message);
-                 MessageBox.Show("Error de usuario o clave de acceso", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBox1.Focus();
-            }
-
-            conexion_access.Close();
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
         }
     }
 

@@ -32,8 +32,6 @@ namespace App_Educativa_Sobre_Animales
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnimalesOmnivoros));
             this.txtnombre = new System.Windows.Forms.TextBox();
-            this.omnivorosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.wonderZooDataSet = new App_Educativa_Sobre_Animales.WonderZooDataSet();
             this.txtpeso = new System.Windows.Forms.TextBox();
             this.txtalimentacion = new System.Windows.Forms.TextBox();
             this.txthabitat = new System.Windows.Forms.TextBox();
@@ -56,14 +54,16 @@ namespace App_Educativa_Sobre_Animales
             this.Perizo = new System.Windows.Forms.PictureBox();
             this.Pmapache = new System.Windows.Forms.PictureBox();
             this.Pgorila = new System.Windows.Forms.PictureBox();
-            this.omnivorosTableAdapter = new App_Educativa_Sobre_Animales.WonderZooDataSetTableAdapters.omnivorosTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.omnivorosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).BeginInit();
+            this.wonderzooDataSet = new App_Educativa_Sobre_Animales.wonderzooDataSet();
+            this.omnivorosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.omnivorosTableAdapter = new App_Educativa_Sobre_Animales.wonderzooDataSetTableAdapters.omnivorosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.Ptucan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pzorro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Perizo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pmapache)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pgorila)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.omnivorosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnombre
@@ -79,16 +79,6 @@ namespace App_Educativa_Sobre_Animales
             this.txtnombre.ReadOnly = true;
             this.txtnombre.Size = new System.Drawing.Size(257, 31);
             this.txtnombre.TabIndex = 0;
-            // 
-            // omnivorosBindingSource
-            // 
-            this.omnivorosBindingSource.DataMember = "omnivoros";
-            this.omnivorosBindingSource.DataSource = this.wonderZooDataSet;
-            // 
-            // wonderZooDataSet
-            // 
-            this.wonderZooDataSet.DataSetName = "WonderZooDataSet";
-            this.wonderZooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtpeso
             // 
@@ -375,6 +365,16 @@ namespace App_Educativa_Sobre_Animales
             this.Pgorila.Visible = false;
             this.Pgorila.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // wonderzooDataSet
+            // 
+            this.wonderzooDataSet.DataSetName = "wonderzooDataSet";
+            this.wonderzooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // omnivorosBindingSource
+            // 
+            this.omnivorosBindingSource.DataMember = "omnivoros";
+            this.omnivorosBindingSource.DataSource = this.wonderzooDataSet;
+            // 
             // omnivorosTableAdapter
             // 
             this.omnivorosTableAdapter.ClearBeforeFill = true;
@@ -415,13 +415,13 @@ namespace App_Educativa_Sobre_Animales
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WonderZoo";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.omnivorosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ptucan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pzorro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Perizo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pmapache)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pgorila)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.omnivorosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -453,9 +453,9 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.PictureBox Perizo;
         private System.Windows.Forms.PictureBox Pzorro;
         private System.Windows.Forms.PictureBox Ptucan;
-        private WonderZooDataSet wonderZooDataSet;
+        private wonderzooDataSet wonderzooDataSet;
         private System.Windows.Forms.BindingSource omnivorosBindingSource;
-        private WonderZooDataSetTableAdapters.omnivorosTableAdapter omnivorosTableAdapter;
+        private wonderzooDataSetTableAdapters.omnivorosTableAdapter omnivorosTableAdapter;
         // private fenaheDataSetTableAdapters.omnivorosTableAdapter omnivorosTableAdapter;
     }
 }

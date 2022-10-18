@@ -14,7 +14,7 @@ namespace App_Educativa_Sobre_Animales
 {
     public partial class AnimalesOmnivoros : Form
     {
-        public string cadena_conexion = "server=Localhost;user id=edwin;password=1234;database=fenahe";
+        public string cadena_conexion = "server=Localhost;user id=wzadmins;password=12345;database=wonderzoo";
 
         public AnimalesOmnivoros()
         {
@@ -23,8 +23,10 @@ namespace App_Educativa_Sobre_Animales
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.omnivoros' Puede moverla o quitarla según sea necesario.
+            this.omnivorosTableAdapter.Fill(this.wonderzooDataSet.omnivoros);
             // TODO: esta línea de código carga datos en la tabla 'wonderZooDataSet.omnivoros' Puede moverla o quitarla según sea necesario.
-            this.omnivorosTableAdapter.Fill(this.wonderZooDataSet.omnivoros);
+            //this.omnivorosTableAdapter.Fill(this.wonderZooDataSet.omnivoros);
             // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet.omnivoros' Puede moverla o quitarla según sea necesario.
            // this.omnivorosTableAdapter.Fill(this.fenaheDataSet.omnivoros);
 

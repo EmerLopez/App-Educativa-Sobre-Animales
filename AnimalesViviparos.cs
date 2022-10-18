@@ -14,7 +14,7 @@ namespace App_Educativa_Sobre_Animales
 {
     public partial class AnimalesViviparos : Form
     {
-        public string cadena_conexion = "server=Localhost;user id=edwin;password=1234;database=fenahe";
+        public string cadena_conexion = "server=Localhost;user id=wzadmins;password=12345;database=wonderzoo";
 
         public AnimalesViviparos()
         {
@@ -23,8 +23,10 @@ namespace App_Educativa_Sobre_Animales
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.viviparos' Puede moverla o quitarla según sea necesario.
+            this.viviparosTableAdapter.Fill(this.wonderzooDataSet.viviparos);
             // TODO: esta línea de código carga datos en la tabla 'wonderZooDataSet.viviparos' Puede moverla o quitarla según sea necesario.
-            this.viviparosTableAdapter.Fill(this.wonderZooDataSet.viviparos);
+            //this.viviparosTableAdapter.Fill(this.wonderZooDataSet.viviparos);
             // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet.viviparos' Puede moverla o quitarla según sea necesario.
             //this.viviparosTableAdapter.Fill(this.fenaheDataSet.viviparos);
             // TODO: esta línea de código carga datos en la tabla 'viviparosDataSet.viviparos' Puede moverla o quitarla según sea necesario.

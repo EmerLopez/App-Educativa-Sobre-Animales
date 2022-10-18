@@ -54,15 +54,15 @@ namespace App_Educativa_Sobre_Animales
             this.ptortuga = new System.Windows.Forms.PictureBox();
             this.piguana = new System.Windows.Forms.PictureBox();
             this.pcoco = new System.Windows.Forms.PictureBox();
-            this.wonderZooDataSet = new App_Educativa_Sobre_Animales.WonderZooDataSet();
+            this.wonderzooDataSet = new App_Educativa_Sobre_Animales.wonderzooDataSet();
             this.anfibiosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.anfibiosTableAdapter = new App_Educativa_Sobre_Animales.WonderZooDataSetTableAdapters.anfibiosTableAdapter();
+            this.anfibiosTableAdapter = new App_Educativa_Sobre_Animales.wonderzooDataSetTableAdapters.anfibiosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.prana)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pserpiente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptortuga)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.piguana)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcoco)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.anfibiosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -361,15 +361,15 @@ namespace App_Educativa_Sobre_Animales
             this.pcoco.TabStop = false;
             this.pcoco.Visible = false;
             // 
-            // wonderZooDataSet
+            // wonderzooDataSet
             // 
-            this.wonderZooDataSet.DataSetName = "WonderZooDataSet";
-            this.wonderZooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.wonderzooDataSet.DataSetName = "wonderzooDataSet";
+            this.wonderzooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // anfibiosBindingSource
             // 
             this.anfibiosBindingSource.DataMember = "anfibios";
-            this.anfibiosBindingSource.DataSource = this.wonderZooDataSet;
+            this.anfibiosBindingSource.DataSource = this.wonderzooDataSet;
             // 
             // anfibiosTableAdapter
             // 
@@ -416,7 +416,7 @@ namespace App_Educativa_Sobre_Animales
             ((System.ComponentModel.ISupportInitialize)(this.ptortuga)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.piguana)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcoco)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.anfibiosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -448,9 +448,9 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.PictureBox ptortuga;
         private System.Windows.Forms.PictureBox piguana;
         private System.Windows.Forms.PictureBox pcoco;
-        private WonderZooDataSet wonderZooDataSet;
+        private wonderzooDataSet wonderzooDataSet;
         private System.Windows.Forms.BindingSource anfibiosBindingSource;
-        private WonderZooDataSetTableAdapters.anfibiosTableAdapter anfibiosTableAdapter;
+        private wonderzooDataSetTableAdapters.anfibiosTableAdapter anfibiosTableAdapter;
     }
 }
 

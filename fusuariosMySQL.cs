@@ -15,7 +15,7 @@ namespace App_Educativa_Sobre_Animales
 {
     public partial class fusuariosMySQL : Form
     {
-        public string cadena_conexion = "Database=fenahe;Data Source=localhost;User Id=edwin;Password=1234";
+        public string cadena_conexion = "server=Localhost;user id=wzadmins;password=12345;database=wonderzoo";
         public string usuario_modificar;
 
         public fusuariosMySQL()
@@ -30,13 +30,15 @@ namespace App_Educativa_Sobre_Animales
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.personasBindingSource.MoveFirst();
+            this.usuariosBindingSource.MoveFirst();
         }
 
         private void fusuariosMySQL_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.usuarios' Puede moverla o quitarla según sea necesario.
+            this.usuariosTableAdapter.Fill(this.wonderzooDataSet.usuarios);
             // TODO: esta línea de código carga datos en la tabla 'wonderZooDataSet.personas' Puede moverla o quitarla según sea necesario.
-            this.personasTableAdapter.Fill(this.wonderZooDataSet.personas);
+            //this.personasTableAdapter.Fill(this.wonderZooDataSet.personas);
             // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet1.personas' Puede moverla o quitarla según sea necesario.
         
           
@@ -47,15 +49,15 @@ namespace App_Educativa_Sobre_Animales
             try
             {
 
-                string consulta = "select * from personas";
+                string consulta = "select * from usuarios";
 
                 MySqlConnection conexion = new MySqlConnection (cadena_conexion);
                 MySqlDataAdapter comando = new MySqlDataAdapter(consulta, conexion);
 
                 System.Data.DataSet ds = new System.Data.DataSet();
-                comando.Fill(ds, "fenahe");
+                comando.Fill(ds, "wonderzoo");
                 dataGridView1.DataSource = ds;
-                dataGridView1.DataMember = "fenahe";
+                dataGridView1.DataMember = "wonderzoo";
 
             }
             catch (MySqlException)
@@ -105,7 +107,7 @@ namespace App_Educativa_Sobre_Animales
                 string niv = lstnivel.Text;
 
 
-                string myInsertQuery = "UPDATE personas SET nombre = '" + nom + "', clave = '" + cla + "',nivel = '" + niv + "' WHERE nombre = '" + usuario_modificar + "'";
+                string myInsertQuery = "UPDATE usuarios SET nombre = '" + nom + "', clave = '" + cla + "',nivel = '" + niv + "' WHERE nombre = '" + usuario_modificar + "'";
 
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
@@ -118,14 +120,14 @@ namespace App_Educativa_Sobre_Animales
 
                 MessageBox.Show("Usuario modificado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                string consulta = "select * from personas";
+                string consulta = "select * from usuarios";
 
                 MySqlConnection conexion = new MySqlConnection(cadena_conexion);
                 MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
                 System.Data.DataSet ds = new System.Data.DataSet();
-                da.Fill(ds, "fenahe");
+                da.Fill(ds, "wonderzoo");
                 dataGridView1.DataSource = ds;
-                dataGridView1.DataMember = "fenahe";
+                dataGridView1.DataMember = "wonderzoo";
 
             }
             catch (MySqlException)
@@ -151,7 +153,7 @@ namespace App_Educativa_Sobre_Animales
 
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
 
-                string myInsertQuery = "INSERT INTO personas(nombre,clave,nivel) Values(?nombre,?clave,?nivel)";
+                string myInsertQuery = "INSERT INTO usuarios(nombre,clave,nivel) Values(?nombre,?clave,?nivel)";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
                 myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 75).Value = txtusuario.Text;
@@ -165,14 +167,14 @@ namespace App_Educativa_Sobre_Animales
 
                 MessageBox.Show("Usuario agregado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                string consulta = "select * from personas";
+                string consulta = "select * from usuarios";
 
                 MySqlConnection conexion = new MySqlConnection(cadena_conexion);
                 MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
                 System.Data.DataSet ds = new System.Data.DataSet();
-                da.Fill(ds, "fenahe");
+                da.Fill(ds, "wonderzoo");
                 dataGridView1.DataSource = ds;
-                dataGridView1.DataMember = "fenahe";
+                dataGridView1.DataMember = "wonderzoo";
 
             }
             catch (MySqlException)
@@ -215,7 +217,7 @@ namespace App_Educativa_Sobre_Animales
                 myConnection.Open();
                 MySqlCommand comando = new MySqlCommand();
                 comando.Connection = myConnection;
-                comando.CommandText = ("select * from personas Where idUsuario = " + txtbuscar.Text + "");
+                comando.CommandText = ("select * from usuarios Where idusuario = '" + txtbuscar.Text + "'");
                 MySqlDataReader leer = comando.ExecuteReader();
                 if (leer.Read() == true)
                 {
@@ -248,17 +250,17 @@ namespace App_Educativa_Sobre_Animales
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.personasBindingSource.MoveNext();
+            this.usuariosBindingSource.MoveNext();
         }
 
         private void banterior_Click(object sender, EventArgs e)
         {
-            this.personasBindingSource.MovePrevious();
+            this.usuariosBindingSource.MovePrevious();
         }
 
         private void bultimo_Click(object sender, EventArgs e)
         {
-            this.personasBindingSource.MoveLast();
+            this.usuariosBindingSource.MoveLast();
         }
 
         private void beliminar_Click(object sender, EventArgs e)
@@ -268,7 +270,7 @@ namespace App_Educativa_Sobre_Animales
 
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
 
-                string myInsertQuery = "delete from personas Where idusuario = " + txtbuscar.Text + "";
+                string myInsertQuery = "delete from usuarios Where idusuario = " + txtbuscar.Text + "";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
                 myCommand.Connection = myConnection;
@@ -279,14 +281,14 @@ namespace App_Educativa_Sobre_Animales
                 MessageBox.Show("Usuario eliminado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
-                string consulta = "select * from personas";
+                string consulta = "select * from usuarios";
 
                 MySqlConnection conexion = new MySqlConnection(cadena_conexion);
                 MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
                 System.Data.DataSet ds = new System.Data.DataSet();
-                da.Fill(ds, "fenahe");
+                da.Fill(ds, "wonderzoo");
                 dataGridView1.DataSource = ds;
-                dataGridView1.DataMember = "fenahe";
+                dataGridView1.DataMember = "wonderzoo";
 
             }
             catch (MySqlException)

@@ -221,10 +221,10 @@
     <Compile Include="Vivíparos.Designer.cs">
       <DependentUpon>Vivíparos.cs</DependentUpon>
     </Compile>
-    <Compile Include="WonderZooDataSet.Designer.cs">
+    <Compile Include="wonderzooDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>WonderZooDataSet.xsd</DependentUpon>
+      <DependentUpon>wonderzooDataSet.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Acercade.resx">
       <DependentUpon>Acercade.cs</DependentUpon>
@@ -309,16 +309,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="WonderZooDataSet.xsc">
-      <DependentUpon>WonderZooDataSet.xsd</DependentUpon>
+    <None Include="wonderzooDataSet.xsc">
+      <DependentUpon>wonderzooDataSet.xsd</DependentUpon>
     </None>
-    <None Include="WonderZooDataSet.xsd">
+    <None Include="wonderzooDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>WonderZooDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>wonderzooDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="WonderZooDataSet.xss">
-      <DependentUpon>WonderZooDataSet.xsd</DependentUpon>
+    <None Include="wonderzooDataSet.xss">
+      <DependentUpon>wonderzooDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

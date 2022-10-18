@@ -54,15 +54,15 @@ namespace App_Educativa_Sobre_Animales
             this.ppollos = new System.Windows.Forms.PictureBox();
             this.ptorogoz = new System.Windows.Forms.PictureBox();
             this.pavestruz = new System.Windows.Forms.PictureBox();
-            this.wonderZooDataSet = new App_Educativa_Sobre_Animales.WonderZooDataSet();
+            this.wonderzooDataSet = new App_Educativa_Sobre_Animales.wonderzooDataSet();
             this.oviparosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.oviparosTableAdapter = new App_Educativa_Sobre_Animales.WonderZooDataSetTableAdapters.oviparosTableAdapter();
+            this.oviparosTableAdapter = new App_Educativa_Sobre_Animales.wonderzooDataSetTableAdapters.oviparosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.ptortuga)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ppinguinos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ppollos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptorogoz)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pavestruz)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.oviparosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -278,11 +278,11 @@ namespace App_Educativa_Sobre_Animales
             this.txtbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.txtbuscar.FormattingEnabled = true;
             this.txtbuscar.Items.AddRange(new object[] {
-            "Tortuga Marina",
-            "Pinguino",
-            "Gallina",
-            "Torogoz",
-            "Avestruz"});
+            "tortuga Marina",
+            "pinguino",
+            "gallina",
+            "torogoz",
+            "avestruz"});
             this.txtbuscar.Location = new System.Drawing.Point(509, 11);
             this.txtbuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtbuscar.Name = "txtbuscar";
@@ -361,15 +361,15 @@ namespace App_Educativa_Sobre_Animales
             this.pavestruz.TabStop = false;
             this.pavestruz.Visible = false;
             // 
-            // wonderZooDataSet
+            // wonderzooDataSet
             // 
-            this.wonderZooDataSet.DataSetName = "WonderZooDataSet";
-            this.wonderZooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.wonderzooDataSet.DataSetName = "wonderzooDataSet";
+            this.wonderzooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // oviparosBindingSource
             // 
             this.oviparosBindingSource.DataMember = "oviparos";
-            this.oviparosBindingSource.DataSource = this.wonderZooDataSet;
+            this.oviparosBindingSource.DataSource = this.wonderzooDataSet;
             // 
             // oviparosTableAdapter
             // 
@@ -380,7 +380,7 @@ namespace App_Educativa_Sobre_Animales
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
-            this.ClientSize = new System.Drawing.Size(886, 541);
+            this.ClientSize = new System.Drawing.Size(891, 541);
             this.Controls.Add(this.pavestruz);
             this.Controls.Add(this.ptorogoz);
             this.Controls.Add(this.ppollos);
@@ -409,14 +409,14 @@ namespace App_Educativa_Sobre_Animales
             this.MaximizeBox = false;
             this.Name = "Oviparosanimales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Animales Oviparos";
+            this.Text = "WonderZoo";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptortuga)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ppinguinos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ppollos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptorogoz)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pavestruz)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderZooDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.oviparosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -449,9 +449,9 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.PictureBox ppollos;
         private System.Windows.Forms.PictureBox ptorogoz;
         private System.Windows.Forms.PictureBox pavestruz;
-        private WonderZooDataSet wonderZooDataSet;
+        private wonderzooDataSet wonderzooDataSet;
         private System.Windows.Forms.BindingSource oviparosBindingSource;
-        private WonderZooDataSetTableAdapters.oviparosTableAdapter oviparosTableAdapter;
+        private wonderzooDataSetTableAdapters.oviparosTableAdapter oviparosTableAdapter;
         // private App_Educativa_Sobre_Animales.fenaheDataSetTableAdapters.oviparosTableAdapter oviparosTableAdapter;
     }
 }

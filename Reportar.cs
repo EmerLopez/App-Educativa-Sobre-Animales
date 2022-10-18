@@ -14,7 +14,7 @@ namespace App_Educativa_Sobre_Animales
 {
     public partial class Reportar : Form
     {
-        public string cadena_conexion = "Database=fenahe;Data Source=localhost;User Id=edwin;Password=1234";
+        public string cadena_conexion = "server=Localhost;user id = wzadmins; password=12345;database=wonderzoo";
         public Reportar()
         {
             InitializeComponent();
