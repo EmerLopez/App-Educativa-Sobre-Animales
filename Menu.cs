@@ -137,5 +137,29 @@ namespace App_Educativa_Sobre_Animales
             fusuariosMySQL rr = new fusuariosMySQL();
             rr.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            invertebrados inverte = new invertebrados();
+            inverte.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            herviboros her = new herviboros();
+            her.Show();
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Salvajes sal = new Salvajes();
+            sal.Show();
+        }
     }
 }

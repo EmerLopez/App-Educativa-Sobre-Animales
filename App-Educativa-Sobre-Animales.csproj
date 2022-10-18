@@ -172,6 +172,18 @@
       <DependentUpon>herviborosanimales.cs</DependentUpon>
     </Compile>
     <Compile Include="Inicio.cs" />
+    <Compile Include="invertebrados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="invertebrados.Designer.cs">
+      <DependentUpon>invertebrados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="invertebradosanimales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="invertebradosanimales.Designer.cs">
+      <DependentUpon>invertebradosanimales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -288,6 +300,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="herviborosanimales.resx">
       <DependentUpon>herviborosanimales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="invertebrados.resx">
+      <DependentUpon>invertebrados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="invertebradosanimales.resx">
+      <DependentUpon>invertebradosanimales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
