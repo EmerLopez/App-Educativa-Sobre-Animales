@@ -117,6 +117,12 @@
     <Compile Include="AnimalesOmnivoros.Designer.cs">
       <DependentUpon>AnimalesOmnivoros.cs</DependentUpon>
     </Compile>
+    <Compile Include="AnimalesSalvajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnimalesSalvajes.Designer.cs">
+      <DependentUpon>AnimalesSalvajes.cs</DependentUpon>
+    </Compile>
     <Compile Include="animalesvertebrados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +203,12 @@
     <Compile Include="Reportar.Designer.cs">
       <DependentUpon>Reportar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Salvajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salvajes.Designer.cs">
+      <DependentUpon>Salvajes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Terminos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AnimalesOmnivoros.resx">
       <DependentUpon>AnimalesOmnivoros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimalesSalvajes.resx">
+      <DependentUpon>AnimalesSalvajes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="animalesvertebrados.resx">
       <DependentUpon>animalesvertebrados.cs</DependentUpon>
@@ -286,6 +301,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportar.resx">
       <DependentUpon>Reportar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salvajes.resx">
+      <DependentUpon>Salvajes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Terminos.resx">
       <DependentUpon>Terminos.cs</DependentUpon>
