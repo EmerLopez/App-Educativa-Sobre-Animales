@@ -48,16 +48,16 @@ namespace App_Educativa_Sobre_Animales
             this.bcerrar = new System.Windows.Forms.Button();
             this.txthabitat = new System.Windows.Forms.TextBox();
             this.txtcomportamiento = new System.Windows.Forms.TextBox();
-            this.pcaballo = new System.Windows.Forms.PictureBox();
-            this.pajolote = new System.Windows.Forms.PictureBox();
             this.pvaca = new System.Windows.Forms.PictureBox();
             this.plemur = new System.Windows.Forms.PictureBox();
             this.pelefante = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pcaballo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pajolote)).BeginInit();
+            this.pcaballo = new System.Windows.Forms.PictureBox();
+            this.pajolote = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pvaca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.plemur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pelefante)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcaballo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pajolote)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -276,61 +276,56 @@ namespace App_Educativa_Sobre_Animales
             this.txtcomportamiento.Size = new System.Drawing.Size(342, 110);
             this.txtcomportamiento.TabIndex = 23;
             // 
-            // pcaballo
-            // 
-            this.pcaballo.Image = ((System.Drawing.Image)(resources.GetObject("pcaballo.Image")));
-            this.pcaballo.Location = new System.Drawing.Point(575, 62);
-            this.pcaballo.Name = "pcaballo";
-            this.pcaballo.Size = new System.Drawing.Size(461, 407);
-            this.pcaballo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcaballo.TabIndex = 27;
-            this.pcaballo.TabStop = false;
-            this.pcaballo.Visible = false;
-            // 
-            // pajolote
-            // 
-            this.pajolote.Image = ((System.Drawing.Image)(resources.GetObject("pajolote.Image")));
-            this.pajolote.Location = new System.Drawing.Point(575, 62);
-            this.pajolote.Name = "pajolote";
-            this.pajolote.Size = new System.Drawing.Size(461, 407);
-            this.pajolote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pajolote.TabIndex = 26;
-            this.pajolote.TabStop = false;
-            this.pajolote.Visible = false;
-            // 
             // pvaca
             // 
-            this.pvaca.Image = ((System.Drawing.Image)(resources.GetObject("pvaca.Image")));
+            this.pvaca.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.vaca5;
             this.pvaca.Location = new System.Drawing.Point(575, 62);
             this.pvaca.Name = "pvaca";
             this.pvaca.Size = new System.Drawing.Size(461, 407);
             this.pvaca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pvaca.TabIndex = 25;
+            this.pvaca.TabIndex = 28;
             this.pvaca.TabStop = false;
-            this.pvaca.Visible = false;
             // 
             // plemur
             // 
-            this.plemur.Image = ((System.Drawing.Image)(resources.GetObject("plemur.Image")));
+            this.plemur.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.lemur5;
             this.plemur.Location = new System.Drawing.Point(575, 62);
             this.plemur.Name = "plemur";
             this.plemur.Size = new System.Drawing.Size(461, 407);
             this.plemur.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.plemur.TabIndex = 24;
+            this.plemur.TabIndex = 27;
             this.plemur.TabStop = false;
-            this.plemur.Visible = false;
             // 
             // pelefante
             // 
-            this.pelefante.Image = ((System.Drawing.Image)(resources.GetObject("pelefante.Image")));
+            this.pelefante.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.elefante5;
             this.pelefante.Location = new System.Drawing.Point(575, 62);
             this.pelefante.Name = "pelefante";
             this.pelefante.Size = new System.Drawing.Size(461, 407);
             this.pelefante.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pelefante.TabIndex = 3;
+            this.pelefante.TabIndex = 26;
             this.pelefante.TabStop = false;
-            this.pelefante.Visible = false;
-            this.pelefante.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pcaballo
+            // 
+            this.pcaballo.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.caballo5;
+            this.pcaballo.Location = new System.Drawing.Point(575, 62);
+            this.pcaballo.Name = "pcaballo";
+            this.pcaballo.Size = new System.Drawing.Size(461, 407);
+            this.pcaballo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcaballo.TabIndex = 25;
+            this.pcaballo.TabStop = false;
+            // 
+            // pajolote
+            // 
+            this.pajolote.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.ajolote5;
+            this.pajolote.Location = new System.Drawing.Point(575, 62);
+            this.pajolote.Name = "pajolote";
+            this.pajolote.Size = new System.Drawing.Size(461, 407);
+            this.pajolote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pajolote.TabIndex = 24;
+            this.pajolote.TabStop = false;
+            this.pajolote.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // animalesvertebrados
             // 
@@ -338,10 +333,11 @@ namespace App_Educativa_Sobre_Animales
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(1083, 630);
-            this.Controls.Add(this.pcaballo);
-            this.Controls.Add(this.pajolote);
             this.Controls.Add(this.pvaca);
             this.Controls.Add(this.plemur);
+            this.Controls.Add(this.pelefante);
+            this.Controls.Add(this.pcaballo);
+            this.Controls.Add(this.pajolote);
             this.Controls.Add(this.txtcomportamiento);
             this.Controls.Add(this.txthabitat);
             this.Controls.Add(this.bcerrar);
@@ -357,7 +353,6 @@ namespace App_Educativa_Sobre_Animales
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtnombre);
-            this.Controls.Add(this.pelefante);
             this.Controls.Add(this.bsiguiente);
             this.Controls.Add(this.banterior);
             this.Controls.Add(this.label1);
@@ -367,11 +362,11 @@ namespace App_Educativa_Sobre_Animales
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WonderZoo";
             this.Load += new System.EventHandler(this.Vertebrados_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pcaballo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pajolote)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pvaca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.plemur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pelefante)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcaballo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pajolote)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -382,7 +377,6 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button banterior;
         private System.Windows.Forms.Button bsiguiente;
-        private System.Windows.Forms.PictureBox pelefante;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
@@ -398,12 +392,13 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.Button bcerrar;
         private System.Windows.Forms.TextBox txthabitat;
         private System.Windows.Forms.TextBox txtcomportamiento;
-        private System.Windows.Forms.PictureBox plemur;
-        private System.Windows.Forms.PictureBox pvaca;
         private System.Windows.Forms.PictureBox pajolote;
         private System.Windows.Forms.PictureBox pcaballo;
-       // private wonderzooDataSet wonderzooDataSet;
-       // private System.Windows.Forms.BindingSource vertebradosBindingSource;
+        private System.Windows.Forms.PictureBox pelefante;
+        private System.Windows.Forms.PictureBox plemur;
+        private System.Windows.Forms.PictureBox pvaca;
+        // private wonderzooDataSet wonderzooDataSet;
+        // private System.Windows.Forms.BindingSource vertebradosBindingSource;
         //private wonderzooDataSetTableAdapters.vertebradosTableAdapter vertebradosTableAdapter;
         // private fenaheDataSetTableAdapters.vertebradosTableAdapter vertebradosTableAdapter;
         //private vertebradosDataSetTableAdapters.vertebradosTableAdapter vertebradosTableAdapter;

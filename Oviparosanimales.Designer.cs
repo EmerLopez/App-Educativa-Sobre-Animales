@@ -29,14 +29,12 @@ namespace App_Educativa_Sobre_Animales
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Oviparosanimales));
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtpeso = new System.Windows.Forms.TextBox();
             this.txtalimentacion = new System.Windows.Forms.TextBox();
             this.txthabitat = new System.Windows.Forms.TextBox();
             this.txtcomportamiento = new System.Windows.Forms.TextBox();
-            this.ptortuga = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -50,27 +48,22 @@ namespace App_Educativa_Sobre_Animales
             this.txtbuscar = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.ppinguinos = new System.Windows.Forms.PictureBox();
-            this.ppollos = new System.Windows.Forms.PictureBox();
+            this.ptortuga = new System.Windows.Forms.PictureBox();
             this.ptorogoz = new System.Windows.Forms.PictureBox();
+            this.ppinguino = new System.Windows.Forms.PictureBox();
+            this.pgallina = new System.Windows.Forms.PictureBox();
             this.pavestruz = new System.Windows.Forms.PictureBox();
-            //this.wonderzooDataSet = new App_Educativa_Sobre_Animales.wonderzooDataSet();
-            //this.oviparosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            //this.oviparosTableAdapter = new App_Educativa_Sobre_Animales.wonderzooDataSetTableAdapters.oviparosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.ptortuga)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ppinguinos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ppollos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptorogoz)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ppinguino)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pgallina)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pavestruz)).BeginInit();
-            //((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).BeginInit();
-            //((System.ComponentModel.ISupportInitialize)(this.oviparosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnombre
             // 
             this.txtnombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            //this.txtnombre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.oviparosBindingSource, "nombre", true));
             this.txtnombre.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombre.Location = new System.Drawing.Point(178, 59);
             this.txtnombre.Margin = new System.Windows.Forms.Padding(2);
@@ -84,7 +77,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtpeso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtpeso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            //this.txtpeso.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.oviparosBindingSource, "peso", true));
             this.txtpeso.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpeso.Location = new System.Drawing.Point(178, 115);
             this.txtpeso.Margin = new System.Windows.Forms.Padding(2);
@@ -98,7 +90,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtalimentacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtalimentacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            //this.txtalimentacion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.oviparosBindingSource, "alimentacion", true));
             this.txtalimentacion.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtalimentacion.Location = new System.Drawing.Point(178, 175);
             this.txtalimentacion.Margin = new System.Windows.Forms.Padding(2);
@@ -112,7 +103,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txthabitat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txthabitat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            //this.txthabitat.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.oviparosBindingSource, "habitat", true));
             this.txthabitat.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txthabitat.Location = new System.Drawing.Point(178, 252);
             this.txthabitat.Margin = new System.Windows.Forms.Padding(2);
@@ -127,7 +117,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtcomportamiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtcomportamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            //this.txtcomportamiento.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.oviparosBindingSource, "comportamiento", true));
             this.txtcomportamiento.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcomportamiento.Location = new System.Drawing.Point(178, 358);
             this.txtcomportamiento.Margin = new System.Windows.Forms.Padding(2);
@@ -137,19 +126,6 @@ namespace App_Educativa_Sobre_Animales
             this.txtcomportamiento.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtcomportamiento.Size = new System.Drawing.Size(257, 95);
             this.txtcomportamiento.TabIndex = 4;
-            // 
-            // ptortuga
-            // 
-            this.ptortuga.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptortuga.BackgroundImage")));
-            this.ptortuga.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptortuga.Location = new System.Drawing.Point(509, 59);
-            this.ptortuga.Margin = new System.Windows.Forms.Padding(2);
-            this.ptortuga.Name = "ptortuga";
-            this.ptortuga.Size = new System.Drawing.Size(346, 331);
-            this.ptortuga.TabIndex = 6;
-            this.ptortuga.TabStop = false;
-            this.ptortuga.Visible = false;
-            this.ptortuga.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button1
             // 
@@ -278,7 +254,7 @@ namespace App_Educativa_Sobre_Animales
             this.txtbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.txtbuscar.FormattingEnabled = true;
             this.txtbuscar.Items.AddRange(new object[] {
-            "tortuga Marina",
+            "tortuga de mar",
             "pinguino",
             "gallina",
             "torogoz",
@@ -313,67 +289,55 @@ namespace App_Educativa_Sobre_Animales
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // ppinguinos
+            // ptortuga
             // 
-            this.ppinguinos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ppinguinos.BackgroundImage")));
-            this.ppinguinos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ppinguinos.Location = new System.Drawing.Point(508, 59);
-            this.ppinguinos.Margin = new System.Windows.Forms.Padding(2);
-            this.ppinguinos.Name = "ppinguinos";
-            this.ppinguinos.Size = new System.Drawing.Size(346, 331);
-            this.ppinguinos.TabIndex = 20;
-            this.ppinguinos.TabStop = false;
-            this.ppinguinos.Visible = false;
-            // 
-            // ppollos
-            // 
-            this.ppollos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ppollos.BackgroundImage")));
-            this.ppollos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ppollos.Location = new System.Drawing.Point(508, 58);
-            this.ppollos.Margin = new System.Windows.Forms.Padding(2);
-            this.ppollos.Name = "ppollos";
-            this.ppollos.Size = new System.Drawing.Size(346, 331);
-            this.ppollos.TabIndex = 21;
-            this.ppollos.TabStop = false;
-            this.ppollos.Visible = false;
+            this.ptortuga.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.tortugam5;
+            this.ptortuga.Location = new System.Drawing.Point(509, 59);
+            this.ptortuga.Name = "ptortuga";
+            this.ptortuga.Size = new System.Drawing.Size(346, 331);
+            this.ptortuga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptortuga.TabIndex = 24;
+            this.ptortuga.TabStop = false;
             // 
             // ptorogoz
             // 
-            this.ptorogoz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptorogoz.BackgroundImage")));
-            this.ptorogoz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptorogoz.Location = new System.Drawing.Point(509, 58);
-            this.ptorogoz.Margin = new System.Windows.Forms.Padding(2);
+            this.ptorogoz.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.torogoz5;
+            this.ptorogoz.Location = new System.Drawing.Point(508, 59);
             this.ptorogoz.Name = "ptorogoz";
             this.ptorogoz.Size = new System.Drawing.Size(346, 331);
-            this.ptorogoz.TabIndex = 22;
+            this.ptorogoz.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptorogoz.TabIndex = 23;
             this.ptorogoz.TabStop = false;
-            this.ptorogoz.Visible = false;
+            // 
+            // ppinguino
+            // 
+            this.ppinguino.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.pinguino5;
+            this.ppinguino.Location = new System.Drawing.Point(509, 59);
+            this.ppinguino.Name = "ppinguino";
+            this.ppinguino.Size = new System.Drawing.Size(346, 331);
+            this.ppinguino.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ppinguino.TabIndex = 22;
+            this.ppinguino.TabStop = false;
+            // 
+            // pgallina
+            // 
+            this.pgallina.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.gallina5;
+            this.pgallina.Location = new System.Drawing.Point(509, 58);
+            this.pgallina.Name = "pgallina";
+            this.pgallina.Size = new System.Drawing.Size(346, 331);
+            this.pgallina.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pgallina.TabIndex = 21;
+            this.pgallina.TabStop = false;
             // 
             // pavestruz
             // 
-            this.pavestruz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pavestruz.BackgroundImage")));
-            this.pavestruz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pavestruz.Location = new System.Drawing.Point(508, 59);
-            this.pavestruz.Margin = new System.Windows.Forms.Padding(2);
+            this.pavestruz.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.avestruz5;
+            this.pavestruz.Location = new System.Drawing.Point(509, 59);
             this.pavestruz.Name = "pavestruz";
             this.pavestruz.Size = new System.Drawing.Size(346, 331);
-            this.pavestruz.TabIndex = 23;
+            this.pavestruz.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pavestruz.TabIndex = 20;
             this.pavestruz.TabStop = false;
-            this.pavestruz.Visible = false;
-            // 
-            // wonderzooDataSet
-            // 
-            //this.wonderzooDataSet.DataSetName = "wonderzooDataSet";
-            //this.wonderzooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // oviparosBindingSource
-            // 
-            //this.oviparosBindingSource.DataMember = "oviparos";
-            //this.oviparosBindingSource.DataSource = this.wonderzooDataSet;
-            // 
-            // oviparosTableAdapter
-            // 
-            //this.oviparosTableAdapter.ClearBeforeFill = true;
             // 
             // Oviparosanimales
             // 
@@ -381,10 +345,11 @@ namespace App_Educativa_Sobre_Animales
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(891, 541);
-            this.Controls.Add(this.pavestruz);
+            this.Controls.Add(this.ptortuga);
             this.Controls.Add(this.ptorogoz);
-            this.Controls.Add(this.ppollos);
-            this.Controls.Add(this.ppinguinos);
+            this.Controls.Add(this.ppinguino);
+            this.Controls.Add(this.pgallina);
+            this.Controls.Add(this.pavestruz);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtbuscar);
@@ -398,7 +363,6 @@ namespace App_Educativa_Sobre_Animales
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.ptortuga);
             this.Controls.Add(this.txtcomportamiento);
             this.Controls.Add(this.txthabitat);
             this.Controls.Add(this.txtalimentacion);
@@ -412,12 +376,10 @@ namespace App_Educativa_Sobre_Animales
             this.Text = "WonderZoo";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptortuga)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ppinguinos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ppollos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptorogoz)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ppinguino)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pgallina)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pavestruz)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.oviparosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -430,7 +392,6 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.TextBox txtalimentacion;
         private System.Windows.Forms.TextBox txthabitat;
         private System.Windows.Forms.TextBox txtcomportamiento;
-        private System.Windows.Forms.PictureBox ptortuga;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -445,11 +406,12 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.Label label6;
         //private fenaheDataSet4TableAdapters.oviparosTableAdapter oviparosTableAdapter;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.PictureBox ppinguinos;
-        private System.Windows.Forms.PictureBox ppollos;
-        private System.Windows.Forms.PictureBox ptorogoz;
         private System.Windows.Forms.PictureBox pavestruz;
-       // private wonderzooDataSet wonderzooDataSet;
+        private System.Windows.Forms.PictureBox pgallina;
+        private System.Windows.Forms.PictureBox ppinguino;
+        private System.Windows.Forms.PictureBox ptorogoz;
+        private System.Windows.Forms.PictureBox ptortuga;
+        // private wonderzooDataSet wonderzooDataSet;
         //private System.Windows.Forms.BindingSource oviparosBindingSource;
         //private wonderzooDataSetTableAdapters.oviparosTableAdapter oviparosTableAdapter;
         // private App_Educativa_Sobre_Animales.fenaheDataSetTableAdapters.oviparosTableAdapter oviparosTableAdapter;

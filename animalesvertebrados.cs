@@ -81,11 +81,7 @@ namespace App_Educativa_Sobre_Animales
         {
             // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.vertebrados' Puede moverla o quitarla según sea necesario.
             this.vertebradosTableAdapter.Fill(this.wonderzooDataSet.vertebrados);
-            // TODO: esta línea de código carga datos en la tabla 'wonderZooDataSet.vertebrados' Puede moverla o quitarla según sea necesario.
-            //this.vertebradosTableAdapter.Fill(this.wonderZooDataSet.vertebrados);
-            // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet.vertebrados' Puede moverla o quitarla según sea necesario.
-            //
-            //this.vertebradosTableAdapter.Fill(this.fenaheDataSet.vertebrados);
+
 
             pelefante.Visible = true;
 
@@ -300,6 +296,11 @@ namespace App_Educativa_Sobre_Animales
                 plemur.Visible = false;
                 pcaballo.Visible = true;
             }
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

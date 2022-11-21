@@ -23,7 +23,9 @@ namespace App_Educativa_Sobre_Animales
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.viviparos' Puede moverla o quitarla según sea necesario.
+            this.viviparosTableAdapter.Fill(this.wonderzooDataSet.viviparos);
+
 
             prinoceronte.Visible = true;
             

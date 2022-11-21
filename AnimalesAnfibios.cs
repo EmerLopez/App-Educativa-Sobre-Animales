@@ -23,10 +23,12 @@ namespace App_Educativa_Sobre_Animales
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.anfibios' Puede moverla o quitarla según sea necesario.
+            this.anfibiosTableAdapter.Fill(this.wonderzooDataSet.anfibios);
 
-            piguana.Visible = true;
-            
+
+            pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.iguana5;
+
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -58,54 +60,39 @@ namespace App_Educativa_Sobre_Animales
                 MessageBox.Show("Campo de busqueda está vacío", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //throw;
             }
-                
-            
+
+
             if (txtnombre.Text == "iguana")
             {
-                pserpiente.Visible = false;
-                pcoco.Visible = false;
-                prana.Visible = false;
-                ptortuga.Visible = false;
-                piguana.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.iguana5;
+
             }
 
-            if (txtnombre.Text == "tortuga marina")
+            if (txtnombre.Text == "tortuga")
             {
-                pserpiente.Visible = false;
-                pcoco.Visible = false;
-                prana.Visible = false;
-                piguana.Visible = false;
-                ptortuga.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.tortuga5;
+
             }
 
             if (txtnombre.Text == "cocodrilo")
             {
-                pcoco.Visible = true;
-                pserpiente.Visible = false;
-                piguana.Visible = false;
-                prana.Visible = false;
-                ptortuga.Visible = false;
-              
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.cocodrilo5;
+
+
             }
 
             if (txtnombre.Text == "serpiente")
             {
-                piguana.Visible = false;
-                pcoco.Visible = false;
-                prana.Visible = false;
-                ptortuga.Visible = false;
-                pserpiente.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.serpiente5;
+
             }
 
             if (txtnombre.Text == "rana")
             {
-                piguana.Visible = false;
-                pcoco.Visible = false;
-                pserpiente.Visible = false;
-                ptortuga.Visible = false;
-                prana.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.rana5;
+
             }
-            
+
         }
 
 
@@ -114,48 +101,33 @@ namespace App_Educativa_Sobre_Animales
             this.anfibiosBindingSource.MoveFirst();
             if (txtnombre.Text == "iguana")
             {
-                pserpiente.Visible = false;
-                pcoco.Visible = false;
-                prana.Visible = false;
-                ptortuga.Visible = false;
-                piguana.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.iguana5;
+
             }
 
-            if (txtnombre.Text == "tortuga marina")
+            if (txtnombre.Text == "tortuga")
             {
-                pserpiente.Visible = false;
-                pcoco.Visible = false;
-                prana.Visible = false;
-                piguana.Visible = false;
-                ptortuga.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.tortuga5;
+
             }
 
             if (txtnombre.Text == "cocodrilo")
             {
-                pcoco.Visible = true;
-                pserpiente.Visible = false;
-                piguana.Visible = false;
-                prana.Visible = false;
-                ptortuga.Visible = false;
-                
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.cocodrilo5;
+
+
             }
 
             if (txtnombre.Text == "serpiente")
             {
-                piguana.Visible = false;
-                pcoco.Visible = false;
-                prana.Visible = false;
-                ptortuga.Visible = false;
-                pserpiente.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.serpiente5;
+
             }
 
             if (txtnombre.Text == "rana")
             {
-                piguana.Visible = false;
-                pcoco.Visible = false;
-                pserpiente.Visible = false;
-                ptortuga.Visible = false;
-                prana.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.rana5;
+
             }
         }
 
@@ -164,48 +136,33 @@ namespace App_Educativa_Sobre_Animales
             this.anfibiosBindingSource.MovePrevious();
             if (txtnombre.Text == "iguana")
             {
-                pserpiente.Visible = false;
-                pcoco.Visible = false;
-                prana.Visible = false;
-                ptortuga.Visible = false;
-                piguana.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.iguana5;
+
             }
 
-            if (txtnombre.Text == "tortuga marina")
+            if (txtnombre.Text == "tortuga")
             {
-                pserpiente.Visible = false;
-                pcoco.Visible = false;
-                prana.Visible = false;
-                piguana.Visible = false;
-                ptortuga.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.tortuga5;
+
             }
 
             if (txtnombre.Text == "cocodrilo")
             {
-                pcoco.Visible = true;
-                pserpiente.Visible = false;
-                piguana.Visible = false;
-                prana.Visible = false;
-                ptortuga.Visible = false;
-             
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.cocodrilo5;
+
+
             }
 
             if (txtnombre.Text == "serpiente")
             {
-                piguana.Visible = false;
-                pcoco.Visible = false;
-                prana.Visible = false;
-                ptortuga.Visible = false;
-                pserpiente.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.serpiente5;
+
             }
 
             if (txtnombre.Text == "rana")
             {
-                piguana.Visible = false;
-                pcoco.Visible = false;
-                pserpiente.Visible = false;
-                ptortuga.Visible = false;
-                prana.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.rana5;
+
             }
         }
 
@@ -214,48 +171,33 @@ namespace App_Educativa_Sobre_Animales
             this.anfibiosBindingSource.MoveNext();
             if (txtnombre.Text == "iguana")
             {
-                pserpiente.Visible = false;
-                pcoco.Visible = false;
-                prana.Visible = false;
-                ptortuga.Visible = false;
-                piguana.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.iguana5;
+               
             }
 
-            if (txtnombre.Text == "tortuga marina")
+            if (txtnombre.Text == "tortuga")
             {
-                pserpiente.Visible = false;
-                pcoco.Visible = false;
-                prana.Visible = false;
-                piguana.Visible = false;
-                ptortuga.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.tortuga5;
+               
             }
 
             if (txtnombre.Text == "cocodrilo")
             {
-                pcoco.Visible = true;
-                pserpiente.Visible = false;
-                piguana.Visible = false;
-                prana.Visible = false;
-                ptortuga.Visible = false;
-               
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.cocodrilo5;
+                
+
             }
 
             if (txtnombre.Text == "serpiente")
             {
-                piguana.Visible = false;
-                pcoco.Visible = false;
-                prana.Visible = false;
-                ptortuga.Visible = false;
-                pserpiente.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.serpiente5;
+                
             }
 
             if (txtnombre.Text == "rana")
             {
-                piguana.Visible = false;
-                pcoco.Visible = false;
-                pserpiente.Visible = false;
-                ptortuga.Visible = false;
-                prana.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.rana5;
+               
             }
         }
 
@@ -264,48 +206,33 @@ namespace App_Educativa_Sobre_Animales
             this.anfibiosBindingSource.MoveLast();
             if (txtnombre.Text == "iguana")
             {
-                pserpiente.Visible = false;
-                pcoco.Visible = false;
-                prana.Visible = false;
-                ptortuga.Visible = false;
-                piguana.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.iguana5;
+                
             }
 
-            if (txtnombre.Text == "tortuga marina")
+            if (txtnombre.Text == "tortuga")
             {
-                pserpiente.Visible = false;
-                pcoco.Visible = false;
-                prana.Visible = false;
-                piguana.Visible = false;
-                ptortuga.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.tortuga5;
+                
             }
 
             if (txtnombre.Text == "cocodrilo")
             {
-                pcoco.Visible = true;
-                pserpiente.Visible = false;
-                piguana.Visible = false;
-                prana.Visible = false;
-                ptortuga.Visible = false;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.cocodrilo5;
                 
+
             }
 
             if (txtnombre.Text == "serpiente")
             {
-                piguana.Visible = false;
-                pcoco.Visible = false;
-                prana.Visible = false;
-                ptortuga.Visible = false;
-                pserpiente.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.serpiente5;
+               
             }
 
             if (txtnombre.Text == "rana")
             {
-                piguana.Visible = false;
-                pcoco.Visible = false;
-                pserpiente.Visible = false;
-                ptortuga.Visible = false;
-                prana.Visible = true;
+                pbimage.Image = App_Educativa_Sobre_Animales.Properties.Resources.rana5;
+               
             }
         }
 
@@ -320,6 +247,16 @@ namespace App_Educativa_Sobre_Animales
         }
 
         private void pcaballo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ptortuga_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pcoco_Click(object sender, EventArgs e)
         {
 
         }

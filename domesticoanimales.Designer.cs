@@ -1,7 +1,7 @@
 ﻿
 namespace App_Educativa_Sobre_Animales
 {
-    partial class domestico
+    partial class domesticoanimales
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,8 +29,7 @@ namespace App_Educativa_Sobre_Animales
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(domestico));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(domesticoanimales));
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtpeso = new System.Windows.Forms.TextBox();
             this.txtalimentacion = new System.Windows.Forms.TextBox();
@@ -49,28 +48,22 @@ namespace App_Educativa_Sobre_Animales
             this.txtbuscar = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.pPerro = new System.Windows.Forms.PictureBox();
-            this.pGato = new System.Windows.Forms.PictureBox();
-            this.pConejo = new System.Windows.Forms.PictureBox();
-            this.pCerdo = new System.Windows.Forms.PictureBox();
-            this.pPato = new System.Windows.Forms.PictureBox();
-            //this.wonderzooDataSet = new App_Educativa_Sobre_Animales.wonderzooDataSet();
-            //this.domesticosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            //this.domesticosTableAdapter1 = new App_Educativa_Sobre_Animales.wonderzooDataSetTableAdapters.domesticosTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.pPerro)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pGato)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pConejo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pCerdo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pPato)).BeginInit();
-            //((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).BeginInit();
-            //((System.ComponentModel.ISupportInitialize)(this.domesticosBindingSource)).BeginInit();
+            this.pperro = new System.Windows.Forms.PictureBox();
+            this.ppato = new System.Windows.Forms.PictureBox();
+            this.pgato = new System.Windows.Forms.PictureBox();
+            this.pconejo = new System.Windows.Forms.PictureBox();
+            this.pcerdo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pperro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ppato)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pgato)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pconejo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcerdo)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnombre
             // 
             this.txtnombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            //this.txtnombre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.domesticosBindingSource, "nombre", true));
             this.txtnombre.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombre.Location = new System.Drawing.Point(179, 59);
             this.txtnombre.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -84,7 +77,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtpeso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtpeso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            //this.txtpeso.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.domesticosBindingSource, "peso", true));
             this.txtpeso.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpeso.Location = new System.Drawing.Point(179, 116);
             this.txtpeso.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -98,7 +90,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtalimentacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtalimentacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-           // this.txtalimentacion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.domesticosBindingSource, "alimentacion", true));
             this.txtalimentacion.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtalimentacion.Location = new System.Drawing.Point(179, 175);
             this.txtalimentacion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -113,7 +104,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txthabitat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txthabitat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            //this.txthabitat.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.domesticosBindingSource, "habitat", true));
             this.txthabitat.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txthabitat.Location = new System.Drawing.Point(179, 252);
             this.txthabitat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -128,7 +118,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtcomportamiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtcomportamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            //this.txtcomportamiento.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.domesticosBindingSource, "comportamiento", true));
             this.txtcomportamiento.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcomportamiento.Location = new System.Drawing.Point(178, 357);
             this.txtcomportamiento.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -299,87 +288,67 @@ namespace App_Educativa_Sobre_Animales
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // pPerro
+            // pperro
             // 
-            this.pPerro.Image = ((System.Drawing.Image)(resources.GetObject("pPerro.Image")));
-            this.pPerro.InitialImage = ((System.Drawing.Image)(resources.GetObject("pPerro.InitialImage")));
-            this.pPerro.Location = new System.Drawing.Point(509, 59);
-            this.pPerro.Name = "pPerro";
-            this.pPerro.Size = new System.Drawing.Size(358, 317);
-            this.pPerro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pPerro.TabIndex = 20;
-            this.pPerro.TabStop = false;
-            this.pPerro.Visible = false;
+            this.pperro.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.perro5;
+            this.pperro.Location = new System.Drawing.Point(491, 80);
+            this.pperro.Name = "pperro";
+            this.pperro.Size = new System.Drawing.Size(365, 317);
+            this.pperro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pperro.TabIndex = 24;
+            this.pperro.TabStop = false;
             // 
-            // pGato
+            // ppato
             // 
-            this.pGato.Image = ((System.Drawing.Image)(resources.GetObject("pGato.Image")));
-            this.pGato.Location = new System.Drawing.Point(509, 59);
-            this.pGato.Name = "pGato";
-            this.pGato.Size = new System.Drawing.Size(358, 317);
-            this.pGato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pGato.TabIndex = 21;
-            this.pGato.TabStop = false;
-            this.pGato.Visible = false;
+            this.ppato.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.pato5;
+            this.ppato.Location = new System.Drawing.Point(491, 80);
+            this.ppato.Name = "ppato";
+            this.ppato.Size = new System.Drawing.Size(365, 317);
+            this.ppato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ppato.TabIndex = 23;
+            this.ppato.TabStop = false;
             // 
-            // pConejo
+            // pgato
             // 
-            this.pConejo.Image = ((System.Drawing.Image)(resources.GetObject("pConejo.Image")));
-            this.pConejo.Location = new System.Drawing.Point(509, 59);
-            this.pConejo.Name = "pConejo";
-            this.pConejo.Size = new System.Drawing.Size(358, 317);
-            this.pConejo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pConejo.TabIndex = 22;
-            this.pConejo.TabStop = false;
-            this.pConejo.Visible = false;
+            this.pgato.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.gato5;
+            this.pgato.Location = new System.Drawing.Point(491, 80);
+            this.pgato.Name = "pgato";
+            this.pgato.Size = new System.Drawing.Size(365, 317);
+            this.pgato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pgato.TabIndex = 22;
+            this.pgato.TabStop = false;
             // 
-            // pCerdo
+            // pconejo
             // 
-            this.pCerdo.Image = ((System.Drawing.Image)(resources.GetObject("pCerdo.Image")));
-            this.pCerdo.Location = new System.Drawing.Point(509, 59);
-            this.pCerdo.Name = "pCerdo";
-            this.pCerdo.Size = new System.Drawing.Size(358, 317);
-            this.pCerdo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pCerdo.TabIndex = 23;
-            this.pCerdo.TabStop = false;
-            this.pCerdo.Visible = false;
+            this.pconejo.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.conejo5;
+            this.pconejo.Location = new System.Drawing.Point(490, 80);
+            this.pconejo.Name = "pconejo";
+            this.pconejo.Size = new System.Drawing.Size(365, 317);
+            this.pconejo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pconejo.TabIndex = 21;
+            this.pconejo.TabStop = false;
             // 
-            // pPato
+            // pcerdo
             // 
-            this.pPato.Image = ((System.Drawing.Image)(resources.GetObject("pPato.Image")));
-            this.pPato.Location = new System.Drawing.Point(509, 59);
-            this.pPato.Name = "pPato";
-            this.pPato.Size = new System.Drawing.Size(365, 317);
-            this.pPato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pPato.TabIndex = 24;
-            this.pPato.TabStop = false;
-            this.pPato.Visible = false;
+            this.pcerdo.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.cerdo5;
+            this.pcerdo.Location = new System.Drawing.Point(491, 80);
+            this.pcerdo.Name = "pcerdo";
+            this.pcerdo.Size = new System.Drawing.Size(365, 317);
+            this.pcerdo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcerdo.TabIndex = 20;
+            this.pcerdo.TabStop = false;
             // 
-            // wonderzooDataSet
-            // 
-            //this.wonderzooDataSet.DataSetName = "wonderzooDataSet";
-            //this.wonderzooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // domesticosBindingSource
-            // 
-            //this.domesticosBindingSource.DataMember = "domesticos";
-           // this.domesticosBindingSource.DataSource = this.wonderzooDataSet;
-            // 
-            // domesticosTableAdapter1
-            // 
-           // this.domesticosTableAdapter1.ClearBeforeFill = true;
-            // 
-            // domestico
+            // domesticoanimales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(886, 524);
-            this.Controls.Add(this.pPato);
-            this.Controls.Add(this.pCerdo);
-            this.Controls.Add(this.pConejo);
-            this.Controls.Add(this.pGato);
-            this.Controls.Add(this.pPerro);
+            this.Controls.Add(this.pperro);
+            this.Controls.Add(this.ppato);
+            this.Controls.Add(this.pgato);
+            this.Controls.Add(this.pconejo);
+            this.Controls.Add(this.pcerdo);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtbuscar);
@@ -401,17 +370,15 @@ namespace App_Educativa_Sobre_Animales
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MaximizeBox = false;
-            this.Name = "domestico";
+            this.Name = "domesticoanimales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WonderZoo";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pPerro)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pGato)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pConejo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pCerdo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pPato)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.domesticosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pperro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ppato)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pgato)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pconejo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcerdo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -437,13 +404,13 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.ComboBox txtbuscar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.PictureBox pPerro;
-        private System.Windows.Forms.PictureBox pGato;
-        private System.Windows.Forms.PictureBox pConejo;
-        private System.Windows.Forms.PictureBox pCerdo;
-        private System.Windows.Forms.PictureBox pPato;
+        private System.Windows.Forms.PictureBox pcerdo;
+        private System.Windows.Forms.PictureBox pconejo;
+        private System.Windows.Forms.PictureBox pgato;
+        private System.Windows.Forms.PictureBox ppato;
+        private System.Windows.Forms.PictureBox pperro;
         //private wonderzooDataSet wonderzooDataSet;
-       // private System.Windows.Forms.BindingSource domesticosBindingSource;
+        // private System.Windows.Forms.BindingSource domesticosBindingSource;
         //private wonderzooDataSetTableAdapters.domesticosTableAdapter domesticosTableAdapter1;
         //private App_Educativa_Sobre_Animales.fenaheDataSetTableAdapters.domesticosTableAdapter domesticosTableAdapter1;
         // private wonderzoDataSetTableAdapters.domesticosTableAdapter domesticosTableAdapter1;

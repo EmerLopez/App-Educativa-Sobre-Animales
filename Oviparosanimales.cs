@@ -23,7 +23,9 @@ namespace App_Educativa_Sobre_Animales
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.oviparos' Puede moverla o quitarla según sea necesario.
+            this.oviparosTableAdapter.Fill(this.wonderzooDataSet.oviparos);
+
             ptortuga.Visible = true;
            
         }
@@ -60,8 +62,8 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "pinguino")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = true;
-                ppollos.Visible = false;
+                ppinguino.Visible = true;
+                pgallina.Visible = false;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = false;
 
@@ -69,8 +71,8 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "gallina")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = false;
-                ppollos.Visible = true;
+                ppinguino.Visible = false;
+                pgallina.Visible = true;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = false;
 
@@ -78,17 +80,17 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "torogoz")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = false;
-                ppollos.Visible = false;
+                ppinguino.Visible = false;
+                pgallina.Visible = false;
                 ptorogoz.Visible = true;
                 ptortuga.Visible = false;
 
             }
-            if (txtnombre.Text == "tortuga Marina")
+            if (txtnombre.Text == "tortuga de mar")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = false;
-                ppollos.Visible = false;
+                ppinguino.Visible = false;
+                pgallina.Visible = false;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = true;
 
@@ -96,8 +98,8 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "avestruz")
             {
                 pavestruz.Visible = true;
-                ppinguinos.Visible = false;
-                ppollos.Visible = false;
+                ppinguino.Visible = false;
+                pgallina.Visible = false;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = false;
 
@@ -112,8 +114,8 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "pinguino")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = true;
-                ppollos.Visible = false;
+                ppinguino.Visible = true;
+                pgallina.Visible = false;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = false;
 
@@ -121,8 +123,8 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "gallina")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = false;
-                ppollos.Visible = true;
+                ppinguino.Visible = false;
+                pgallina.Visible = true;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = false;
 
@@ -130,17 +132,17 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "torogoz")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = false;
-                ppollos.Visible = false;
+                ppinguino.Visible = false;
+                pgallina.Visible = false;
                 ptorogoz.Visible = true;
                 ptortuga.Visible = false;
 
             }
-            if (txtnombre.Text == "tortuga Marina")
+            if (txtnombre.Text == "tortuga de mar")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = false;
-                ppollos.Visible = false;
+                ppinguino.Visible = false;
+                pgallina.Visible = false;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = true;
 
@@ -148,8 +150,8 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "avestruz")
             {
                 pavestruz.Visible = true;
-                ppinguinos.Visible = false;
-                ppollos.Visible = false;
+                ppinguino.Visible = false;
+                pgallina.Visible = false;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = false;
 
@@ -162,8 +164,8 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "pinguino")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = true;
-                ppollos.Visible = false;
+                ppinguino.Visible = true;
+                pgallina.Visible = false;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = false;
 
@@ -171,8 +173,8 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "gallina")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = false;
-                ppollos.Visible = true;
+                ppinguino.Visible = false;
+                pgallina.Visible = true;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = false;
 
@@ -180,17 +182,17 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "torogoz")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = false;
-                ppollos.Visible = false;
+                ppinguino.Visible = false;
+                pgallina.Visible = false;
                 ptorogoz.Visible = true;
                 ptortuga.Visible = false;
 
             }
-            if (txtnombre.Text == "tortuga Marina")
+            if (txtnombre.Text == "tortuga de mar")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = false;
-                ppollos.Visible = false;
+                ppinguino.Visible = false;
+                pgallina.Visible = false;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = true;
 
@@ -198,8 +200,8 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "avestruz")
             {
                 pavestruz.Visible = true;
-                ppinguinos.Visible = false;
-                ppollos.Visible = false;
+                ppinguino.Visible = false;
+                pgallina.Visible = false;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = false;
 
@@ -213,8 +215,8 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "pinguino")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = true;
-                ppollos.Visible = false;
+                ppinguino.Visible = true;
+                pgallina.Visible = false;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = false;
 
@@ -222,8 +224,8 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "gallina")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = false;
-                ppollos.Visible = true;
+                ppinguino.Visible = false;
+                pgallina.Visible = true;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = false;
 
@@ -231,17 +233,17 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "torogoz")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = false;
-                ppollos.Visible = false;
+                ppinguino.Visible = false;
+                pgallina.Visible = false;
                 ptorogoz.Visible = true;
                 ptortuga.Visible = false;
 
             }
-            if (txtnombre.Text == "tortuga Marina")
+            if (txtnombre.Text == "tortuga de mar")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = false;
-                ppollos.Visible = false;
+                ppinguino.Visible = false;
+                pgallina.Visible = false;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = true;
 
@@ -249,8 +251,8 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "avestruz")
             {
                 pavestruz.Visible = true;
-                ppinguinos.Visible = false;
-                ppollos.Visible = false;
+                ppinguino.Visible = false;
+                pgallina.Visible = false;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = false;
 
@@ -263,8 +265,8 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "pinguino")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = true;
-                ppollos.Visible = false;
+                ppinguino.Visible = true;
+                pgallina.Visible = false;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = false;
 
@@ -272,8 +274,8 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "gallina")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = false;
-                ppollos.Visible = true;
+                ppinguino.Visible = false;
+                pgallina.Visible = true;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = false;
 
@@ -281,17 +283,17 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "torogoz")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = false;
-                ppollos.Visible = false;
+                ppinguino.Visible = false;
+                pgallina.Visible = false;
                 ptorogoz.Visible = true;
                 ptortuga.Visible = false;
 
             }
-            if (txtnombre.Text == "tortuga Marina")
+            if (txtnombre.Text == "tortuga de mar")
             {
                 pavestruz.Visible = false;
-                ppinguinos.Visible = false;
-                ppollos.Visible = false;
+                ppinguino.Visible = false;
+                pgallina.Visible = false;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = true;
 
@@ -299,8 +301,8 @@ namespace App_Educativa_Sobre_Animales
             if (txtnombre.Text == "avestruz")
             {
                 pavestruz.Visible = true;
-                ppinguinos.Visible = false;
-                ppollos.Visible = false;
+                ppinguino.Visible = false;
+                pgallina.Visible = false;
                 ptorogoz.Visible = false;
                 ptortuga.Visible = false;
 

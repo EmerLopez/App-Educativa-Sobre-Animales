@@ -12,18 +12,20 @@ using MySql.Data.MySqlClient;
 
 namespace App_Educativa_Sobre_Animales
 {
-    public partial class Pcobra : Form
+    public partial class AnimalesSalvajes : Form
     {
         public string cadena_conexion = "server=Localhost;user id=wzadmins;password=12345;database=wonderzoo";
-        public Pcobra()
+        public AnimalesSalvajes()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-            Pleopardo.Visible = true;
+            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.salvajes' Puede moverla o quitarla según sea necesario.
+            this.salvajesTableAdapter.Fill(this.wonderzooDataSet.salvajes);
+
+            pleopardo.Visible = true;
 
         }
 
@@ -35,7 +37,7 @@ namespace App_Educativa_Sobre_Animales
                 myConnection.Open();
                 MySqlCommand comando = new MySqlCommand();
                 comando.Connection = myConnection;
-                comando.CommandText = ("select * from salvaje Where nombre = '" + txtbuscar.Text + "'");
+                comando.CommandText = ("select * from salvajes Where nombre = '" + txtbuscar.Text + "'");
                 MySqlDataReader leer = comando.ExecuteReader();
                 if (leer.Read() == true)
                 {
@@ -60,254 +62,254 @@ namespace App_Educativa_Sobre_Animales
 
             if (txtnombre.Text == "leopardo")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
             
-                Plobos.Visible = false;
-                Ptiburon.Visible = false;
-                Ptigre.Visible = false;
-                Pleopardo.Visible = true;
+                plobo.Visible = false;
+                ptiburon.Visible = false;
+                ptigre.Visible = false;
+                pleopardo.Visible = true;
             }
 
             if (txtnombre.Text == "tigre")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Plobos.Visible = false;
-                Ptiburon.Visible = false;
-                Pleopardo.Visible = false;
-                Ptigre.Visible = true;
+                plobo.Visible = false;
+                ptiburon.Visible = false;
+                pleopardo.Visible = false;
+                ptigre.Visible = true;
             }
             if (txtnombre.Text == "tiburon")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Plobos.Visible = false;
-                Pleopardo.Visible = false;
-                Ptigre.Visible = false;
-                Ptiburon.Visible = true;
+                plobo.Visible = false;
+                pleopardo.Visible = false;
+                ptigre.Visible = false;
+                ptiburon.Visible = true;
             }
             if (txtnombre.Text == "lobos")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Pleopardo.Visible = false;
-                Ptiburon.Visible = false;
-                Ptigre.Visible = false;
-                Plobos.Visible = true;
+                pleopardo.Visible = false;
+                ptiburon.Visible = false;
+                ptigre.Visible = false;
+                plobo.Visible = true;
             }
-            if (txtnombre.Text == "cobras")
+            if (txtnombre.Text == "serpiente cobra")
             {
-                Pleopardo.Visible = false;
+                pleopardo.Visible = false;
 
-                Plobos.Visible = false;
-                Ptiburon.Visible = false;
-                Ptigre.Visible = false;
-                Pcobras.Visible = true;
+                plobo.Visible = false;
+                ptiburon.Visible = false;
+                ptigre.Visible = false;
+                pscobra.Visible = true;
             }
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.oviparosBindingSource.MoveFirst();
+            this.salvajesBindingSource.MoveFirst();
             if (txtnombre.Text == "leopardo")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Plobos.Visible = false;
-                Ptiburon.Visible = false;
-                Ptigre.Visible = false;
-                Pleopardo.Visible = true;
+                plobo.Visible = false;
+                ptiburon.Visible = false;
+                ptigre.Visible = false;
+                pleopardo.Visible = true;
             }
 
             if (txtnombre.Text == "tigre")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Plobos.Visible = false;
-                Ptiburon.Visible = false;
-                Pleopardo.Visible = false;
-                Ptigre.Visible = true;
+                plobo.Visible = false;
+                ptiburon.Visible = false;
+                pleopardo.Visible = false;
+                ptigre.Visible = true;
             }
             if (txtnombre.Text == "tiburon")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Plobos.Visible = false;
-                Pleopardo.Visible = false;
-                Ptigre.Visible = false;
-                Ptiburon.Visible = true;
+                plobo.Visible = false;
+                pleopardo.Visible = false;
+                ptigre.Visible = false;
+                ptiburon.Visible = true;
             }
             if (txtnombre.Text == "lobos")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Pleopardo.Visible = false;
-                Ptiburon.Visible = false;
-                Ptigre.Visible = false;
-                Plobos.Visible = true;
+                pleopardo.Visible = false;
+                ptiburon.Visible = false;
+                ptigre.Visible = false;
+                plobo.Visible = true;
             }
-            if (txtnombre.Text == "cobras")
+            if (txtnombre.Text == "serpiente cobra")
             {
-                Pleopardo.Visible = false;
+                pleopardo.Visible = false;
 
-                Plobos.Visible = false;
-                Ptiburon.Visible = false;
-                Ptigre.Visible = false;
-                Pcobras.Visible = true;
+                plobo.Visible = false;
+                ptiburon.Visible = false;
+                ptigre.Visible = false;
+                pscobra.Visible = true;
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.oviparosBindingSource.MovePrevious();
+            this.salvajesBindingSource.MovePrevious();
             if (txtnombre.Text == "leopardo")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Plobos.Visible = false;
-                Ptiburon.Visible = false;
-                Ptigre.Visible = false;
-                Pleopardo.Visible = true;
+                plobo.Visible = false;
+                ptiburon.Visible = false;
+                ptigre.Visible = false;
+                pleopardo.Visible = true;
             }
 
             if (txtnombre.Text == "tigre")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Plobos.Visible = false;
-                Ptiburon.Visible = false;
-                Pleopardo.Visible = false;
-                Ptigre.Visible = true;
+                plobo.Visible = false;
+                ptiburon.Visible = false;
+                pleopardo.Visible = false;
+                ptigre.Visible = true;
             }
             if (txtnombre.Text == "tiburon")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Plobos.Visible = false;
-                Pleopardo.Visible = false;
-                Ptigre.Visible = false;
-                Ptiburon.Visible = true;
+                plobo.Visible = false;
+                pleopardo.Visible = false;
+                ptigre.Visible = false;
+                ptiburon.Visible = true;
             }
             if (txtnombre.Text == "lobos")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Pleopardo.Visible = false;
-                Ptiburon.Visible = false;
-                Ptigre.Visible = false;
-                Plobos.Visible = true;
+                pleopardo.Visible = false;
+                ptiburon.Visible = false;
+                ptigre.Visible = false;
+                plobo.Visible = true;
             }
-            if (txtnombre.Text == "cobras")
+            if (txtnombre.Text == "serpiente cobra")
             {
-                Pleopardo.Visible = false;
+                pleopardo.Visible = false;
 
-                Plobos.Visible = false;
-                Ptiburon.Visible = false;
-                Ptigre.Visible = false;
-                Pcobras.Visible = true;
+                plobo.Visible = false;
+                ptiburon.Visible = false;
+                ptigre.Visible = false;
+                pscobra.Visible = true;
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.oviparosBindingSource.MoveNext();
+            this.salvajesBindingSource.MoveNext();
             if (txtnombre.Text == "leopardo")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Plobos.Visible = false;
-                Ptiburon.Visible = false;
-                Ptigre.Visible = false;
-                Pleopardo.Visible = true;
+                plobo.Visible = false;
+                ptiburon.Visible = false;
+                ptigre.Visible = false;
+                pleopardo.Visible = true;
             }
 
             if (txtnombre.Text == "tigre")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Plobos.Visible = false;
-                Ptiburon.Visible = false;
-                Pleopardo.Visible = false;
-                Ptigre.Visible = true;
+                plobo.Visible = false;
+                ptiburon.Visible = false;
+                pleopardo.Visible = false;
+                ptigre.Visible = true;
             }
             if (txtnombre.Text == "tiburon")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Plobos.Visible = false;
-                Pleopardo.Visible = false;
-                Ptigre.Visible = false;
-                Ptiburon.Visible = true;
+                plobo.Visible = false;
+                pleopardo.Visible = false;
+                ptigre.Visible = false;
+                ptiburon.Visible = true;
             }
             if (txtnombre.Text == "lobos")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Pleopardo.Visible = false;
-                Ptiburon.Visible = false;
-                Ptigre.Visible = false;
-                Plobos.Visible = true;
+                pleopardo.Visible = false;
+                ptiburon.Visible = false;
+                ptigre.Visible = false;
+                plobo.Visible = true;
             }
-            if (txtnombre.Text == "cobras")
+            if (txtnombre.Text == "serpiente cobra")
             {
-                Pleopardo.Visible = false;
+                pleopardo.Visible = false;
 
-                Plobos.Visible = false;
-                Ptiburon.Visible = false;
-                Ptigre.Visible = false;
-                Pcobras.Visible = true;
+                plobo.Visible = false;
+                ptiburon.Visible = false;
+                ptigre.Visible = false;
+                pscobra.Visible = true;
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.oviparosBindingSource.MoveLast();
+            this.salvajesBindingSource.MoveLast();
             if (txtnombre.Text == "leopardo")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Plobos.Visible = false;
-                Ptiburon.Visible = false;
-                Ptigre.Visible = false;
-                Pleopardo.Visible = true;
+                plobo.Visible = false;
+                ptiburon.Visible = false;
+                ptigre.Visible = false;
+                pleopardo.Visible = true;
             }
 
             if (txtnombre.Text == "tigre")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Plobos.Visible = false;
-                Ptiburon.Visible = false;
-                Pleopardo.Visible = false;
-                Ptigre.Visible = true;
+                plobo.Visible = false;
+                ptiburon.Visible = false;
+                pleopardo.Visible = false;
+                ptigre.Visible = true;
             }
             if (txtnombre.Text == "tiburon")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Plobos.Visible = false;
-                Pleopardo.Visible = false;
-                Ptigre.Visible = false;
-                Ptiburon.Visible = true;
+                plobo.Visible = false;
+                pleopardo.Visible = false;
+                ptigre.Visible = false;
+                ptiburon.Visible = true;
             }
             if (txtnombre.Text == "lobos")
             {
-                Pcobras.Visible = false;
+                pscobra.Visible = false;
 
-                Pleopardo.Visible = false;
-                Ptiburon.Visible = false;
-                Ptigre.Visible = false;
-                Plobos.Visible = true;
+                pleopardo.Visible = false;
+                ptiburon.Visible = false;
+                ptigre.Visible = false;
+                plobo.Visible = true;
             }
-            if (txtnombre.Text == "cobras")
+            if (txtnombre.Text == "serpiente cobra")
             {
-                Pleopardo.Visible = false;
+                pleopardo.Visible = false;
 
-                Plobos.Visible = false;
-                Ptiburon.Visible = false;
-                Ptigre.Visible = false;
-                Pcobras.Visible = true;
+                plobo.Visible = false;
+                ptiburon.Visible = false;
+                ptigre.Visible = false;
+                pscobra.Visible = true;
             }
         }
 
@@ -324,6 +326,11 @@ namespace App_Educativa_Sobre_Animales
         private void Ptigre_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bsalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

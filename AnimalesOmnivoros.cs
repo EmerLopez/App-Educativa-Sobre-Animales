@@ -23,10 +23,12 @@ namespace App_Educativa_Sobre_Animales
 
         private void Form1_Load(object sender, EventArgs e)
         {
-         
+            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.omnivoros' Puede moverla o quitarla según sea necesario.
+            this.omnivorosTableAdapter.Fill(this.wonderzooDataSet.omnivoros);
 
 
-            Pgorila.Visible = true;
+
+            pgorila.Visible = true;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -60,43 +62,43 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "gorila")
             {
-                Ptucan.Visible = false;
-                Pzorro.Visible = false;
-                Perizo.Visible = false;
-                Pmapache.Visible = false;
-                Pgorila.Visible = true;
+                ptucan.Visible = false;
+                pzorro.Visible = false;
+                perizo.Visible = false;
+                pmapache.Visible = false;
+                pgorila.Visible = true;
             }
             if (txtnombre.Text == "mapache")
             {
-                Ptucan.Visible = false;
-                Pzorro.Visible = false;
-                Perizo.Visible = false;
-                Pgorila.Visible = false;
-                Pmapache.Visible = true;
+                ptucan.Visible = false;
+                pzorro.Visible = false;
+                perizo.Visible = false;
+                pgorila.Visible = false;
+                pmapache.Visible = true;
             }
             if (txtnombre.Text == "erizo")
             {
-                Ptucan.Visible = false;
-                Pzorro.Visible = false;
-                Pgorila.Visible = false;
-                Pmapache.Visible = false;
-                Perizo.Visible = true;
+                ptucan.Visible = false;
+                pzorro.Visible = false;
+                pgorila.Visible = false;
+                pmapache.Visible = false;
+                perizo.Visible = true;
             }
             if (txtnombre.Text == "zorro")
             {
-                Ptucan.Visible = false;
-                Pgorila.Visible = false;
-                Perizo.Visible = false;
-                Pmapache.Visible = false;
-                Pzorro.Visible = true;
+                ptucan.Visible = false;
+                pgorila.Visible = false;
+                perizo.Visible = false;
+                pmapache.Visible = false;
+                pzorro.Visible = true;
             }
             if (txtnombre.Text == "tucan")
             {
-                Pgorila.Visible = false;
-                Pzorro.Visible = false;
-                Perizo.Visible = false;
-                Pmapache.Visible = false;
-                Ptucan.Visible = true;
+                pgorila.Visible = false;
+                pzorro.Visible = false;
+                perizo.Visible = false;
+                pmapache.Visible = false;
+                ptucan.Visible = true;
             }
 
 
@@ -109,43 +111,43 @@ namespace App_Educativa_Sobre_Animales
             this.omnivorosBindingSource.MoveFirst();
             if (txtnombre.Text == "gorila")
             {
-                Ptucan.Visible = false;
-                Pzorro.Visible = false;
-                Perizo.Visible = false;
-                Pmapache.Visible = false;
-                Pgorila.Visible = true;
+                ptucan.Visible = false;
+                pzorro.Visible = false;
+                perizo.Visible = false;
+                pmapache.Visible = false;
+                pgorila.Visible = true;
             }
             if (txtnombre.Text == "mapache")
             {
-                Ptucan.Visible = false;
-                Pzorro.Visible = false;
-                Perizo.Visible = false;
-                Pgorila.Visible = false;
-                Pmapache.Visible = true;
+                ptucan.Visible = false;
+                pzorro.Visible = false;
+                perizo.Visible = false;
+                pgorila.Visible = false;
+                pmapache.Visible = true;
             }
             if (txtnombre.Text == "erizo")
             {
-                Ptucan.Visible = false;
-                Pzorro.Visible = false;
-                Pgorila.Visible = false;
-                Pmapache.Visible = false;
-                Perizo.Visible = true;
+                ptucan.Visible = false;
+                pzorro.Visible = false;
+                pgorila.Visible = false;
+                pmapache.Visible = false;
+                perizo.Visible = true;
             }
             if (txtnombre.Text == "zorro")
             {
-                Ptucan.Visible = false;
-                Pgorila.Visible = false;
-                Perizo.Visible = false;
-                Pmapache.Visible = false;
-                Pzorro.Visible = true;
+                ptucan.Visible = false;
+                pgorila.Visible = false;
+                perizo.Visible = false;
+                pmapache.Visible = false;
+                pzorro.Visible = true;
             }
             if (txtnombre.Text == "tucan")
             {
-                Pgorila.Visible = false;
-                Pzorro.Visible = false;
-                Perizo.Visible = false;
-                Pmapache.Visible = false;
-                Ptucan.Visible = true;
+                pgorila.Visible = false;
+                pzorro.Visible = false;
+                perizo.Visible = false;
+                pmapache.Visible = false;
+                ptucan.Visible = true;
             }
         }
 
@@ -154,43 +156,43 @@ namespace App_Educativa_Sobre_Animales
             this.omnivorosBindingSource.MovePrevious();
             if (txtnombre.Text == "gorila")
             {
-                Ptucan.Visible = false;
-                Pzorro.Visible = false;
-                Perizo.Visible = false;
-                Pmapache.Visible = false;
-                Pgorila.Visible = true;
+                ptucan.Visible = false;
+                pzorro.Visible = false;
+                perizo.Visible = false;
+                pmapache.Visible = false;
+                pgorila.Visible = true;
             }
             if (txtnombre.Text == "mapache")
             {
-                Ptucan.Visible = false;
-                Pzorro.Visible = false;
-                Perizo.Visible = false;
-                Pgorila.Visible = false;
-                Pmapache.Visible = true;
+                ptucan.Visible = false;
+                pzorro.Visible = false;
+                perizo.Visible = false;
+                pgorila.Visible = false;
+                pmapache.Visible = true;
             }
             if (txtnombre.Text == "erizo")
             {
-                Ptucan.Visible = false;
-                Pzorro.Visible = false;
-                Pgorila.Visible = false;
-                Pmapache.Visible = false;
-                Perizo.Visible = true;
+                ptucan.Visible = false;
+                pzorro.Visible = false;
+                pgorila.Visible = false;
+                pmapache.Visible = false;
+                perizo.Visible = true;
             }
             if (txtnombre.Text == "zorro")
             {
-                Ptucan.Visible = false;
-                Pgorila.Visible = false;
-                Perizo.Visible = false;
-                Pmapache.Visible = false;
-                Pzorro.Visible = true;
+                ptucan.Visible = false;
+                pgorila.Visible = false;
+                perizo.Visible = false;
+                pmapache.Visible = false;
+                pzorro.Visible = true;
             }
             if (txtnombre.Text == "tucan")
             {
-                Pgorila.Visible = false;
-                Pzorro.Visible = false;
-                Perizo.Visible = false;
-                Pmapache.Visible = false;
-                Ptucan.Visible = true;
+                pgorila.Visible = false;
+                pzorro.Visible = false;
+                perizo.Visible = false;
+                pmapache.Visible = false;
+                ptucan.Visible = true;
             }
         }
 
@@ -199,43 +201,43 @@ namespace App_Educativa_Sobre_Animales
             this.omnivorosBindingSource.MoveNext();
             if (txtnombre.Text == "gorila")
             {
-                Ptucan.Visible = false;
-                Pzorro.Visible = false;
-                Perizo.Visible = false;
-                Pmapache.Visible = false;
-                Pgorila.Visible = true;
+                ptucan.Visible = false;
+                pzorro.Visible = false;
+                perizo.Visible = false;
+                pmapache.Visible = false;
+                pgorila.Visible = true;
             }
             if (txtnombre.Text == "mapache")
             {
-                Ptucan.Visible = false;
-                Pzorro.Visible = false;
-                Perizo.Visible = false;
-                Pgorila.Visible = false;
-                Pmapache.Visible = true;
+                ptucan.Visible = false;
+                pzorro.Visible = false;
+                perizo.Visible = false;
+                pgorila.Visible = false;
+                pmapache.Visible = true;
             }
             if (txtnombre.Text == "erizo")
             {
-                Ptucan.Visible = false;
-                Pzorro.Visible = false;
-                Pgorila.Visible = false;
-                Pmapache.Visible = false;
-                Perizo.Visible = true;
+                ptucan.Visible = false;
+                pzorro.Visible = false;
+                pgorila.Visible = false;
+                pmapache.Visible = false;
+                perizo.Visible = true;
             }
             if (txtnombre.Text == "zorro")
             {
-                Ptucan.Visible = false;
-                Pgorila.Visible = false;
-                Perizo.Visible = false;
-                Pmapache.Visible = false;
-                Pzorro.Visible = true;
+                ptucan.Visible = false;
+                pgorila.Visible = false;
+                perizo.Visible = false;
+                pmapache.Visible = false;
+                pzorro.Visible = true;
             }
             if (txtnombre.Text == "tucan")
             {
-                Pgorila.Visible = false;
-                Pzorro.Visible = false;
-                Perizo.Visible = false;
-                Pmapache.Visible = false;
-                Ptucan.Visible = true;
+                pgorila.Visible = false;
+                pzorro.Visible = false;
+                perizo.Visible = false;
+                pmapache.Visible = false;
+                ptucan.Visible = true;
             }
         }
 
@@ -244,43 +246,43 @@ namespace App_Educativa_Sobre_Animales
             this.omnivorosBindingSource.MoveLast();
             if (txtnombre.Text == "gorila")
             {
-                Ptucan.Visible = false;
-                Pzorro.Visible = false;
-                Perizo.Visible = false;
-                Pmapache.Visible = false;
-                Pgorila.Visible = true;
+                ptucan.Visible = false;
+                pzorro.Visible = false;
+                perizo.Visible = false;
+                pmapache.Visible = false;
+                pgorila.Visible = true;
             }
             if (txtnombre.Text == "mapache")
             {
-                Ptucan.Visible = false;
-                Pzorro.Visible = false;
-                Perizo.Visible = false;
-                Pgorila.Visible = false;
-                Pmapache.Visible = true;
+                ptucan.Visible = false;
+                pzorro.Visible = false;
+                perizo.Visible = false;
+                pgorila.Visible = false;
+                pmapache.Visible = true;
             }
             if (txtnombre.Text == "erizo")
             {
-                Ptucan.Visible = false;
-                Pzorro.Visible = false;
-                Pgorila.Visible = false;
-                Pmapache.Visible = false;
-                Perizo.Visible = true;
+                ptucan.Visible = false;
+                pzorro.Visible = false;
+                pgorila.Visible = false;
+                pmapache.Visible = false;
+                perizo.Visible = true;
             }
             if (txtnombre.Text == "zorro")
             {
-                Ptucan.Visible = false;
-                Pgorila.Visible = false;
-                Perizo.Visible = false;
-                Pmapache.Visible = false;
-                Pzorro.Visible = true;
+                ptucan.Visible = false;
+                pgorila.Visible = false;
+                perizo.Visible = false;
+                pmapache.Visible = false;
+                pzorro.Visible = true;
             }
             if (txtnombre.Text == "tucan")
             {
-                Pgorila.Visible = false;
-                Pzorro.Visible = false;
-                Perizo.Visible = false;
-                Pmapache.Visible = false;
-                Ptucan.Visible = true;
+                pgorila.Visible = false;
+                pzorro.Visible = false;
+                perizo.Visible = false;
+                pmapache.Visible = false;
+                ptucan.Visible = true;
             }
         }
 
@@ -296,6 +298,12 @@ namespace App_Educativa_Sobre_Animales
 
         private void Perizo_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void bsalir_Click(object sender, EventArgs e)
+        {
+            Close();
 
         }
     }

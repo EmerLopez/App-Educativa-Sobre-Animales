@@ -23,15 +23,17 @@ namespace App_Educativa_Sobre_Animales
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.invertebrados' Puede moverla o quitarla según sea necesario.
+            this.invertebradosTableAdapter.Fill(this.wonderzooDataSet.invertebrados);
+
 
             if (txtnombre.Text == "mariquitas")
             {
-                pmariquitas.Visible = true;
+                pmariquita.Visible = true;
                 pabeja.Visible = false;
-                pmedusas.Visible = false;
+                pmedusa.Visible = false;
                 pestrella.Visible = false;
-                porugas.Visible = false;
+                poruga.Visible = false;
             }
 
         }
@@ -67,43 +69,43 @@ namespace App_Educativa_Sobre_Animales
             }
             if(txtnombre.Text == "mariquitas")
             {
-                pmariquitas.Visible = true;
+                pmariquita.Visible = true;
                 pabeja.Visible = false;
-                pmedusas.Visible = false;
+                pmedusa.Visible = false;
                 pestrella.Visible = false;
-                porugas.Visible = false;
+                poruga.Visible = false;
             }
             if (txtnombre.Text == "abeja")
             {
-                pmariquitas.Visible = false;
+                pmariquita.Visible = false;
                 pabeja.Visible = true;
-                pmedusas.Visible = false;
+                pmedusa.Visible = false;
                 pestrella.Visible = false;
-                porugas.Visible = false;
+                poruga.Visible = false;
             }
             if (txtnombre.Text == "medusas")
             {
-                pmariquitas.Visible = false;
+                pmariquita.Visible = false;
                 pabeja.Visible = false;
-                pmedusas.Visible = true;
+                pmedusa.Visible = true;
                 pestrella.Visible = false;
-                porugas.Visible = false;
+                poruga.Visible = false;
             }
             if (txtnombre.Text == "estrella de mar")
             {
-                pmariquitas.Visible = false;
+                pmariquita.Visible = false;
                 pabeja.Visible = false;
-                pmedusas.Visible = false;
+                pmedusa.Visible = false;
                 pestrella.Visible = true;
-                porugas.Visible = false;
+                poruga.Visible = false;
             }
             if (txtnombre.Text == "orugas")
             {
-                pmariquitas.Visible = false;
+                pmariquita.Visible = false;
                 pabeja.Visible = false;
-                pmedusas.Visible = false;
+                pmedusa.Visible = false;
                 pestrella.Visible = false;
-                porugas.Visible = true;
+                poruga.Visible = true;
             }
 
 
@@ -115,11 +117,43 @@ namespace App_Educativa_Sobre_Animales
             this.invertebradosBindingSource.MoveFirst();
             if (txtnombre.Text == "mariquitas")
             {
-                pmariquitas.Visible = true;
+                pmariquita.Visible = true;
                 pabeja.Visible = false;
-                pmedusas.Visible = false;
+                pmedusa.Visible = false;
                 pestrella.Visible = false;
-                porugas.Visible = false;
+                poruga.Visible = false;
+            }
+            if (txtnombre.Text == "abeja")
+            {
+                pmariquita.Visible = false;
+                pabeja.Visible = true;
+                pmedusa.Visible = false;
+                pestrella.Visible = false;
+                poruga.Visible = false;
+            }
+            if (txtnombre.Text == "medusas")
+            {
+                pmariquita.Visible = false;
+                pabeja.Visible = false;
+                pmedusa.Visible = true;
+                pestrella.Visible = false;
+                poruga.Visible = false;
+            }
+            if (txtnombre.Text == "estrella de mar")
+            {
+                pmariquita.Visible = false;
+                pabeja.Visible = false;
+                pmedusa.Visible = false;
+                pestrella.Visible = true;
+                poruga.Visible = false;
+            }
+            if (txtnombre.Text == "orugas")
+            {
+                pmariquita.Visible = false;
+                pabeja.Visible = false;
+                pmedusa.Visible = false;
+                pestrella.Visible = false;
+                poruga.Visible = true;
             }
         }
 
@@ -128,43 +162,43 @@ namespace App_Educativa_Sobre_Animales
             this.invertebradosBindingSource.MovePrevious();
             if (txtnombre.Text == "mariquitas")
             {
-                pmariquitas.Visible = true;
+                pmariquita.Visible = true;
                 pabeja.Visible = false;
-                pmedusas.Visible = false;
+                pmedusa.Visible = false;
                 pestrella.Visible = false;
-                porugas.Visible = false;
+                poruga.Visible = false;
             }
             if (txtnombre.Text == "abeja")
             {
-                pmariquitas.Visible = false;
+                pmariquita.Visible = false;
                 pabeja.Visible = true;
-                pmedusas.Visible = false;
+                pmedusa.Visible = false;
                 pestrella.Visible = false;
-                porugas.Visible = false;
+                poruga.Visible = false;
             }
             if (txtnombre.Text == "medusas")
             {
-                pmariquitas.Visible = false;
+                pmariquita.Visible = false;
                 pabeja.Visible = false;
-                pmedusas.Visible = true;
+                pmedusa.Visible = true;
                 pestrella.Visible = false;
-                porugas.Visible = false;
+                poruga.Visible = false;
             }
             if (txtnombre.Text == "estrella de mar")
             {
-                pmariquitas.Visible = false;
+                pmariquita.Visible = false;
                 pabeja.Visible = false;
-                pmedusas.Visible = false;
+                pmedusa.Visible = false;
                 pestrella.Visible = true;
-                porugas.Visible = false;
+                poruga.Visible = false;
             }
             if (txtnombre.Text == "orugas")
             {
-                pmariquitas.Visible = false;
+                pmariquita.Visible = false;
                 pabeja.Visible = false;
-                pmedusas.Visible = false;
+                pmedusa.Visible = false;
                 pestrella.Visible = false;
-                porugas.Visible = true;
+                poruga.Visible = true;
             }
         }
 
@@ -173,56 +207,88 @@ namespace App_Educativa_Sobre_Animales
             this.invertebradosBindingSource.MoveNext();
             if (txtnombre.Text == "mariquitas")
             {
-                pmariquitas.Visible = true;
+                pmariquita.Visible = true;
                 pabeja.Visible = false;
-                pmedusas.Visible = false;
+                pmedusa.Visible = false;
                 pestrella.Visible = false;
-                porugas.Visible = false;
+                poruga.Visible = false;
             }
             if (txtnombre.Text == "abeja")
             {
-                pmariquitas.Visible = false;
+                pmariquita.Visible = false;
                 pabeja.Visible = true;
-                pmedusas.Visible = false;
+                pmedusa.Visible = false;
                 pestrella.Visible = false;
-                porugas.Visible = false;
+                poruga.Visible = false;
             }
             if (txtnombre.Text == "medusas")
             {
-                pmariquitas.Visible = false;
+                pmariquita.Visible = false;
                 pabeja.Visible = false;
-                pmedusas.Visible = true;
+                pmedusa.Visible = true;
                 pestrella.Visible = false;
-                porugas.Visible = false;
+                poruga.Visible = false;
             }
             if (txtnombre.Text == "estrella de mar")
             {
-                pmariquitas.Visible = false;
+                pmariquita.Visible = false;
                 pabeja.Visible = false;
-                pmedusas.Visible = false;
+                pmedusa.Visible = false;
                 pestrella.Visible = true;
-                porugas.Visible = false;
+                poruga.Visible = false;
             }
             if (txtnombre.Text == "orugas")
             {
-                pmariquitas.Visible = false;
+                pmariquita.Visible = false;
                 pabeja.Visible = false;
-                pmedusas.Visible = false;
+                pmedusa.Visible = false;
                 pestrella.Visible = false;
-                porugas.Visible = true;
+                poruga.Visible = true;
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             this.invertebradosBindingSource.MoveLast();
+            if (txtnombre.Text == "mariquitas")
+            {
+                pmariquita.Visible = true;
+                pabeja.Visible = false;
+                pmedusa.Visible = false;
+                pestrella.Visible = false;
+                poruga.Visible = false;
+            }
+            if (txtnombre.Text == "abeja")
+            {
+                pmariquita.Visible = false;
+                pabeja.Visible = true;
+                pmedusa.Visible = false;
+                pestrella.Visible = false;
+                poruga.Visible = false;
+            }
+            if (txtnombre.Text == "medusas")
+            {
+                pmariquita.Visible = false;
+                pabeja.Visible = false;
+                pmedusa.Visible = true;
+                pestrella.Visible = false;
+                poruga.Visible = false;
+            }
+            if (txtnombre.Text == "estrella de mar")
+            {
+                pmariquita.Visible = false;
+                pabeja.Visible = false;
+                pmedusa.Visible = false;
+                pestrella.Visible = true;
+                poruga.Visible = false;
+            }
             if (txtnombre.Text == "orugas")
             {
-                pmariquitas.Visible = false;
+                pmariquita.Visible = false;
                 pabeja.Visible = false;
-                pmedusas.Visible = false;
+                pmedusa.Visible = false;
                 pestrella.Visible = false;
-                porugas.Visible = true;
+                poruga.Visible = true;
             }
         }
 

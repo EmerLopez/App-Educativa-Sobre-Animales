@@ -118,49 +118,202 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="desktop_11d1bd6f-4a6d-4e98-a78e-ccdffce29db5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\desktop_11d1bd6f-4a6d-4e98-a78e-ccdffce29db5.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gorila5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\Omnivoros5\gorila5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ovi 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ovi 3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="unknown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unknown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Lion-Transparent-Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lion-Transparent-Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vaca5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\vertebrados5\vaca5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ovi 2.1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ovi 2.1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="equipo-animal-feliz-sosteniendo-llave-grande_116802-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\equipo-animal-feliz-sosteniendo-llave-grande_116802-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tortuga5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\Anfibios5\tortuga5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pngtree-green-animal-frog-image_1473867" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-green-animal-frog-image_1473867.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="zoo-vector-ilustracion-con-animales-salvajes-de-safari-de-dibujos-animados-banner-de-bienvenida-zoologico-animales-animales-de-fauna-rhinoceros-y-flamingo-2b0thxn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zoo-vector-ilustracion-con-animales-salvajes-de-safari-de-dibujos-animados-banner-de-bienvenida-zoologico-animales-animales-de-fauna-rhinoceros-y-flamingo-2b0thxn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="perro5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\domesticos5\perro5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="png-transparent-computer-icons-user-customer-others" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png-transparent-computer-icons-user-customer-others.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pato5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\domesticos5\pato5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ovi 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ovi 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MicrosoftTeams-image (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MicrosoftTeams-image (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngtree-cute-axolotl-cartoon-vector-illustration-png-image_4689474" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-cute-axolotl-cartoon-vector-illustration-png-image_4689474.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cerdo5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\domesticos5\cerdo5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="unknown (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unknown (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="avestruz5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\oviparos5\avestruz5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="aguila5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\carnivoros5\aguila5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tigre51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\carnivoros5\tigre5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="elefante5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\vertebrados5\elefante5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lemur5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\vertebrados5\lemur5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rana5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\Anfibios5\rana5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MicrosoftTeams-image (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MicrosoftTeams-image (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MicrosoftTeams-image (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="desktop_11d1bd6f-4a6d-4e98-a78e-ccdffce29db5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\desktop_11d1bd6f-4a6d-4e98-a78e-ccdffce29db5.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zorro5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\Omnivoros5\zorro5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="erizo5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\Omnivoros5\erizo5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="equipo-animal-feliz-sosteniendo-llave-grande_116802-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\equipo-animal-feliz-sosteniendo-llave-grande_116802-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oruga5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\invertebrados5\oruga5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-cute-axolotl-cartoon-vector-illustration-png-image_4689474" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-cute-axolotl-cartoon-vector-illustration-png-image_4689474.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tucan5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\Omnivoros5\tucan5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medusa5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\invertebrados5\medusa5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mariquita5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\invertebrados5\mariquita5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jirafa51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\herviboros5\jirafa5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panda5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\herviboros5\panda5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lion-Transparent-Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lion-Transparent-Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="koala5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\viviparos5\koala5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="estrella5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\invertebrados5\estrella5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unknown (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unknown (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unknown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unknown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jirafa5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\viviparos5\jirafa5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ovi 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ovi 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="caballo5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\vertebrados5\caballo5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tortugam5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\oviparos5\tortugam5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zorro51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\carnivoros5\zorro5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gallina5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\oviparos5\gallina5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="leopardo5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\salvajes5\leopardo5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rinoceronte5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\viviparos5\rinoceronte5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cobra5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\salvajes5\cobra5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="serpiente5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\Anfibios5\serpiente5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="png-transparent-computer-icons-user-customer-others" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png-transparent-computer-icons-user-customer-others.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ovi 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ovi 3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iguana5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\Anfibios5\iguana5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tigre5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\salvajes5\tigre5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canguro5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\herviboros5\canguro5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ajolote5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\vertebrados5\ajolote5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oso5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\viviparos5\oso5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="conejo5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\domesticos5\conejo5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="abeja5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\invertebrados5\abeja5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gacela5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\herviboros5\gacela5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="torogoz5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\oviparos5\torogoz5.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapache5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\Omnivoros5\mapache5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oveja5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\herviboros5\oveja5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cocodrilo5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\Anfibios5\cocodrilo5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lobo5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\salvajes5\lobo5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delfin5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\viviparos5\delfin5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pinguino5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\oviparos5\pinguino5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gato5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\domesticos5\gato5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tiburon5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\salvajes5\tiburon5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="puma5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\carnivoros5\puma5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoo-vector-ilustracion-con-animales-salvajes-de-safari-de-dibujos-animados-banner-de-bienvenida-zoologico-animales-animales-de-fauna-rhinoceros-y-flamingo-2b0thxn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zoo-vector-ilustracion-con-animales-salvajes-de-safari-de-dibujos-animados-banner-de-bienvenida-zoologico-animales-animales-de-fauna-rhinoceros-y-flamingo-2b0thxn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gaviota5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\carnivoros5\gaviota5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cocodrilo55" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images5\Anfibios5\cocodrilo55.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

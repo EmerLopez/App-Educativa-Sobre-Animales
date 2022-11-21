@@ -48,16 +48,16 @@ namespace App_Educativa_Sobre_Animales
             this.txtbuscar = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.posopanda = new System.Windows.Forms.PictureBox();
-            this.pgacela = new System.Windows.Forms.PictureBox();
-            this.pjirafa = new System.Windows.Forms.PictureBox();
-            this.pcanguro = new System.Windows.Forms.PictureBox();
+            this.ppanda = new System.Windows.Forms.PictureBox();
             this.poveja = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.posopanda)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pgacela)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pjirafa)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcanguro)).BeginInit();
+            this.pjirafa = new System.Windows.Forms.PictureBox();
+            this.pgacela = new System.Windows.Forms.PictureBox();
+            this.pcanguro = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ppanda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.poveja)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pjirafa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pgacela)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcanguro)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnombre
@@ -287,62 +287,55 @@ namespace App_Educativa_Sobre_Animales
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // posopanda
+            // ppanda
             // 
-            this.posopanda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("posopanda.BackgroundImage")));
-            this.posopanda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.posopanda.Location = new System.Drawing.Point(502, 59);
-            this.posopanda.Margin = new System.Windows.Forms.Padding(2);
-            this.posopanda.Name = "posopanda";
-            this.posopanda.Size = new System.Drawing.Size(346, 331);
-            this.posopanda.TabIndex = 6;
-            this.posopanda.TabStop = false;
-            this.posopanda.Visible = false;
-            this.posopanda.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pgacela
-            // 
-            this.pgacela.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pgacela.BackgroundImage")));
-            this.pgacela.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pgacela.Location = new System.Drawing.Point(502, 59);
-            this.pgacela.Name = "pgacela";
-            this.pgacela.Size = new System.Drawing.Size(346, 331);
-            this.pgacela.TabIndex = 20;
-            this.pgacela.TabStop = false;
-            this.pgacela.Visible = false;
-            // 
-            // pjirafa
-            // 
-            this.pjirafa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pjirafa.BackgroundImage")));
-            this.pjirafa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pjirafa.Location = new System.Drawing.Point(502, 59);
-            this.pjirafa.Name = "pjirafa";
-            this.pjirafa.Size = new System.Drawing.Size(346, 331);
-            this.pjirafa.TabIndex = 21;
-            this.pjirafa.TabStop = false;
-            this.pjirafa.Visible = false;
-            // 
-            // pcanguro
-            // 
-            this.pcanguro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pcanguro.BackgroundImage")));
-            this.pcanguro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pcanguro.Location = new System.Drawing.Point(502, 59);
-            this.pcanguro.Name = "pcanguro";
-            this.pcanguro.Size = new System.Drawing.Size(346, 331);
-            this.pcanguro.TabIndex = 22;
-            this.pcanguro.TabStop = false;
-            this.pcanguro.Visible = false;
+            this.ppanda.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.panda5;
+            this.ppanda.Location = new System.Drawing.Point(509, 59);
+            this.ppanda.Name = "ppanda";
+            this.ppanda.Size = new System.Drawing.Size(346, 331);
+            this.ppanda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ppanda.TabIndex = 24;
+            this.ppanda.TabStop = false;
             // 
             // poveja
             // 
-            this.poveja.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("poveja.BackgroundImage")));
-            this.poveja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.poveja.Location = new System.Drawing.Point(502, 59);
+            this.poveja.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.oveja5;
+            this.poveja.Location = new System.Drawing.Point(509, 59);
             this.poveja.Name = "poveja";
             this.poveja.Size = new System.Drawing.Size(346, 331);
+            this.poveja.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.poveja.TabIndex = 23;
             this.poveja.TabStop = false;
-            this.poveja.Visible = false;
+            // 
+            // pjirafa
+            // 
+            this.pjirafa.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.jirafa51;
+            this.pjirafa.Location = new System.Drawing.Point(508, 59);
+            this.pjirafa.Name = "pjirafa";
+            this.pjirafa.Size = new System.Drawing.Size(346, 331);
+            this.pjirafa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pjirafa.TabIndex = 22;
+            this.pjirafa.TabStop = false;
+            // 
+            // pgacela
+            // 
+            this.pgacela.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.gacela5;
+            this.pgacela.Location = new System.Drawing.Point(509, 59);
+            this.pgacela.Name = "pgacela";
+            this.pgacela.Size = new System.Drawing.Size(346, 331);
+            this.pgacela.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pgacela.TabIndex = 21;
+            this.pgacela.TabStop = false;
+            // 
+            // pcanguro
+            // 
+            this.pcanguro.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.canguro5;
+            this.pcanguro.Location = new System.Drawing.Point(508, 59);
+            this.pcanguro.Name = "pcanguro";
+            this.pcanguro.Size = new System.Drawing.Size(346, 331);
+            this.pcanguro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcanguro.TabIndex = 20;
+            this.pcanguro.TabStop = false;
             // 
             // herviborosanimales
             // 
@@ -350,10 +343,11 @@ namespace App_Educativa_Sobre_Animales
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(886, 541);
+            this.Controls.Add(this.ppanda);
             this.Controls.Add(this.poveja);
-            this.Controls.Add(this.pcanguro);
             this.Controls.Add(this.pjirafa);
             this.Controls.Add(this.pgacela);
+            this.Controls.Add(this.pcanguro);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtbuscar);
@@ -367,7 +361,6 @@ namespace App_Educativa_Sobre_Animales
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.posopanda);
             this.Controls.Add(this.txtcomportamiento);
             this.Controls.Add(this.txthabitat);
             this.Controls.Add(this.txtalimentacion);
@@ -380,11 +373,11 @@ namespace App_Educativa_Sobre_Animales
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WonderZoo";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.posopanda)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pgacela)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pjirafa)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcanguro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ppanda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.poveja)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pjirafa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pgacela)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcanguro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -410,11 +403,11 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.ComboBox txtbuscar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.PictureBox posopanda;
+        private System.Windows.Forms.PictureBox pcanguro;
         private System.Windows.Forms.PictureBox pgacela;
         private System.Windows.Forms.PictureBox pjirafa;
-        private System.Windows.Forms.PictureBox pcanguro;
         private System.Windows.Forms.PictureBox poveja;
+        private System.Windows.Forms.PictureBox ppanda;
     }
 }
 

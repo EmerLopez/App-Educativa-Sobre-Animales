@@ -24,14 +24,49 @@ namespace App_Educativa_Sobre_Animales
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.herviboros' Puede moverla o quitarla según sea necesario.
-           // this.herviborosTableAdapter.Fill(this.wonderzooDataSet.herviboros);
-            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.herviboros' Puede moverla o quitarla según sea necesario.
-           // this.herviborosTableAdapter.Fill(this.wonderzooDataSet.herviboros);
-            // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet4.oviparos' Puede moverla o quitarla según sea necesario.
-            // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet3.oviparos' Puede moverla o quitarla según sea necesario.
-            //this.oviparosTableAdapter.Fill(this.fenaheDataSet3.oviparos);
+            this.herviborosTableAdapter.Fill(this.wonderzooDataSet.herviboros);
 
-            posopanda.Visible = true;
+
+            if (txtnombre.Text == "panda")
+            {
+                ppanda.Visible = true;
+                pgacela.Visible = false;
+                pjirafa.Visible = false;
+                pcanguro.Visible = false;
+                poveja.Visible = false;
+            }
+            if (txtnombre.Text == "gacela")
+            {
+                ppanda.Visible = false;
+                pgacela.Visible = true;
+                pjirafa.Visible = false;
+                pcanguro.Visible = false;
+                poveja.Visible = false;
+            }
+            if (txtnombre.Text == "jirafa")
+            {
+                ppanda.Visible = false;
+                pgacela.Visible = false;
+                pjirafa.Visible = true;
+                pcanguro.Visible = false;
+                poveja.Visible = false;
+            }
+            if (txtnombre.Text == "canguro")
+            {
+                ppanda.Visible = false;
+                pgacela.Visible = false;
+                pjirafa.Visible = false;
+                pcanguro.Visible = true;
+                poveja.Visible = false;
+            }
+            if (txtnombre.Text == "oveja")
+            {
+                ppanda.Visible = false;
+                pgacela.Visible = false;
+                pjirafa.Visible = false;
+                pcanguro.Visible = false;
+                poveja.Visible = true;
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -63,9 +98,9 @@ namespace App_Educativa_Sobre_Animales
                 MessageBox.Show("Campo de busqueda está vacío", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //throw;
             }
-            if (txtnombre.Text == "panda") ;
+            if (txtnombre.Text == "panda") 
             {
-                posopanda.Visible = true;
+                ppanda.Visible = true;
                 pgacela.Visible = false;
                 pjirafa.Visible = false;
                 pcanguro.Visible = false;
@@ -73,7 +108,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "gacela")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = true;
                 pjirafa.Visible = false;
                 pcanguro.Visible = false;
@@ -81,7 +116,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "jirafa")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = false;
                 pjirafa.Visible = true;
                 pcanguro.Visible = false;
@@ -89,7 +124,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "canguro")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = false;
                 pjirafa.Visible = false;
                 pcanguro.Visible = true;
@@ -97,7 +132,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "oveja")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = false;
                 pjirafa.Visible = false;
                 pcanguro.Visible = false;
@@ -113,9 +148,9 @@ namespace App_Educativa_Sobre_Animales
         private void button1_Click(object sender, EventArgs e)
         {
             this.herviborosBindingSource.MoveFirst();
-            if (txtnombre.Text == "panda") ;
+            if (txtnombre.Text == "panda") 
             {
-                posopanda.Visible = true;
+                ppanda.Visible = true;
                 pgacela.Visible = false;
                 pjirafa.Visible = false;
                 pcanguro.Visible = false;
@@ -123,7 +158,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "gacela")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = true;
                 pjirafa.Visible = false;
                 pcanguro.Visible = false;
@@ -131,7 +166,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "jirafa")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = false;
                 pjirafa.Visible = true;
                 pcanguro.Visible = false;
@@ -139,7 +174,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "canguro")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = false;
                 pjirafa.Visible = false;
                 pcanguro.Visible = true;
@@ -147,7 +182,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "oveja")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = false;
                 pjirafa.Visible = false;
                 pcanguro.Visible = false;
@@ -158,9 +193,9 @@ namespace App_Educativa_Sobre_Animales
         private void button2_Click(object sender, EventArgs e)
         {
             this.herviborosBindingSource.MovePrevious();
-            if (txtnombre.Text == "panda");
+            if (txtnombre.Text == "panda") 
             {
-                posopanda.Visible = true;
+                ppanda.Visible = true;
                 pgacela.Visible = false;
                 pjirafa.Visible = false;
                 pcanguro.Visible = false;
@@ -168,7 +203,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "gacela")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = true;
                 pjirafa.Visible = false;
                 pcanguro.Visible = false;
@@ -176,15 +211,15 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "jirafa")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = false;
-                pjirafa.Visible =true;
+                pjirafa.Visible = true;
                 pcanguro.Visible = false;
                 poveja.Visible = false;
             }
             if (txtnombre.Text == "canguro")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = false;
                 pjirafa.Visible = false;
                 pcanguro.Visible = true;
@@ -192,7 +227,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "oveja")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = false;
                 pjirafa.Visible = false;
                 pcanguro.Visible = false;
@@ -205,9 +240,9 @@ namespace App_Educativa_Sobre_Animales
         private void button3_Click(object sender, EventArgs e)
         {
             this.herviborosBindingSource.MoveNext();
-            if (txtnombre.Text == "panda") ;
+            if (txtnombre.Text == "panda") 
             {
-                posopanda.Visible = true;
+                ppanda.Visible = true;
                 pgacela.Visible = false;
                 pjirafa.Visible = false;
                 pcanguro.Visible = false;
@@ -215,7 +250,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "gacela")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = true;
                 pjirafa.Visible = false;
                 pcanguro.Visible = false;
@@ -223,7 +258,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "jirafa")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = false;
                 pjirafa.Visible = true;
                 pcanguro.Visible = false;
@@ -231,7 +266,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "canguro")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = false;
                 pjirafa.Visible = false;
                 pcanguro.Visible = true;
@@ -239,7 +274,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "oveja")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = false;
                 pjirafa.Visible = false;
                 pcanguro.Visible = false;
@@ -250,9 +285,9 @@ namespace App_Educativa_Sobre_Animales
         private void button4_Click(object sender, EventArgs e)
         {
             this.herviborosBindingSource.MoveLast();
-            if (txtnombre.Text == "panda") ;
+            if (txtnombre.Text == "panda") 
             {
-                posopanda.Visible = true;
+                ppanda.Visible = true;
                 pgacela.Visible = false;
                 pjirafa.Visible = false;
                 pcanguro.Visible = false;
@@ -260,7 +295,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "gacela")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = true;
                 pjirafa.Visible = false;
                 pcanguro.Visible = false;
@@ -268,7 +303,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "jirafa")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = false;
                 pjirafa.Visible = true;
                 pcanguro.Visible = false;
@@ -276,7 +311,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "canguro")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = false;
                 pjirafa.Visible = false;
                 pcanguro.Visible = true;
@@ -284,7 +319,7 @@ namespace App_Educativa_Sobre_Animales
             }
             if (txtnombre.Text == "oveja")
             {
-                posopanda.Visible = false;
+                ppanda.Visible = false;
                 pgacela.Visible = false;
                 pjirafa.Visible = false;
                 pcanguro.Visible = false;

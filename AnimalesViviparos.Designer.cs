@@ -29,14 +29,12 @@ namespace App_Educativa_Sobre_Animales
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnimalesViviparos));
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtpeso = new System.Windows.Forms.TextBox();
             this.txtalimentacion = new System.Windows.Forms.TextBox();
             this.txthabitat = new System.Windows.Forms.TextBox();
             this.txtcomportamiento = new System.Windows.Forms.TextBox();
-            this.prinoceronte = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -50,27 +48,22 @@ namespace App_Educativa_Sobre_Animales
             this.Combobuscar = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.pdelfin = new System.Windows.Forms.PictureBox();
-            this.pjirafa = new System.Windows.Forms.PictureBox();
+            this.prinoceronte = new System.Windows.Forms.PictureBox();
             this.poso = new System.Windows.Forms.PictureBox();
             this.pkoala = new System.Windows.Forms.PictureBox();
-            //this.wonderzooDataSet = new App_Educativa_Sobre_Animales.wonderzooDataSet();
-            //this.viviparosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            //this.viviparosTableAdapter = new App_Educativa_Sobre_Animales.wonderzooDataSetTableAdapters.viviparosTableAdapter();
+            this.pjirafa = new System.Windows.Forms.PictureBox();
+            this.pdelfin = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.prinoceronte)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pdelfin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pjirafa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.poso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkoala)).BeginInit();
-            //((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).BeginInit();
-            //((System.ComponentModel.ISupportInitialize)(this.viviparosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pjirafa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pdelfin)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnombre
             // 
             this.txtnombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            //this.txtnombre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viviparosBindingSource, "nombre", true));
             this.txtnombre.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombre.Location = new System.Drawing.Point(171, 59);
             this.txtnombre.Margin = new System.Windows.Forms.Padding(2);
@@ -84,7 +77,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtpeso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtpeso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            //this.txtpeso.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viviparosBindingSource, "peso", true));
             this.txtpeso.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpeso.Location = new System.Drawing.Point(178, 115);
             this.txtpeso.Margin = new System.Windows.Forms.Padding(2);
@@ -98,7 +90,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtalimentacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtalimentacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            //this.txtalimentacion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viviparosBindingSource, "alimentacion", true));
             this.txtalimentacion.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtalimentacion.Location = new System.Drawing.Point(178, 175);
             this.txtalimentacion.Margin = new System.Windows.Forms.Padding(2);
@@ -113,7 +104,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txthabitat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txthabitat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            //this.txthabitat.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viviparosBindingSource, "habitat", true));
             this.txthabitat.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txthabitat.Location = new System.Drawing.Point(178, 252);
             this.txthabitat.Margin = new System.Windows.Forms.Padding(2);
@@ -128,7 +118,6 @@ namespace App_Educativa_Sobre_Animales
             // 
             this.txtcomportamiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtcomportamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            //this.txtcomportamiento.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viviparosBindingSource, "comportamiento", true));
             this.txtcomportamiento.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcomportamiento.Location = new System.Drawing.Point(178, 358);
             this.txtcomportamiento.Margin = new System.Windows.Forms.Padding(2);
@@ -138,19 +127,6 @@ namespace App_Educativa_Sobre_Animales
             this.txtcomportamiento.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtcomportamiento.Size = new System.Drawing.Size(257, 95);
             this.txtcomportamiento.TabIndex = 4;
-            // 
-            // prinoceronte
-            // 
-            this.prinoceronte.Image = ((System.Drawing.Image)(resources.GetObject("prinoceronte.Image")));
-            this.prinoceronte.Location = new System.Drawing.Point(502, 59);
-            this.prinoceronte.Margin = new System.Windows.Forms.Padding(2);
-            this.prinoceronte.Name = "prinoceronte";
-            this.prinoceronte.Size = new System.Drawing.Size(346, 331);
-            this.prinoceronte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.prinoceronte.TabIndex = 6;
-            this.prinoceronte.TabStop = false;
-            this.prinoceronte.Visible = false;
-            this.prinoceronte.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button1
             // 
@@ -312,68 +288,55 @@ namespace App_Educativa_Sobre_Animales
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // pdelfin
+            // prinoceronte
             // 
-            this.pdelfin.Image = ((System.Drawing.Image)(resources.GetObject("pdelfin.Image")));
-            this.pdelfin.Location = new System.Drawing.Point(502, 59);
-            this.pdelfin.Margin = new System.Windows.Forms.Padding(2);
-            this.pdelfin.Name = "pdelfin";
-            this.pdelfin.Size = new System.Drawing.Size(346, 331);
-            this.pdelfin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pdelfin.TabIndex = 20;
-            this.pdelfin.TabStop = false;
-            this.pdelfin.Visible = false;
-            // 
-            // pjirafa
-            // 
-            this.pjirafa.Image = ((System.Drawing.Image)(resources.GetObject("pjirafa.Image")));
-            this.pjirafa.Location = new System.Drawing.Point(502, 59);
-            this.pjirafa.Margin = new System.Windows.Forms.Padding(2);
-            this.pjirafa.Name = "pjirafa";
-            this.pjirafa.Size = new System.Drawing.Size(346, 331);
-            this.pjirafa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pjirafa.TabIndex = 21;
-            this.pjirafa.TabStop = false;
-            this.pjirafa.Visible = false;
+            this.prinoceronte.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.rinoceronte5;
+            this.prinoceronte.Location = new System.Drawing.Point(509, 69);
+            this.prinoceronte.Name = "prinoceronte";
+            this.prinoceronte.Size = new System.Drawing.Size(346, 334);
+            this.prinoceronte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.prinoceronte.TabIndex = 24;
+            this.prinoceronte.TabStop = false;
             // 
             // poso
             // 
-            this.poso.Image = ((System.Drawing.Image)(resources.GetObject("poso.Image")));
-            this.poso.Location = new System.Drawing.Point(502, 59);
-            this.poso.Margin = new System.Windows.Forms.Padding(2);
+            this.poso.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.oso5;
+            this.poso.Location = new System.Drawing.Point(508, 69);
             this.poso.Name = "poso";
-            this.poso.Size = new System.Drawing.Size(346, 331);
+            this.poso.Size = new System.Drawing.Size(346, 334);
             this.poso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.poso.TabIndex = 22;
+            this.poso.TabIndex = 23;
             this.poso.TabStop = false;
-            this.poso.Visible = false;
             // 
             // pkoala
             // 
-            this.pkoala.Image = ((System.Drawing.Image)(resources.GetObject("pkoala.Image")));
-            this.pkoala.Location = new System.Drawing.Point(502, 56);
-            this.pkoala.Margin = new System.Windows.Forms.Padding(2);
+            this.pkoala.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.koala5;
+            this.pkoala.Location = new System.Drawing.Point(509, 69);
             this.pkoala.Name = "pkoala";
             this.pkoala.Size = new System.Drawing.Size(346, 334);
             this.pkoala.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pkoala.TabIndex = 23;
+            this.pkoala.TabIndex = 22;
             this.pkoala.TabStop = false;
-            this.pkoala.Visible = false;
-            this.pkoala.Click += new System.EventHandler(this.pcaballo_Click);
             // 
-            // wonderzooDataSet
+            // pjirafa
             // 
-            //this.wonderzooDataSet.DataSetName = "wonderzooDataSet";
-           // this.wonderzooDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.pjirafa.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.jirafa5;
+            this.pjirafa.Location = new System.Drawing.Point(509, 69);
+            this.pjirafa.Name = "pjirafa";
+            this.pjirafa.Size = new System.Drawing.Size(346, 334);
+            this.pjirafa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pjirafa.TabIndex = 21;
+            this.pjirafa.TabStop = false;
             // 
-            // viviparosBindingSource
+            // pdelfin
             // 
-           // this.viviparosBindingSource.DataMember = "viviparos";
-            //this.viviparosBindingSource.DataSource = this.wonderzooDataSet;
-            // 
-            // viviparosTableAdapter
-            // 
-           // this.viviparosTableAdapter.ClearBeforeFill = true;
+            this.pdelfin.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.delfin5;
+            this.pdelfin.Location = new System.Drawing.Point(508, 69);
+            this.pdelfin.Name = "pdelfin";
+            this.pdelfin.Size = new System.Drawing.Size(346, 334);
+            this.pdelfin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pdelfin.TabIndex = 20;
+            this.pdelfin.TabStop = false;
             // 
             // AnimalesViviparos
             // 
@@ -381,8 +344,9 @@ namespace App_Educativa_Sobre_Animales
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(886, 541);
-            this.Controls.Add(this.pkoala);
+            this.Controls.Add(this.prinoceronte);
             this.Controls.Add(this.poso);
+            this.Controls.Add(this.pkoala);
             this.Controls.Add(this.pjirafa);
             this.Controls.Add(this.pdelfin);
             this.Controls.Add(this.button6);
@@ -398,7 +362,6 @@ namespace App_Educativa_Sobre_Animales
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.prinoceronte);
             this.Controls.Add(this.txtcomportamiento);
             this.Controls.Add(this.txthabitat);
             this.Controls.Add(this.txtalimentacion);
@@ -413,12 +376,10 @@ namespace App_Educativa_Sobre_Animales
             this.Text = "WonderZoo";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.prinoceronte)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pdelfin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pjirafa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.poso)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkoala)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.wonderzooDataSet)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.viviparosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pjirafa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pdelfin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -431,7 +392,6 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.TextBox txtalimentacion;
         private System.Windows.Forms.TextBox txthabitat;
         private System.Windows.Forms.TextBox txtcomportamiento;
-        private System.Windows.Forms.PictureBox prinoceronte;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -447,9 +407,10 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pdelfin;
         private System.Windows.Forms.PictureBox pjirafa;
-        private System.Windows.Forms.PictureBox poso;
         private System.Windows.Forms.PictureBox pkoala;
-       // private wonderzooDataSet wonderzooDataSet;
+        private System.Windows.Forms.PictureBox poso;
+        private System.Windows.Forms.PictureBox prinoceronte;
+        // private wonderzooDataSet wonderzooDataSet;
         //private System.Windows.Forms.BindingSource viviparosBindingSource;
         //private wonderzooDataSetTableAdapters.viviparosTableAdapter viviparosTableAdapter;
         //private App_Educativa_Sobre_Animales.fenaheDataSetTableAdapters.viviparosTableAdapter viviparosTableAdapter;

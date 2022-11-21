@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("WikiAnimales")]
+[assembly: AssemblyTitle("WonderZoo")]
 [assembly: AssemblyDescription("Somos una compañia especializada en informacion de categorias de animales")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Nombre de la Compañia: FENAHEC_SV")]

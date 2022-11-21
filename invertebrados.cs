@@ -30,6 +30,7 @@ namespace App_Educativa_Sobre_Animales
         private void button1_Click_1(object sender, EventArgs e)
         {
             invertebradosanimales invert = new invertebradosanimales();
+            this.Hide();
             invert.Show();
         }
     }

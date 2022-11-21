@@ -1,7 +1,7 @@
 ﻿
 namespace App_Educativa_Sobre_Animales
 {
-    partial class Pcobra
+    partial class AnimalesSalvajes
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@ namespace App_Educativa_Sobre_Animales
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pcobra));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnimalesSalvajes));
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtpeso = new System.Windows.Forms.TextBox();
             this.txtalimentacion = new System.Windows.Forms.TextBox();
@@ -47,17 +47,17 @@ namespace App_Educativa_Sobre_Animales
             this.button5 = new System.Windows.Forms.Button();
             this.txtbuscar = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.Pcobras = new System.Windows.Forms.PictureBox();
-            this.Plobos = new System.Windows.Forms.PictureBox();
-            this.Ptiburon = new System.Windows.Forms.PictureBox();
-            this.Ptigre = new System.Windows.Forms.PictureBox();
-            this.Pleopardo = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.Pcobras)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Plobos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Ptiburon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Ptigre)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pleopardo)).BeginInit();
+            this.ptigre = new System.Windows.Forms.PictureBox();
+            this.ptiburon = new System.Windows.Forms.PictureBox();
+            this.plobo = new System.Windows.Forms.PictureBox();
+            this.pleopardo = new System.Windows.Forms.PictureBox();
+            this.pscobra = new System.Windows.Forms.PictureBox();
+            this.bsalir = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.ptigre)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptiburon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plobo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pleopardo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pscobra)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnombre
@@ -252,9 +252,11 @@ namespace App_Educativa_Sobre_Animales
             this.txtbuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtbuscar.FormattingEnabled = true;
             this.txtbuscar.Items.AddRange(new object[] {
-            "Tortuga Marina",
-            "Pinguinos",
-            "Pollos"});
+            "leopardo",
+            "tigre",
+            "tiburon",
+            "lobos",
+            "serpiente cobra"});
             this.txtbuscar.Location = new System.Drawing.Point(528, 20);
             this.txtbuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtbuscar.Name = "txtbuscar";
@@ -271,96 +273,82 @@ namespace App_Educativa_Sobre_Animales
             this.label6.TabIndex = 18;
             this.label6.Text = " Salvajes";
             // 
-            // button6
+            // ptigre
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(20, 476);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(171, 40);
-            this.button6.TabIndex = 19;
-            this.button6.Text = "Salir";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.ptigre.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.tigre5;
+            this.ptigre.Location = new System.Drawing.Point(508, 68);
+            this.ptigre.Name = "ptigre";
+            this.ptigre.Size = new System.Drawing.Size(347, 332);
+            this.ptigre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptigre.TabIndex = 23;
+            this.ptigre.TabStop = false;
             // 
-            // Pcobras
+            // ptiburon
             // 
-            this.Pcobras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Pcobras.Image = ((System.Drawing.Image)(resources.GetObject("Pcobras.Image")));
-            this.Pcobras.Location = new System.Drawing.Point(508, 59);
-            this.Pcobras.Name = "Pcobras";
-            this.Pcobras.Size = new System.Drawing.Size(347, 332);
-            this.Pcobras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Pcobras.TabIndex = 23;
-            this.Pcobras.TabStop = false;
-            this.Pcobras.Visible = false;
+            this.ptiburon.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.tiburon5;
+            this.ptiburon.Location = new System.Drawing.Point(508, 68);
+            this.ptiburon.Name = "ptiburon";
+            this.ptiburon.Size = new System.Drawing.Size(347, 332);
+            this.ptiburon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptiburon.TabIndex = 22;
+            this.ptiburon.TabStop = false;
             // 
-            // Plobos
+            // plobo
             // 
-            this.Plobos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Plobos.Image = ((System.Drawing.Image)(resources.GetObject("Plobos.Image")));
-            this.Plobos.Location = new System.Drawing.Point(508, 59);
-            this.Plobos.Name = "Plobos";
-            this.Plobos.Size = new System.Drawing.Size(347, 332);
-            this.Plobos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Plobos.TabIndex = 22;
-            this.Plobos.TabStop = false;
-            this.Plobos.Visible = false;
+            this.plobo.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.lobo5;
+            this.plobo.Location = new System.Drawing.Point(508, 68);
+            this.plobo.Name = "plobo";
+            this.plobo.Size = new System.Drawing.Size(347, 332);
+            this.plobo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.plobo.TabIndex = 21;
+            this.plobo.TabStop = false;
             // 
-            // Ptiburon
+            // pleopardo
             // 
-            this.Ptiburon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Ptiburon.Image = ((System.Drawing.Image)(resources.GetObject("Ptiburon.Image")));
-            this.Ptiburon.Location = new System.Drawing.Point(509, 60);
-            this.Ptiburon.Margin = new System.Windows.Forms.Padding(2);
-            this.Ptiburon.Name = "Ptiburon";
-            this.Ptiburon.Size = new System.Drawing.Size(346, 331);
-            this.Ptiburon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Ptiburon.TabIndex = 21;
-            this.Ptiburon.TabStop = false;
-            this.Ptiburon.Visible = false;
+            this.pleopardo.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.leopardo5;
+            this.pleopardo.Location = new System.Drawing.Point(508, 68);
+            this.pleopardo.Name = "pleopardo";
+            this.pleopardo.Size = new System.Drawing.Size(347, 332);
+            this.pleopardo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pleopardo.TabIndex = 20;
+            this.pleopardo.TabStop = false;
             // 
-            // Ptigre
+            // pscobra
             // 
-            this.Ptigre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Ptigre.Image = ((System.Drawing.Image)(resources.GetObject("Ptigre.Image")));
-            this.Ptigre.Location = new System.Drawing.Point(508, 60);
-            this.Ptigre.Margin = new System.Windows.Forms.Padding(2);
-            this.Ptigre.Name = "Ptigre";
-            this.Ptigre.Size = new System.Drawing.Size(346, 331);
-            this.Ptigre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Ptigre.TabIndex = 20;
-            this.Ptigre.TabStop = false;
-            this.Ptigre.Visible = false;
-            this.Ptigre.Click += new System.EventHandler(this.Ptigre_Click);
+            this.pscobra.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.cobra5;
+            this.pscobra.Location = new System.Drawing.Point(508, 68);
+            this.pscobra.Name = "pscobra";
+            this.pscobra.Size = new System.Drawing.Size(347, 332);
+            this.pscobra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pscobra.TabIndex = 19;
+            this.pscobra.TabStop = false;
             // 
-            // Pleopardo
+            // bsalir
             // 
-            this.Pleopardo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Pleopardo.Image = ((System.Drawing.Image)(resources.GetObject("Pleopardo.Image")));
-            this.Pleopardo.Location = new System.Drawing.Point(509, 59);
-            this.Pleopardo.Margin = new System.Windows.Forms.Padding(2);
-            this.Pleopardo.Name = "Pleopardo";
-            this.Pleopardo.Size = new System.Drawing.Size(346, 331);
-            this.Pleopardo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Pleopardo.TabIndex = 6;
-            this.Pleopardo.TabStop = false;
-            this.Pleopardo.Visible = false;
-            this.Pleopardo.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.bsalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(248)))), ((int)(((byte)(93)))));
+            this.bsalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bsalir.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bsalir.Location = new System.Drawing.Point(24, 490);
+            this.bsalir.Margin = new System.Windows.Forms.Padding(2);
+            this.bsalir.Name = "bsalir";
+            this.bsalir.Size = new System.Drawing.Size(171, 40);
+            this.bsalir.TabIndex = 24;
+            this.bsalir.Text = "Salir";
+            this.bsalir.UseVisualStyleBackColor = false;
+            this.bsalir.Click += new System.EventHandler(this.bsalir_Click);
             // 
-            // Pcobra
+            // AnimalesSalvajes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(886, 541);
-            this.Controls.Add(this.Pcobras);
-            this.Controls.Add(this.Plobos);
-            this.Controls.Add(this.Ptiburon);
-            this.Controls.Add(this.Ptigre);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.bsalir);
+            this.Controls.Add(this.ptigre);
+            this.Controls.Add(this.ptiburon);
+            this.Controls.Add(this.plobo);
+            this.Controls.Add(this.pleopardo);
+            this.Controls.Add(this.pscobra);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.button5);
@@ -373,7 +361,6 @@ namespace App_Educativa_Sobre_Animales
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.Pleopardo);
             this.Controls.Add(this.txtcomportamiento);
             this.Controls.Add(this.txthabitat);
             this.Controls.Add(this.txtalimentacion);
@@ -382,15 +369,15 @@ namespace App_Educativa_Sobre_Animales
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
-            this.Name = "Pcobra";
+            this.Name = "AnimalesSalvajes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WonderZoo";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Pcobras)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Plobos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Ptiburon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Ptigre)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pleopardo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptigre)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptiburon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.plobo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pleopardo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pscobra)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -403,7 +390,6 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.TextBox txtalimentacion;
         private System.Windows.Forms.TextBox txthabitat;
         private System.Windows.Forms.TextBox txtcomportamiento;
-        private System.Windows.Forms.PictureBox Pleopardo;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -416,12 +402,12 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.ComboBox txtbuscar;
         private System.Windows.Forms.Label label6;
-        //private fenaheDataSet4TableAdapters.oviparosTableAdapter oviparosTableAdapter;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.PictureBox Ptigre;
-        private System.Windows.Forms.PictureBox Ptiburon;
-        private System.Windows.Forms.PictureBox Plobos;
-        private System.Windows.Forms.PictureBox Pcobras;
+        private System.Windows.Forms.PictureBox pscobra;
+        private System.Windows.Forms.PictureBox pleopardo;
+        private System.Windows.Forms.PictureBox plobo;
+        private System.Windows.Forms.PictureBox ptiburon;
+        private System.Windows.Forms.PictureBox ptigre;
+        private System.Windows.Forms.Button bsalir;
     }
 }
 

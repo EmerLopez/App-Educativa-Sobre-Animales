@@ -115,6 +115,7 @@ namespace App_Educativa_Sobre_Animales
             this.button2.TabIndex = 6;
             this.button2.Text = "Animales";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // herviboros
             // 

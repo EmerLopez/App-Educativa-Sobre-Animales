@@ -35,7 +35,6 @@ namespace App_Educativa_Sobre_Animales
             this.txtalimentacion = new System.Windows.Forms.TextBox();
             this.txthabitat = new System.Windows.Forms.TextBox();
             this.txtcomportamiento = new System.Windows.Forms.TextBox();
-            this.pmariquitas = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -49,15 +48,16 @@ namespace App_Educativa_Sobre_Animales
             this.txtbuscar = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.pabeja = new System.Windows.Forms.PictureBox();
-            this.pmedusas = new System.Windows.Forms.PictureBox();
+            this.poruga = new System.Windows.Forms.PictureBox();
+            this.pmedusa = new System.Windows.Forms.PictureBox();
+            this.pmariquita = new System.Windows.Forms.PictureBox();
             this.pestrella = new System.Windows.Forms.PictureBox();
-            this.porugas = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pmariquitas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pabeja)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pmedusas)).BeginInit();
+            this.pabeja = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.poruga)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pmedusa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pmariquita)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pestrella)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.porugas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pabeja)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnombre
@@ -127,19 +127,6 @@ namespace App_Educativa_Sobre_Animales
             this.txtcomportamiento.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtcomportamiento.Size = new System.Drawing.Size(257, 95);
             this.txtcomportamiento.TabIndex = 4;
-            // 
-            // pmariquitas
-            // 
-            this.pmariquitas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pmariquitas.BackgroundImage")));
-            this.pmariquitas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pmariquitas.Location = new System.Drawing.Point(502, 59);
-            this.pmariquitas.Margin = new System.Windows.Forms.Padding(2);
-            this.pmariquitas.Name = "pmariquitas";
-            this.pmariquitas.Size = new System.Drawing.Size(346, 331);
-            this.pmariquitas.TabIndex = 6;
-            this.pmariquitas.TabStop = false;
-            this.pmariquitas.Visible = false;
-            this.pmariquitas.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button1
             // 
@@ -301,54 +288,55 @@ namespace App_Educativa_Sobre_Animales
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // pabeja
+            // poruga
             // 
-            this.pabeja.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pabeja.BackgroundImage")));
-            this.pabeja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pabeja.Location = new System.Drawing.Point(502, 58);
-            this.pabeja.Margin = new System.Windows.Forms.Padding(2);
-            this.pabeja.Name = "pabeja";
-            this.pabeja.Size = new System.Drawing.Size(346, 331);
-            this.pabeja.TabIndex = 20;
-            this.pabeja.TabStop = false;
-            this.pabeja.Visible = false;
+            this.poruga.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.oruga5;
+            this.poruga.Location = new System.Drawing.Point(509, 69);
+            this.poruga.Name = "poruga";
+            this.poruga.Size = new System.Drawing.Size(346, 331);
+            this.poruga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.poruga.TabIndex = 24;
+            this.poruga.TabStop = false;
             // 
-            // pmedusas
+            // pmedusa
             // 
-            this.pmedusas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pmedusas.BackgroundImage")));
-            this.pmedusas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pmedusas.Location = new System.Drawing.Point(502, 58);
-            this.pmedusas.Margin = new System.Windows.Forms.Padding(2);
-            this.pmedusas.Name = "pmedusas";
-            this.pmedusas.Size = new System.Drawing.Size(346, 331);
-            this.pmedusas.TabIndex = 21;
-            this.pmedusas.TabStop = false;
-            this.pmedusas.Visible = false;
+            this.pmedusa.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.medusa5;
+            this.pmedusa.Location = new System.Drawing.Point(509, 69);
+            this.pmedusa.Name = "pmedusa";
+            this.pmedusa.Size = new System.Drawing.Size(346, 331);
+            this.pmedusa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pmedusa.TabIndex = 23;
+            this.pmedusa.TabStop = false;
+            // 
+            // pmariquita
+            // 
+            this.pmariquita.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.mariquita5;
+            this.pmariquita.Location = new System.Drawing.Point(509, 69);
+            this.pmariquita.Name = "pmariquita";
+            this.pmariquita.Size = new System.Drawing.Size(346, 331);
+            this.pmariquita.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pmariquita.TabIndex = 22;
+            this.pmariquita.TabStop = false;
             // 
             // pestrella
             // 
-            this.pestrella.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pestrella.BackgroundImage")));
-            this.pestrella.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pestrella.Location = new System.Drawing.Point(502, 58);
-            this.pestrella.Margin = new System.Windows.Forms.Padding(2);
+            this.pestrella.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.estrella5;
+            this.pestrella.Location = new System.Drawing.Point(509, 69);
             this.pestrella.Name = "pestrella";
             this.pestrella.Size = new System.Drawing.Size(346, 331);
-            this.pestrella.TabIndex = 22;
+            this.pestrella.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pestrella.TabIndex = 21;
             this.pestrella.TabStop = false;
-            this.pestrella.Visible = false;
             // 
-            // porugas
+            // pabeja
             // 
-            this.porugas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("porugas.BackgroundImage")));
-            this.porugas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.porugas.Location = new System.Drawing.Point(502, 58);
-            this.porugas.Margin = new System.Windows.Forms.Padding(2);
-            this.porugas.Name = "porugas";
-            this.porugas.Size = new System.Drawing.Size(346, 331);
-            this.porugas.TabIndex = 23;
-            this.porugas.TabStop = false;
-            this.porugas.Visible = false;
-            this.porugas.Click += new System.EventHandler(this.porugas_Click);
+            this.pabeja.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.abeja5;
+            this.pabeja.Location = new System.Drawing.Point(509, 69);
+            this.pabeja.Name = "pabeja";
+            this.pabeja.Size = new System.Drawing.Size(346, 331);
+            this.pabeja.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pabeja.TabIndex = 20;
+            this.pabeja.TabStop = false;
             // 
             // invertebradosanimales
             // 
@@ -356,9 +344,10 @@ namespace App_Educativa_Sobre_Animales
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(886, 541);
-            this.Controls.Add(this.porugas);
+            this.Controls.Add(this.poruga);
+            this.Controls.Add(this.pmedusa);
+            this.Controls.Add(this.pmariquita);
             this.Controls.Add(this.pestrella);
-            this.Controls.Add(this.pmedusas);
             this.Controls.Add(this.pabeja);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label6);
@@ -373,7 +362,6 @@ namespace App_Educativa_Sobre_Animales
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pmariquitas);
             this.Controls.Add(this.txtcomportamiento);
             this.Controls.Add(this.txthabitat);
             this.Controls.Add(this.txtalimentacion);
@@ -386,11 +374,11 @@ namespace App_Educativa_Sobre_Animales
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Invertebrados";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pmariquitas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pabeja)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pmedusas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.poruga)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pmedusa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pmariquita)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pestrella)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.porugas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pabeja)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -403,7 +391,6 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.TextBox txtalimentacion;
         private System.Windows.Forms.TextBox txthabitat;
         private System.Windows.Forms.TextBox txtcomportamiento;
-        private System.Windows.Forms.PictureBox pmariquitas;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -418,9 +405,10 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pabeja;
-        private System.Windows.Forms.PictureBox pmedusas;
         private System.Windows.Forms.PictureBox pestrella;
-        private System.Windows.Forms.PictureBox porugas;
+        private System.Windows.Forms.PictureBox pmariquita;
+        private System.Windows.Forms.PictureBox pmedusa;
+        private System.Windows.Forms.PictureBox poruga;
     }
 }
 

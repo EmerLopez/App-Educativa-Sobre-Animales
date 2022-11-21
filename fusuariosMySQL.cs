@@ -36,12 +36,14 @@ namespace App_Educativa_Sobre_Animales
         private void fusuariosMySQL_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.usuarios' Puede moverla o quitarla según sea necesario.
+            this.usuariosTableAdapter.Fill(this.wonderzooDataSet.usuarios);
+            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.usuarios' Puede moverla o quitarla según sea necesario.
             //this.usuariosTableAdapter.Fill(this.wonderzooDataSet.usuarios);
             // TODO: esta línea de código carga datos en la tabla 'wonderZooDataSet.personas' Puede moverla o quitarla según sea necesario.
             //this.personasTableAdapter.Fill(this.wonderZooDataSet.personas);
             // TODO: esta línea de código carga datos en la tabla 'fenaheDataSet1.personas' Puede moverla o quitarla según sea necesario.
-        
-          
+
+
             txtusuario.Enabled = false;
             txtclave.Enabled = false;
             lstnivel.Enabled = false;

@@ -35,7 +35,6 @@ namespace App_Educativa_Sobre_Animales
             this.txtalimentacion = new System.Windows.Forms.TextBox();
             this.txthabitat = new System.Windows.Forms.TextBox();
             this.txtcomportamiento = new System.Windows.Forms.TextBox();
-            this.prana = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -49,15 +48,8 @@ namespace App_Educativa_Sobre_Animales
             this.Combobuscar = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.pserpiente = new System.Windows.Forms.PictureBox();
-            this.ptortuga = new System.Windows.Forms.PictureBox();
-            this.piguana = new System.Windows.Forms.PictureBox();
-            this.pcoco = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.prana)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pserpiente)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptortuga)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.piguana)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcoco)).BeginInit();
+            this.pbimage = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbimage)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnombre
@@ -91,7 +83,7 @@ namespace App_Educativa_Sobre_Animales
             this.txtalimentacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtalimentacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtalimentacion.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtalimentacion.Location = new System.Drawing.Point(178, 175);
+            this.txtalimentacion.Location = new System.Drawing.Point(178, 177);
             this.txtalimentacion.Margin = new System.Windows.Forms.Padding(2);
             this.txtalimentacion.Multiline = true;
             this.txtalimentacion.Name = "txtalimentacion";
@@ -105,7 +97,7 @@ namespace App_Educativa_Sobre_Animales
             this.txthabitat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txthabitat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txthabitat.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txthabitat.Location = new System.Drawing.Point(178, 252);
+            this.txthabitat.Location = new System.Drawing.Point(178, 254);
             this.txthabitat.Margin = new System.Windows.Forms.Padding(2);
             this.txthabitat.Multiline = true;
             this.txthabitat.Name = "txthabitat";
@@ -127,19 +119,6 @@ namespace App_Educativa_Sobre_Animales
             this.txtcomportamiento.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtcomportamiento.Size = new System.Drawing.Size(257, 95);
             this.txtcomportamiento.TabIndex = 4;
-            // 
-            // prana
-            // 
-            this.prana.Image = ((System.Drawing.Image)(resources.GetObject("prana.Image")));
-            this.prana.Location = new System.Drawing.Point(509, 59);
-            this.prana.Margin = new System.Windows.Forms.Padding(2);
-            this.prana.Name = "prana";
-            this.prana.Size = new System.Drawing.Size(346, 334);
-            this.prana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.prana.TabIndex = 6;
-            this.prana.TabStop = false;
-            this.prana.Visible = false;
-            this.prana.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button1
             // 
@@ -267,7 +246,7 @@ namespace App_Educativa_Sobre_Animales
             this.Combobuscar.FormattingEnabled = true;
             this.Combobuscar.Items.AddRange(new object[] {
             "iguana",
-            "tortuga marina",
+            "tortuga",
             "cocodrilo",
             "serpiente",
             "rana"});
@@ -301,54 +280,15 @@ namespace App_Educativa_Sobre_Animales
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // pserpiente
+            // pbimage
             // 
-            this.pserpiente.Image = ((System.Drawing.Image)(resources.GetObject("pserpiente.Image")));
-            this.pserpiente.Location = new System.Drawing.Point(509, 59);
-            this.pserpiente.Margin = new System.Windows.Forms.Padding(2);
-            this.pserpiente.Name = "pserpiente";
-            this.pserpiente.Size = new System.Drawing.Size(346, 334);
-            this.pserpiente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pserpiente.TabIndex = 20;
-            this.pserpiente.TabStop = false;
-            this.pserpiente.Visible = false;
-            // 
-            // ptortuga
-            // 
-            this.ptortuga.Image = ((System.Drawing.Image)(resources.GetObject("ptortuga.Image")));
-            this.ptortuga.Location = new System.Drawing.Point(508, 59);
-            this.ptortuga.Margin = new System.Windows.Forms.Padding(2);
-            this.ptortuga.Name = "ptortuga";
-            this.ptortuga.Size = new System.Drawing.Size(346, 334);
-            this.ptortuga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptortuga.TabIndex = 22;
-            this.ptortuga.TabStop = false;
-            this.ptortuga.Visible = false;
-            // 
-            // piguana
-            // 
-            this.piguana.Image = ((System.Drawing.Image)(resources.GetObject("piguana.Image")));
-            this.piguana.Location = new System.Drawing.Point(508, 59);
-            this.piguana.Margin = new System.Windows.Forms.Padding(2);
-            this.piguana.Name = "piguana";
-            this.piguana.Size = new System.Drawing.Size(346, 334);
-            this.piguana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.piguana.TabIndex = 23;
-            this.piguana.TabStop = false;
-            this.piguana.Visible = false;
-            this.piguana.Click += new System.EventHandler(this.pcaballo_Click);
-            // 
-            // pcoco
-            // 
-            this.pcoco.Image = ((System.Drawing.Image)(resources.GetObject("pcoco.Image")));
-            this.pcoco.Location = new System.Drawing.Point(508, 61);
-            this.pcoco.Margin = new System.Windows.Forms.Padding(2);
-            this.pcoco.Name = "pcoco";
-            this.pcoco.Size = new System.Drawing.Size(346, 334);
-            this.pcoco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcoco.TabIndex = 24;
-            this.pcoco.TabStop = false;
-            this.pcoco.Visible = false;
+            this.pbimage.Image = global::App_Educativa_Sobre_Animales.Properties.Resources.cocodrilo55;
+            this.pbimage.Location = new System.Drawing.Point(508, 61);
+            this.pbimage.Name = "pbimage";
+            this.pbimage.Size = new System.Drawing.Size(346, 334);
+            this.pbimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbimage.TabIndex = 20;
+            this.pbimage.TabStop = false;
             // 
             // AnimalesAnfibios
             // 
@@ -356,10 +296,7 @@ namespace App_Educativa_Sobre_Animales
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(248)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(886, 541);
-            this.Controls.Add(this.pcoco);
-            this.Controls.Add(this.piguana);
-            this.Controls.Add(this.ptortuga);
-            this.Controls.Add(this.pserpiente);
+            this.Controls.Add(this.pbimage);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Combobuscar);
@@ -373,7 +310,6 @@ namespace App_Educativa_Sobre_Animales
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.prana);
             this.Controls.Add(this.txtcomportamiento);
             this.Controls.Add(this.txthabitat);
             this.Controls.Add(this.txtalimentacion);
@@ -387,11 +323,7 @@ namespace App_Educativa_Sobre_Animales
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WonderZoo";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.prana)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pserpiente)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptortuga)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.piguana)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcoco)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbimage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -404,7 +336,6 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.TextBox txtalimentacion;
         private System.Windows.Forms.TextBox txthabitat;
         private System.Windows.Forms.TextBox txtcomportamiento;
-        private System.Windows.Forms.PictureBox prana;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -418,10 +349,7 @@ namespace App_Educativa_Sobre_Animales
         private System.Windows.Forms.ComboBox Combobuscar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.PictureBox pserpiente;
-        private System.Windows.Forms.PictureBox ptortuga;
-        private System.Windows.Forms.PictureBox piguana;
-        private System.Windows.Forms.PictureBox pcoco;
+        private System.Windows.Forms.PictureBox pbimage;
         //private wonderzooDataSet wonderzooDataSet;
         //private System.Windows.Forms.BindingSource anfibiosBindingSource;
         //private wonderzooDataSetTableAdapters.anfibiosTableAdapter anfibiosTableAdapter;

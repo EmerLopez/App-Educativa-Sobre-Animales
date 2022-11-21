@@ -153,7 +153,8 @@ namespace App_Educativa_Sobre_Animales
 
         private void button9_Click(object sender, EventArgs e)
         {
-
+            Carnivoros CC = new Carnivoros();
+            CC.Show();
         }
 
         private void button10_Click(object sender, EventArgs e)

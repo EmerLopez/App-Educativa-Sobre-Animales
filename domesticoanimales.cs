@@ -12,21 +12,23 @@ using MySql.Data.MySqlClient;
 
 namespace App_Educativa_Sobre_Animales
 {
-    public partial class domestico : Form
+    public partial class domesticoanimales : Form
     {
         public string cadena_conexion = "server=Localhost;user id=wzadmins;password=12345;database=wonderzoo";
         private object domesticosTableAdapter;
         private object wonderzoDataSet;
 
-        public domestico()
+        public domesticoanimales()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-            pPerro.Visible = true;
+            // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.domesticos' Puede moverla o quitarla según sea necesario.
+            this.domesticosTableAdapter1.Fill(this.wonderzooDataSet.domesticos);
+
+            pperro.Visible = true;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -61,43 +63,43 @@ namespace App_Educativa_Sobre_Animales
 
             if (txtnombre.Text == "perro")
             {
-                pPerro.Visible = true;
-                pGato.Visible = false;
-                pConejo.Visible = false;
-                pCerdo.Visible = false;
-                pPato.Visible = false;
+                pperro.Visible = true;
+                pgato.Visible = false;
+                pconejo.Visible = false;
+                pcerdo.Visible = false;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "gato")
             {
-                pPerro.Visible = false;
-                pGato.Visible = true;
-                pConejo.Visible = false;
-                pCerdo.Visible = false;
-                pPato.Visible = false;
+                pperro.Visible = false;
+                pgato.Visible = true;
+                pconejo.Visible = false;
+                pcerdo.Visible = false;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "conejo")
             {
-                pPerro.Visible = false;
-                pGato.Visible = false;
-                pConejo.Visible = true;
-                pCerdo.Visible = false;
-                pPato.Visible = false;
+                pperro.Visible = false;
+                pgato.Visible = false;
+                pconejo.Visible = true;
+                pcerdo.Visible = false;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "cerdo")
             {
-                pPerro.Visible = false;
-                pGato.Visible = false;
-                pConejo.Visible = false;
-                pCerdo.Visible = true;
-                pPato.Visible = false;
+                pperro.Visible = false;
+                pgato.Visible = false;
+                pconejo.Visible = false;
+                pcerdo.Visible = true;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "pato")
             {
-                pPerro.Visible = false;
-                pGato.Visible = false;
-                pConejo.Visible = false;
-                pCerdo.Visible = false;
-                pPato.Visible = true;
+                pperro.Visible = false;
+                pgato.Visible = false;
+                pconejo.Visible = false;
+                pcerdo.Visible = false;
+                ppato.Visible = true;
             }
 
 
@@ -110,43 +112,43 @@ namespace App_Educativa_Sobre_Animales
             this.domesticosBindingSource.MoveFirst();
             if (txtnombre.Text == "perro")
             {
-                pPerro.Visible = true;
-                pGato.Visible = false;
-                pConejo.Visible = false;
-                pCerdo.Visible = false;
-                pPato.Visible = false;
+                pperro.Visible = true;
+                pgato.Visible = false;
+                pconejo.Visible = false;
+                pcerdo.Visible = false;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "gato")
             {
-                pPerro.Visible = false;
-                pGato.Visible = true;
-                pConejo.Visible = false;
-                pCerdo.Visible = false;
-                pPato.Visible = false;
+                pperro.Visible = false;
+                pgato.Visible = true;
+                pconejo.Visible = false;
+                pcerdo.Visible = false;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "conejo")
             {
-                pPerro.Visible = false;
-                pGato.Visible = false;
-                pConejo.Visible = true;
-                pCerdo.Visible = false;
-                pPato.Visible = false;
+                pperro.Visible = false;
+                pgato.Visible = false;
+                pconejo.Visible = true;
+                pcerdo.Visible = false;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "cerdo")
             {
-                pPerro.Visible = false;
-                pGato.Visible = false;
-                pConejo.Visible = false;
-                pCerdo.Visible = true;
-                pPato.Visible = false;
+                pperro.Visible = false;
+                pgato.Visible = false;
+                pconejo.Visible = false;
+                pcerdo.Visible = true;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "pato")
             {
-                pPerro.Visible = false;
-                pGato.Visible = false;
-                pConejo.Visible = false;
-                pCerdo.Visible = false;
-                pPato.Visible = true;
+                pperro.Visible = false;
+                pgato.Visible = false;
+                pconejo.Visible = false;
+                pcerdo.Visible = false;
+                ppato.Visible = true;
             }
         }
 
@@ -155,43 +157,43 @@ namespace App_Educativa_Sobre_Animales
             this.domesticosBindingSource.MovePrevious();
             if (txtnombre.Text == "perro")
             {
-                pPerro.Visible = true;
-                pGato.Visible = false;
-                pConejo.Visible = false;
-                pCerdo.Visible = false;
-                pPato.Visible = false;
+                pperro.Visible = true;
+                pgato.Visible = false;
+                pconejo.Visible = false;
+                pcerdo.Visible = false;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "gato")
             {
-                pPerro.Visible = false;
-                pGato.Visible = true;
-                pConejo.Visible = false;
-                pCerdo.Visible = false;
-                pPato.Visible = false;
+                pperro.Visible = false;
+                pgato.Visible = true;
+                pconejo.Visible = false;
+                pcerdo.Visible = false;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "conejo")
             {
-                pPerro.Visible = false;
-                pGato.Visible = false;
-                pConejo.Visible = true;
-                pCerdo.Visible = false;
-                pPato.Visible = false;
+                pperro.Visible = false;
+                pgato.Visible = false;
+                pconejo.Visible = true;
+                pcerdo.Visible = false;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "cerdo")
             {
-                pPerro.Visible = false;
-                pGato.Visible = false;
-                pConejo.Visible = false;
-                pCerdo.Visible = true;
-                pPato.Visible = false;
+                pperro.Visible = false;
+                pgato.Visible = false;
+                pconejo.Visible = false;
+                pcerdo.Visible = true;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "pato")
             {
-                pPerro.Visible = false;
-                pGato.Visible = false;
-                pConejo.Visible = false;
-                pCerdo.Visible = false;
-                pPato.Visible = true;
+                pperro.Visible = false;
+                pgato.Visible = false;
+                pconejo.Visible = false;
+                pcerdo.Visible = false;
+                ppato.Visible = true;
             }
         }
 
@@ -200,43 +202,43 @@ namespace App_Educativa_Sobre_Animales
             this.domesticosBindingSource.MoveNext();
             if (txtnombre.Text == "perro")
             {
-                pPerro.Visible = true;
-                pGato.Visible = false;
-                pConejo.Visible = false;
-                pCerdo.Visible = false;
-                pPato.Visible = false;
+                pperro.Visible = true;
+                pgato.Visible = false;
+                pconejo.Visible = false;
+                pcerdo.Visible = false;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "gato")
             {
-                pPerro.Visible = false;
-                pGato.Visible = true;
-                pConejo.Visible = false;
-                pCerdo.Visible = false;
-                pPato.Visible = false;
+                pperro.Visible = false;
+                pgato.Visible = true;
+                pconejo.Visible = false;
+                pcerdo.Visible = false;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "conejo")
             {
-                pPerro.Visible = false;
-                pGato.Visible = false;
-                pConejo.Visible = true;
-                pCerdo.Visible = false;
-                pPato.Visible = false;
+                pperro.Visible = false;
+                pgato.Visible = false;
+                pconejo.Visible = true;
+                pcerdo.Visible = false;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "cerdo")
             {
-                pPerro.Visible = false;
-                pGato.Visible = false;
-                pConejo.Visible = false;
-                pCerdo.Visible = true;
-                pPato.Visible = false;
+                pperro.Visible = false;
+                pgato.Visible = false;
+                pconejo.Visible = false;
+                pcerdo.Visible = true;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "pato")
             {
-                pPerro.Visible = false;
-                pGato.Visible = false;
-                pConejo.Visible = false;
-                pCerdo.Visible = false;
-                pPato.Visible = true;
+                pperro.Visible = false;
+                pgato.Visible = false;
+                pconejo.Visible = false;
+                pcerdo.Visible = false;
+                ppato.Visible = true;
             }
         }
 
@@ -245,44 +247,46 @@ namespace App_Educativa_Sobre_Animales
             this.domesticosBindingSource.MoveLast();
             if (txtnombre.Text == "perro")
             {
-                pPerro.Visible = true;
-                pGato.Visible = false;
-                pConejo.Visible = false;
-                pCerdo.Visible = false;
-                pPato.Visible = false;
+                pperro.Visible = true;
+                pgato.Visible = false;
+                pconejo.Visible = false;
+                pcerdo.Visible = false;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "gato")
             {
-                pPerro.Visible = false;
-                pGato.Visible = true;
-                pConejo.Visible = false;
-                pCerdo.Visible = false;
-                pPato.Visible = false;
+                pperro.Visible = false;
+                pgato.Visible = true;
+                pconejo.Visible = false;
+                pcerdo.Visible = false;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "conejo")
             {
-                pPerro.Visible = false;
-                pGato.Visible = false;
-                pConejo.Visible = true;
-                pCerdo.Visible = false;
-                pPato.Visible = false;
+                pperro.Visible = false;
+                pgato.Visible = false;
+                pconejo.Visible = true;
+                pcerdo.Visible = false;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "cerdo")
             {
-                pPerro.Visible = false;
-                pGato.Visible = false;
-                pConejo.Visible = false;
-                pCerdo.Visible = true;
-                pPato.Visible = false;
+                pperro.Visible = false;
+                pgato.Visible = false;
+                pconejo.Visible = false;
+                pcerdo.Visible = true;
+                ppato.Visible = false;
             }
             if (txtnombre.Text == "pato")
             {
-                pPerro.Visible = false;
-                pGato.Visible = false;
-                pConejo.Visible = false;
-                pCerdo.Visible = false;
-                pPato.Visible = true;
+                pperro.Visible = false;
+                pgato.Visible = false;
+                pconejo.Visible = false;
+                pcerdo.Visible = false;
+                ppato.Visible = true;
             }
+           // pPato.Visible = true;
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

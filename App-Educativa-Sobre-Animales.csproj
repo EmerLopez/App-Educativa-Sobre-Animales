@@ -108,6 +108,12 @@
     <Compile Include="AnimalesAnfibios.Designer.cs">
       <DependentUpon>AnimalesAnfibios.cs</DependentUpon>
     </Compile>
+    <Compile Include="animalescarnivoros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="animalescarnivoros.Designer.cs">
+      <DependentUpon>animalescarnivoros.cs</DependentUpon>
+    </Compile>
     <Compile Include="AnimalesOmnivoros.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,12 +143,6 @@
     </Compile>
     <Compile Include="Carnivoros.designer.cs">
       <DependentUpon>Carnivoros.cs</DependentUpon>
-    </Compile>
-    <Compile Include="carnivorosanimales.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="carnivorosanimales.designer.cs">
-      <DependentUpon>carnivorosanimales.cs</DependentUpon>
     </Compile>
     <Compile Include="domesticoanimales.cs">
       <SubType>Form</SubType>
@@ -275,6 +275,9 @@
     <EmbeddedResource Include="AnimalesAnfibios.resx">
       <DependentUpon>AnimalesAnfibios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="animalescarnivoros.resx">
+      <DependentUpon>animalescarnivoros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AnimalesOmnivoros.resx">
       <DependentUpon>AnimalesOmnivoros.cs</DependentUpon>
     </EmbeddedResource>
@@ -289,9 +292,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Carnivoros.resx">
       <DependentUpon>Carnivoros.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="carnivorosanimales.resx">
-      <DependentUpon>carnivorosanimales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="domesticoanimales.resx">
       <DependentUpon>domesticoanimales.cs</DependentUpon>
@@ -421,6 +421,60 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MicrosoftTeams-image %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icono\77_85219.ico" />
+    <Content Include="images5\Anfibios5\cocodrilo5.jpg" />
+    <Content Include="images5\Anfibios5\cocodrilo55.jpg" />
+    <Content Include="images5\Anfibios5\iguana5.jpg" />
+    <Content Include="images5\Anfibios5\rana5.jpg" />
+    <Content Include="images5\Anfibios5\serpiente5.jpg" />
+    <Content Include="images5\Anfibios5\tortuga5.jpg" />
+    <Content Include="images5\carnivoros5\aguila5.jpg" />
+    <Content Include="images5\carnivoros5\gaviota5.jpg" />
+    <Content Include="images5\carnivoros5\puma5.jpg" />
+    <Content Include="images5\carnivoros5\tigre5.jpg" />
+    <Content Include="images5\carnivoros5\zorro5.jpg" />
+    <Content Include="images5\domesticos5\cerdo5.jpg" />
+    <Content Include="images5\domesticos5\conejo5.jpg" />
+    <Content Include="images5\domesticos5\gato5.jpg" />
+    <Content Include="images5\domesticos5\pato5.jpg" />
+    <Content Include="images5\domesticos5\perro5.jpg" />
+    <Content Include="images5\herviboros5\canguro5.jpg" />
+    <Content Include="images5\herviboros5\gacela5.jpg" />
+    <Content Include="images5\herviboros5\jirafa5.jpg" />
+    <Content Include="images5\herviboros5\oveja5.jpg" />
+    <Content Include="images5\herviboros5\panda5.jpg" />
+    <Content Include="images5\invertebrados5\abeja5.jpg" />
+    <Content Include="images5\invertebrados5\estrella5.jpg" />
+    <Content Include="images5\invertebrados5\mariquita5.jpg" />
+    <Content Include="images5\invertebrados5\medusa5.jpg" />
+    <Content Include="images5\invertebrados5\oruga5.jpg" />
+    <Content Include="images5\Omnivoros5\erizo5.jpg" />
+    <Content Include="images5\Omnivoros5\gorila5.jpg" />
+    <Content Include="images5\Omnivoros5\mapache5.jpg" />
+    <Content Include="images5\Omnivoros5\tucan5.jpg" />
+    <Content Include="images5\Omnivoros5\zorro5.jpg" />
+    <Content Include="images5\oviparos5\avestruz5.jpg" />
+    <Content Include="images5\oviparos5\gallina5.jpg" />
+    <Content Include="images5\oviparos5\pinguino5.jpg" />
+    <Content Include="images5\oviparos5\torogoz5.jpeg" />
+    <Content Include="images5\oviparos5\tortugam5.jpg" />
+    <Content Include="images5\salvajes5\cobra5.jpg" />
+    <Content Include="images5\salvajes5\leopardo5.jpg" />
+    <Content Include="images5\salvajes5\lobo5.jpg" />
+    <Content Include="images5\salvajes5\tiburon5.jpg" />
+    <Content Include="images5\salvajes5\tigre5.jpg" />
+    <Content Include="images5\vertebrados5\ajolote5.jpg" />
+    <Content Include="images5\vertebrados5\caballo5.jpg" />
+    <Content Include="images5\vertebrados5\elefante5.jpg" />
+    <Content Include="images5\vertebrados5\lemur5.jpg" />
+    <Content Include="images5\vertebrados5\vaca5.jpg" />
+    <Content Include="images5\viviparos5\delfin5.jpg" />
+    <Content Include="images5\viviparos5\jirafa5.jpg" />
+    <Content Include="images5\viviparos5\koala5.jpg" />
+    <Content Include="images5\viviparos5\oso5.jpg" />
+    <Content Include="images5\viviparos5\rinoceronte5.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
