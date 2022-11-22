@@ -24,7 +24,7 @@ namespace App_Educativa_Sobre_Animales
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'wonderzooDataSet.oviparos' Puede moverla o quitarla según sea necesario.
-            this.oviparosTableAdapter.Fill(this.wonderzooDataSet.oviparos);
+            //this.oviparosTableAdapter.Fill(this.wonderzooDataSet.oviparos);
 
             ptortuga.Visible = true;
            

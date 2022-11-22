@@ -250,6 +250,7 @@ namespace App_Educativa_Sobre_Animales
             // txtbuscar
             // 
             this.txtbuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtbuscar.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Italic);
             this.txtbuscar.FormattingEnabled = true;
             this.txtbuscar.Items.AddRange(new object[] {
             "panda",
@@ -260,7 +261,7 @@ namespace App_Educativa_Sobre_Animales
             this.txtbuscar.Location = new System.Drawing.Point(492, 21);
             this.txtbuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(172, 21);
+            this.txtbuscar.Size = new System.Drawing.Size(172, 30);
             this.txtbuscar.TabIndex = 17;
             // 
             // label6

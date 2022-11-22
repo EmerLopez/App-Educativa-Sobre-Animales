@@ -243,6 +243,7 @@ namespace App_Educativa_Sobre_Animales
             // Combobuscar
             // 
             this.Combobuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Combobuscar.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Italic);
             this.Combobuscar.FormattingEnabled = true;
             this.Combobuscar.Items.AddRange(new object[] {
             "iguana",
@@ -253,7 +254,7 @@ namespace App_Educativa_Sobre_Animales
             this.Combobuscar.Location = new System.Drawing.Point(508, 21);
             this.Combobuscar.Margin = new System.Windows.Forms.Padding(2);
             this.Combobuscar.Name = "Combobuscar";
-            this.Combobuscar.Size = new System.Drawing.Size(172, 21);
+            this.Combobuscar.Size = new System.Drawing.Size(172, 30);
             this.Combobuscar.TabIndex = 17;
             // 
             // label6

@@ -193,6 +193,12 @@
     <Compile Include="invertebradosanimales.Designer.cs">
       <DependentUpon>invertebradosanimales.cs</DependentUpon>
     </Compile>
+    <Compile Include="jparejas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jparejas.Designer.cs">
+      <DependentUpon>jparejas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -316,6 +322,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="invertebradosanimales.resx">
       <DependentUpon>invertebradosanimales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jparejas.resx">
+      <DependentUpon>jparejas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -475,6 +484,15 @@
     <Content Include="images5\viviparos5\koala5.jpg" />
     <Content Include="images5\viviparos5\oso5.jpg" />
     <Content Include="images5\viviparos5\rinoceronte5.jpg" />
+    <None Include="Resources\question.jpg" />
+    <None Include="Resources\img8.jpg" />
+    <None Include="Resources\img7.jpg" />
+    <None Include="Resources\img6.jpg" />
+    <None Include="Resources\img5.jpg" />
+    <None Include="Resources\img4.jpg" />
+    <None Include="Resources\img3.jpg" />
+    <None Include="Resources\img2.jpg" />
+    <None Include="Resources\img1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
